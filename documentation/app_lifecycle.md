@@ -1,15 +1,14 @@
 # App lifecycle
 
-## App Install
-<details><summary>App Installation </summary>
+## Install App
 
 <details><summary>Sequence Diagram</summary>
- 
-![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
+
+  ![alt text](https://github.com/opsramp/sdk2.0/blob/145def16b0b657edc66590c3450dde124b9669e8/images/app_install_flow.png)
 
 </details>
 
-<details><summary>Install Message[Json]</summary>
+<details><summary>Message</summary>
 
 ```json
 {
@@ -43,21 +42,17 @@
 ```
 </details>
 
-</details>
-
 ---
 
-## App Upgrade
-
-<details><summary>App Upgrade </summary>
+## Upgrade App
 
 <details><summary>Sequence Diagram</summary>
   
-![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
+![alt text](https://github.com/opsramp/sdk2.0/blob/145def16b0b657edc66590c3450dde124b9669e8/images/app_upgrade_flow.png)
 
 </details>
 
-<details><summary>Upgrade Message[Json]</summary>
+<details><summary>Message</summary>
 
 ```json
 {
@@ -91,21 +86,17 @@
 ```
 </details>
 
-</details>
-
 ---
 
-## App Uninstall
-
-<details><summary>App Uninstall </summary>
+## Uninstall App
 
 <details><summary>Sequence Diagram</summary>
   
-  ![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
+  ![alt text](https://github.com/opsramp/sdk2.0/blob/145def16b0b657edc66590c3450dde124b9669e8/images/app_uninstall_flow.png)
 
 </details>
 
-<details><summary>Uninstall Message[Json]</summary>
+<details><summary>Message</summary>
 
 ```json
 {
@@ -126,4 +117,3 @@
 ```
 </details>
 
-</details>
