@@ -4,6 +4,8 @@
 <details><summary>App Installation </summary>
 
 <details><summary>Sequence Diagram</summary>
+ 
+![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
 
 </details>
 
@@ -50,6 +52,8 @@
 <details><summary>App Upgrade </summary>
 
 <details><summary>Sequence Diagram</summary>
+  
+![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
 
 </details>
 
@@ -96,6 +100,8 @@
 <details><summary>App Uninstall </summary>
 
 <details><summary>Sequence Diagram</summary>
+  
+  ![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
 
 </details>
 
