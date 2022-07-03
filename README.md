@@ -4,21 +4,8 @@
 <details><summary>App Installation </summary>
 
 <details><summary>Sequence Diagram</summary>
-
-```plantuml
-@startuml install message
-
-title SDK2.0 Install Message Flow
-
-inboundchannel -> messagesorter: Install Message
-messagesorter  -> serviceregistry: Install Message
-
-serviceregistry -> gatewaymanager: Install Message
-gatewaymanager --> serviceregistry: Install Message Response
-@enduml
-```
-
-![Screenshot](/home/snuramjirajukammila/config_files/architectures/out/Gateway/sdk2/installmessage.png)
+  
+![alt text](https://github.com/opsramp/sdk2.0/blob/eae2d3f008f94a62310ee35b1316006241288fe8/images/app_install_flow.png)
 
 </details>
 
