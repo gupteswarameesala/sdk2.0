@@ -2,16 +2,18 @@
 
 Resource payload contains two types of attributes
 
-1. standard attributes
+1. Standard attributes
 
-   mandatory attributes
+   These attributes are standard across domain
+
+   Mandatory attributes
 
     1. moId
     2. resourceType
     3. nativeType
     4. resourceName
 
-   optional attributes[Generic domain attributes]
+   Optional attributes[Generic domain attributes]
 
     1. hostName
     2. aliasName
@@ -26,10 +28,13 @@ Resource payload contains two types of attributes
     11. systemUID
     12. hasRelationship
 
-2. custom attributes
+2. Custom attributes
+
+    These are native attributes specific to that domain, tags is a json object, add key value to tags 
 
     1. tags
 
+## Sample json message
 ```json
 {
   "resourceType": "server",
