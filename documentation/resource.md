@@ -1,19 +1,26 @@
 # Resource
 
-Resource payload contains two types of attributes
+Resource payload contains four types of attributes
 
-1. Standard attributes
+- [Standard attributes](#standard-attributes) 
+- [Custom attributes](#custom-attributes)
+- [App attributes](#app-attributes)
+- [Signatures](#signatures)
+
+[Sample JSON Message](#sample-json-message)
+
+### Standard attributes
 
    These attributes are standard across domain
 
-   Mandatory attributes
+   mandatory attributes
 
     1. moId
     2. resourceType
     3. nativeType
     4. resourceName
 
-   Optional attributes[Generic domain attributes]
+   optional attributes[Generic domain attributes]
 
     1. hostName
     2. aliasName
@@ -28,13 +35,38 @@ Resource payload contains two types of attributes
     11. systemUID
     12. hasRelationship
 
-2. Custom attributes
+### Custom attributes
 
-    These are native attributes specific to that domain, tags is a json object, add key value to tags 
+    Native attributes specific to that domain, tags is a json object, add key value to tags 
 
     1. tags
 
-## Sample json message
+### App attributes
+  
+    Add any key of your choice and value as json object, anything specific to app for that resource can be injected here
+
+    ```json
+    *"{appName}" : {
+            "key1" : "value1",  
+            "key2" : "value2"
+        }
+    ```
+
+### Signatures
+
+    Signatures are the identities for a resource, used for resource reconcilation when a same resource is discovered from multiple apps.
+
+    ```json
+    "signatures" : [
+              "172.200.25.12@@@2E:8B:EB:32:7A:F9",
+              "server-1234-hostname@@@dell, inc.@@@model-xyz",
+              "123456@@@testdevice-api.com@@@2E:8B:EB:32:7A:F9",
+              "a0594f2e-3b26-2acf-b9e0-4a9fdc42a1a0"
+        ]
+    ```
+
+
+### Sample JSON message
 ```json
 {
   "resourceType": "server",
@@ -56,6 +88,17 @@ Resource payload contains two types of attributes
   "tags": {
     "firmware": "fireware-1",
     "bios": "bios-1"
-  }
+  },
+  "{appName}" : {
+            "key1" : "value1",  
+            "key2" : "value2"
+        },
+  "signatures" : [
+              "172.200.25.12@@@2E:8B:EB:32:7A:F9",
+              "server-1234-hostname@@@dell, inc.@@@model-xyz",
+              "123456@@@testdevice-api.com@@@2E:8B:EB:32:7A:F9",
+              "a0594f2e-3b26-2acf-b9e0-4a9fdc42a1a0"
+        ]
 }
 ```
+[Home](#resource)
