@@ -1,5 +1,7 @@
 # Resource
 
+Resource is core entity that is discovered and monitored in Opsramp platform.
+
 Resource payload contains four types of attributes
 
 - [Standard attributes](#standard-attributes) 
