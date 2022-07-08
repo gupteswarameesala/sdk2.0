@@ -1,5 +1,13 @@
 # Monitoring message
 
+<details><summary>Activity Diagram</summary>
+  
+ ![alt text](https://github.com/opsramp/sdk2.0/blob/9fba0395b1237b8fb8667160a63c7706db1bc311/images/monitoring_message_processing.png)
+  
+</details>
+
+<details><summary>Message</summary>
+  
 ```json
 {
   "action": "Update",
@@ -75,3 +83,5 @@
   "subtype": "Configuration"
 }
 ```
+  
+ </details>
