@@ -1,5 +1,13 @@
 # Discovery message
 
+<details><summary>Activity Diagram</summary>
+  
+ ![alt text](https://github.com/opsramp/sdk2.0/blob/f8e5fa1e098a956ffb45f2a5535c6883967675d5/images/discovery_message_processing.png)
+  
+</details>
+
+<details><summary>Message</summary>
+  
 ```json
 {
   "action": "Update",
@@ -48,3 +56,5 @@
   "subtype": "Configuration"
 }
 ```
+  
+</details>
