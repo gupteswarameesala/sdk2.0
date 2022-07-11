@@ -1,0 +1,215 @@
+{
+    "appName": "demo-sample-app-python",
+    "appVersion": "1.0.0",
+    "discoveryConfiguration": [
+        {
+            "propertyName": "ipAddress",
+            "label": "IP Address",
+            "dataType": "string",
+            "placeholder" : "Enter IP Address or hostname"
+        },
+        {
+            "propertyName": "port",
+            "label": "Port",
+            "dataType": "boolean"
+        },
+        {
+            "propertyName": "credentials",
+            "label": "Credentials",
+            "dataType": "string",
+            "credentialType": "APPLICATION",
+            "placeholder": "Select Credentials"
+
+        },
+         {
+            "propertyName": "notificationAlert",
+            "label": "Notification Alert",
+            "dataType": "boolean"
+         },
+        {
+            "propertyName": "alertConfiguration",
+            "label": "Event polling",
+            "dataType": "boolean"
+
+         },
+        {
+            "propertyName": "alertSeverity",
+            "label": "Alert Severity",
+            "dataType": "string"
+         },
+        {
+            "propertyName": "alertOnRootResource",
+            "label": "Alert on Root Resource",
+            "dataType": "boolean"
+         },
+        {
+            "propertyName": "alertSeverityMapping",
+            "label": "Alert Severity Mapping",
+            "dataType": "string"
+         }
+
+    ],
+    "required": [
+        "ipAddress","port"
+
+    ],
+    "data": {
+    "notificationAlert": false
+  },
+    "nativeTypeMapping": [
+    	{
+            "nativeType": "vcenter",
+            "opsrampResourceType": "server"
+        },
+        {
+            "nativeType": "host",
+            "opsrampResourceType": "server"
+        },
+        {
+            "nativeType": "vm",
+            "opsrampResourceType": "server"
+        }
+    ],
+    "nativeType": [
+    	{
+            "name": "vcenter",
+            "metric": [
+                {
+                    "name": "resource_event_statistics",
+                    "units": "s",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "resource_event_statistics",
+                    "alertDescription": "resource_event_statistics",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                }
+            ],
+            "monitors": [
+                {
+                    "title": "Event Statistics Monitor",
+                    "frequency": 5,
+                    "metric": ["resource_event_statistics"]
+                }
+
+            ]
+        },
+        {
+            "name": "host",
+            "metric": [
+                {
+                    "name": "demo_system_os_uptime",
+                    "units": "s",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "demo_system_os_uptime",
+                    "alertDescription": "demo_system_os_uptime",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                },
+                {
+                    "name": "demo_system_network_interface_utilization",
+                    "units": "%",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "demo_system_network_interface_utilization",
+                    "alertDescription": "demo_system_network_interface_utilization",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                }
+
+            ],
+            "monitors": [
+                {
+                    "title": "Performance Monitor",
+                    "frequency": 5,
+                    "metric": ["demo_system_os_uptime","demo_system_network_interface_utilization"]
+                }
+
+            ]
+        },
+        {
+            "name": "vm",
+            "metric": [
+                {
+                    "name": "demo_system_cpu_usage_stats",
+                    "units": "%",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "demo_system_cpu_usage_stats",
+                    "alertDescription": "demo_system_cpu_usage_stats",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                }
+
+            ],
+            "monitors": [
+                {
+                    "title": "Performance Monitor",
+                    "frequency": 5,
+                    "metric": ["demo_system_cpu_usage_stats"]
+                }
+            ]
+        }
+    ]
+}
