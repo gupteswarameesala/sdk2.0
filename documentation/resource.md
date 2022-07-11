@@ -103,4 +103,7 @@ Resource payload contains four types of attributes
         ]
 }
 ```
+
+![alt text](https://github.com/opsramp/sdk2.0/blob/main/images/resource_schema.png)
+
 [Home](#resource)
