@@ -2,6 +2,11 @@
 
 ## Credential configuration update
 
+<details><summary>Sequence Diagram</summary>
+
+ ![alt text](https://github.com/opsramp/sdk2.0/blob/aacd2e46c7c51f92bc1879310162d65f412af453/images/credential_configuration_update.png)
+</details>
+
 <details><summary>Message</summary>
 
 ```json
@@ -35,3 +40,11 @@
 </details>
 
 ---
+## Credential configuration delete
+
+<details><summary>Sequence Diagram</summary>
+
+ ![alt text](https://github.com/opsramp/sdk2.0/blob/main/images/credential_configuration_delete.png)
+</details>
+
+<details><summary>Message</summary>
