@@ -4,7 +4,7 @@
 
 <details><summary>Sequence Diagram</summary>
 
- ![alt text](https://github.com/opsramp/sdk2.0/blob/145def16b0b657edc66590c3450dde124b9669e8/images/discovery_configuration_update.png)
+ ![alt text](https://github.com/opsramp/sdk2.0/blob/6b46f9381348e10b49e6e391b493db6d0a340a65/images/resource_ack_message.png)
 </details>
 
 <details><summary>Message</summary>
@@ -46,7 +46,7 @@
 
 <details><summary>Sequence Diagram</summary>
 
-![alt text](https://github.com/opsramp/sdk2.0/blob/145def16b0b657edc66590c3450dde124b9669e8/images/discovery_configuration_delete.png)
+![alt text](https://github.com/opsramp/sdk2.0/blob/6b46f9381348e10b49e6e391b493db6d0a340a65/images/relationship_ack_message.png)
 
 </details>
 
