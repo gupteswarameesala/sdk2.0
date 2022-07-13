@@ -45,7 +45,7 @@
 
 <details><summary>Sequence Diagram</summary>
 
-![alt text](https://github.com/opsramp/sdk2.0/blob/main/images/resource_configuration_unassign.png)
+![alt text](https://github.com/opsramp/sdk2.0/blob/8ed6146eac803981ecabc6ddfeaeb408a0b1fcce/images/resource_configuration_delete.png)
 
 </details>
 
@@ -75,7 +75,7 @@
 
 <details><summary>Sequence Diagram</summary>
 
-![alt text](https://github.com/opsramp/sdk2.0/blob/main/images/resource_configuration_unassign.png)
+![alt text](https://github.com/opsramp/sdk2.0/blob/8ed6146eac803981ecabc6ddfeaeb408a0b1fcce/images/resource_configuration_unassign.png)
 
 </details>
 
