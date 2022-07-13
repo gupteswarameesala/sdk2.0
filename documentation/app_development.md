@@ -7,8 +7,20 @@
 - [Publishing App]
 - [Installing App]
 - [Create Configuration]
-- [App attributes](#app-attributes)
-- [Signatures](#signatures)
+
+# Reports 
+
+- [Resource Discovery]
+- [Relationship Discovery]
+- [Metric Population]
+- [Alerting]
+- [Topology]
+
+# Customization
+
+- [DMP Cloning]
+- [Template customization]
+- [Resource customization]
 
 [Sample JSON Message](#sample-json-message)
 
