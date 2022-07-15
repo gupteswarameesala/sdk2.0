@@ -11,11 +11,6 @@ File location: /usr/local/share/ca-certificates/
     emc.crt 
     emcd.crt
 
-
-# Nextgen Gateway DOC
-
-https://confluence.opsramp.net/display/PA/Next-gen+gateway
-
 # Install K3S and required binaries
 opsramp-collector-start setup init
 
