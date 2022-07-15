@@ -1,6 +1,5 @@
 # Gateway setup
 
-
 ## Provision new VM with below Gateway OVA link
 
 https://opsramp-gateway.s3.us-east-2.amazonaws.com/Gateway+Cluster/Nextgen-gw-202207140245.ova
@@ -30,7 +29,7 @@ https://opsramp-gateway.s3.us-east-2.amazonaws.com/Gateway+Cluster/Nextgen-gw-20
 Run the opsramp collector tool to setup gateway
 
 ```shell
-**opsramp-collector-start** setup init
+sudo opsramp-collector-start setup init
 ```
 
 ## Add repo details to fetch the thirdparty images
@@ -52,6 +51,11 @@ mirrors:
 
 ```shell
 sudo service k3s restart
+```
+
+## Give permission to this file to avoid sudo for kubectl commands
+```shell
+sudo chmod 755 /etc/rancher/k3s/k3s.yaml
 ```
 
 ## Register Gateway to cloud with thirdPartyApp flag enabled to run python Apps
