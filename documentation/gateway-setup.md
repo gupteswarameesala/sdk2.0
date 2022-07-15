@@ -29,13 +29,17 @@ https://opsramp-gateway.s3.us-east-2.amazonaws.com/Gateway+Cluster/Nextgen-gw-20
 ## Install K3S and required binaries
 Run the opsramp collector tool to setup gateway
 
+```shell
 **opsramp-collector-start** setup init
+```
 
 ## Add repo details to fetch the thirdparty images
 
 Edit the below file add the following configuration
 
+```shell
 sudo vi /etc/rancher/k3s/registries.yaml
+```
 
 ```yaml
 mirrors:
@@ -46,28 +50,40 @@ mirrors:
 
 ## Restart K3S after adding repo details
 
-**sudo service k3s restart**
+```shell
+sudo service k3s restart
+```
 
 ## Register Gateway to cloud with thirdPartyApp flag enabled to run python Apps
 
-**opsramp-collector-start** install -e k8s -u dell-sdk-lab.api.opsramp.net -k 5560c768-e390-41ef-9f3d-XXXXXXXXX --thirdPartyApp enable 
+```shell
+opsramp-collector-start install --environment k8s --url dell-sdk-lab.api.opsramp.net --key 5560c768-e390-41ef-9f3d-XXXXXXXXX --thirdPartyApp enable 
 --imageChannel pre-release
+```
 
 ## Register Gateway to cloud with thirdPartyApp flag enabled through proxy
 
-**opsramp-collector-start** install -e k8s -u dell-sdk-lab.api.opsramp.net -k 5560c768-e390-41ef-9f3d-XXXXXXX --thirdPartyApp enable 
+```shell
+opsramp-collector-start install --environment k8s --url dell-sdk-lab.api.opsramp.net --key 5560c768-e390-41ef-9f3d-XXXXXXX --thirdPartyApp enable 
 --imageChannel pre-release --proxy-protocol http --proxy-ip 172.22.11.33 --proxy-port 1234 --proxy-username test --proxy-password test@123
+```
 
 ## Add certificates to vProbe to pull third party charts and images
 
 ### Add all the certificates to single file  ca-certificates-custom.crt
-cat dell*.crt > ca-certificates-custom.crt
+```shell
+cat *.crt > ca-certificates-custom.crt
+```
 
 ### Create Configmap
+```shell
 kubectl create configmap root-certs-cm --from-file=ca-certificates-custom.crt
+```
 
 ### Update vprobe stateful set
+```shell
 kubectl edit statefulset nextgen-gw
+```
 
 #### Append the following under volumeMount section in vprobe container
 ```yaml
@@ -83,13 +99,22 @@ kubectl edit statefulset nextgen-gw
   name: root-certs-volume
 ```
 
+### Restart the nextgen gateway pod
+```shell
+kubectl delete pod nextgen-gw-0
+```
+
 ## Add proxy info to vProbe to pull third party charts
 
 ### Create configmap 
+```shell
 kubectl create configmap proxy-env-cm --from-file=/etc/environment
+```
 
 ### Update vprobe stateful set
+```shell
 kubectl edit statefulset nextgen-gw
+```
 
 #### Append the following under volumeMount section in vprobe container
 ```yaml
@@ -103,6 +128,10 @@ kubectl edit statefulset nextgen-gw
 - configMap:      
     name: proxy-env-cm  
   name: proxy-env-volume
+```
+### Restart the nextgen gateway pod
+```shell
+kubectl delete pod nextgen-gw-0
 ```
   
  
