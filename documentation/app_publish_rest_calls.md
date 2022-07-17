@@ -12,7 +12,7 @@
     - Authorization: Bearer <Token> //OAuth 2.0 Token generated with scope credentials
     - Content-Type: application/json
   BODY: 
-    Manifest body
+    Manifest body [https://github.com/opsramp/sdk2.0/blob/bc34b148985673529540c910ee78cd7ad99f9d69/documentation/sample-manifest.json]
   HEADERS:
    - Authorization: Bearer <Token> //OAuth 2.0 Token generated with scope credentials
   RESPONSE: 
