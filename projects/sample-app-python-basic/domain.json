@@ -1,0 +1,155 @@
+{
+    "appName": "sample-app-python-basic",
+    "appVersion": "1.0.0",
+    "discoveryConfiguration": [
+      {
+        "propertyName": "ipAddress",
+        "label": "IP Address",
+        "dataType": "string"
+      },
+      {
+        "propertyName": "port",
+        "label": "Port",
+        "dataType": "string"
+      }
+    ],
+    "required": [
+      "ipAddress"
+    ],
+    "data": {
+      "port": 443
+    },
+    "nativeTypeMapping": [
+      {
+        "nativeType": "vcenter",
+        "opsrampResourceType": "server"
+      },
+      {
+        "nativeType": "host",
+        "opsrampResourceType": "Server"
+      },
+      {
+        "nativeType": "vm",
+        "opsrampResourceType": "Server"
+      }
+    ],
+    "nativeType": [
+      {
+        "name": "vcenter",
+        "metric": [
+          {
+            "name": "sample_app_python_basic_resource_event_statistics",
+            "units": "percentage",
+            "dataPoint": "Guage",
+            "factor": 1,
+            "alertOn": "STATIC",
+            "alertSummary": "resource summary",
+            "alertDescription": "resource description",
+            "warning": {
+              "operator": "GREATER_THAN",
+              "value": "50",
+              "repeat": 1
+            },
+            "critical": {
+              "operator": "GREATER_THAN",
+              "value": "70",
+              "repeat": 2
+            },
+            "availability": true,
+            "graphPoint": true,
+            "raiseAlert": true,
+            "formatPlottedValue": false,
+            "formatGraph": false,
+            "formatAlert": false
+          }
+        ],
+        "monitors": [
+          {
+            "title": "Event Monitor",
+            "frequency": 15,
+            "metric": [
+              "sample_app_python_basic_resource_event_statistics"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "host",
+        "metric": [
+          {
+            "name": "sample_app_python_basic_host_system_network_interface_utilization",
+            "units": "percentage",
+            "dataPoint": "Guage",
+            "factor": 1,
+            "alertOn": "STATIC",
+            "alertSummary": "Host system network interface utilization",
+            "alertDescription": "Host system network interface utilization",
+            "warning": {
+              "operator": "GREATER_THAN",
+              "value": "50",
+              "repeat": 1
+            },
+            "critical": {
+              "operator": "GREATER_THAN",
+              "value": "70",
+              "repeat": 2
+            },
+            "availability": true,
+            "graphPoint": true,
+            "raiseAlert": true,
+            "formatPlottedValue": false,
+            "formatGraph": false,
+            "formatAlert": false
+          }
+        ],
+        "monitors": [
+          {
+            "title": "Host Monitor",
+            "frequency": 15,
+            "metric": [
+              "sample_app_python_basic_host_system_network_interface_utilization"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "vm",
+        "metric": [
+          {
+            "name": "sample_app_python_basic_vm_system_cpu_usage_stats",
+            "units": "percentage",
+            "dataPoint": "Guage",
+            "factor": 1,
+            "alertOn": "STATIC",
+            "alertSummary": "resource summary",
+            "alertDescription": "resource description",
+            "warning": {
+              "operator": "GREATER_THAN",
+              "value": "50",
+              "repeat": 1
+            },
+            "critical": {
+              "operator": "GREATER_THAN",
+              "value": "70",
+              "repeat": 2
+            },
+            "availability": true,
+            "graphPoint": true,
+            "raiseAlert": true,
+            "formatPlottedValue": false,
+            "formatGraph": false,
+            "formatAlert": false
+          }
+        ],
+        "monitors": [
+          {
+            "title": "VM Monitor",
+            "frequency": 15,
+            "metric": [
+              "sample_app_python_basic_vm_system_cpu_usage_stats"
+            ]
+          }
+        ]
+      }
+    ]
+  }

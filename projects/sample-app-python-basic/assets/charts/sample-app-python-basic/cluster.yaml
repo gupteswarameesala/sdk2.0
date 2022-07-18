@@ -1,0 +1,94 @@
+nameOverride: sample-app-python-basic
+
+clusterDomain: cluster.local
+
+imageChannel: pre-release
+
+securityContext:
+  fsGroup: 3000
+
+service:
+  type:
+  ports:
+    - name: &http http
+      protocol: &protocol TCP
+      servicePort: &servicePort
+      containerPort: &containerPort 25000
+  labels:
+    gatewayServiceType: app
+  publishInfo:
+
+appContainer:
+  repository: artifact.registry
+  imagePullPolicy: IfNotPresent
+  ports:
+    - name: http
+      protocol: TCP
+      containerPort: *containerPort
+  env: # Remove after demo
+    - name: ADK_SERVICE_HOST
+      value: localhost
+    - name: NAMESPACE
+      value: default
+    - name: ADK_SERVICE_PORT
+      value: 25001
+    
+  envFrom:
+    - type: configMapRef
+      name: service-registry-info
+    - type: configMapRef
+      name: cache-service-info
+
+sidecarContainer:
+  repository: artifact.registry
+  imagePullPolicy: IfNotPresent
+  env: # Remove after demo
+    - name: "SERVICE_ADAPTER_HOST_NAME"
+      value: "localhost"
+    - name: "SERVICE_ADAPTER_HOST_PORT"
+      value: *containerPort
+  envFrom:
+    - type: configMapRef
+      name: service-registry-info
+    - type: configMapRef
+      name: cache-service-info
+
+configMaps:
+  - name: sidecarConfig.json
+    container: sideContainer
+    mountPath: /opt/sidecar/config/config.json
+    data:
+      maxRetries: 5
+      retryWaitInSeconds: 30
+      listener:
+        port: *containerPort
+        pathPrefix: &listenerPathPrefix
+        channels:
+          listensOn:
+            - name: sample-app-python-basic
+              ackWaitInSecs: 60
+              maxRetries: 5
+          publishesOn:
+  - name: appConfig.json
+    container: appContainer
+    mountPath: /opt/app/config.json
+    data:
+      listener: 
+        port: *containerPort 
+        pathPrefix: *listenerPathPrefix
+  - name: appDependencies.json
+    container: sideContainer
+    mountPath: /opt/sidecar/config/dependencies.json
+    data:
+      - cache-service
+  - name: appToken.json
+    container: sideContainer
+    mountPath: /opt/sidecar/config/token.json
+    data:
+      token : TsHQCff8vFfZr4tylHWeNd3mVzHVXeEG
+
+autoScaling:
+  min: 1
+  max: 3
+  utilization:
+    memory: 80
