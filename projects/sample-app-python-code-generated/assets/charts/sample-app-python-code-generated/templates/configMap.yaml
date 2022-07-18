@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "sdkApp.name" . }}-cm
+data:
+  {{- if $.Values.appContainer }}
+  "appInfo.json": |-
+    {
+      "app": {{ .Chart.Name | quote}},
+      "version": {{ .Chart.AppVersion | quote }},
+      "name": {{ include "sdkApp.name" . | quote }}
+    }
+  {{- end }}
+  {{- if $.Values.sidecarContainer }}
+  "sidecarInfo.json": |-
+    {
+      "app": {{ .Chart.Annotations.sidecar }}
+      "version": {{ .Chart.Annotations.sidecarVersion }}
+    }
+  {{- end }}
+  {{- range .Values.configMaps }}
+  {{ .name | quote}}: |-
+    {{ .data | toJson }}
+  {{- end }}
+  "jvm.properties": |-
+  {{ .Files.Get "jvm.properties" | nindent 4 }}
+  
+  
