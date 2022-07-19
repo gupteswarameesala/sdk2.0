@@ -111,7 +111,7 @@ Refer slides from 19-29 in the presentation [Link](https://github.com/opsramp/sd
 [Make file](https://github.com/opsramp/sdk2.0/blob/main/projects/sample-app-python-code-generated/make.sh)
   
 ###### Gateway setup
-[Setup through OVA](https://github.com/opsramp/sdk2.0/blob/main/documentation/gateway-setup.md)
+[Setup through OVA](https://github.com/opsramp/sdk2.0/blob/main/documentation/gateway-setup.md) <br />
 [Setup up from scratch](https://github.com/opsramp/sdk2.0/blob/main/documentation/PA-SetupandDebugging-130722-0522-52.pdf)
   
 ###### Publishing App
