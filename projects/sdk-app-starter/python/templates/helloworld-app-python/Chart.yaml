@@ -1,0 +1,9 @@
+annotations:
+  sidecar: queue-listener-adk
+  sidecarVersion: 1.0.3
+apiVersion: v2
+appVersion: {{ appVersion }}
+description: A Helm chart for Hello World App
+name: {{ appName }}
+type: application
+version: {{ appVersion }}
