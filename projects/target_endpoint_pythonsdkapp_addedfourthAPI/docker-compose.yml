@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  python-sdk-app:
+    container_name: helloworld-endpoint
+    build:
+      context: .
+      dockerfile: Dockerfile
+    #image: us-docker.pkg.dev/gateway-images/gateway-cluster-images/helloworld-app-python:1.0.0
+    ports:
+      - 45000:45000
