@@ -1,11 +1,11 @@
-# Content covered as part of Day 1
+# Day 1 Summary
 
 <details><summary> Basics </summary>
   
 - [Resource](#resource) 
 - [Resource Type](#resource-type) 
 - [Native Type](#native-type) 
-- [Relationship](#realtionship) 
+- [Relationship](#relationship) 
 - [Metric](#metric) 
 - [Monitor](#monitor)
 - [Template](#template)
@@ -16,10 +16,10 @@
 [details](https://github.com/opsramp/sdk2.0/blob/main/documentation/resource.md)
   
 ###### Resource Type
-Equivalent name of the native type in opsramp
+Name of the type of resource in opsramp
 
 ###### Native Type
-Name of the resource type in target domain
+Name of the type of resource in target
 
 ###### Relationship
 [details](https://github.com/opsramp/sdk2.0/blob/main/documentation/relationship.md)
@@ -38,7 +38,7 @@ Group of monitors
 - A policy which will apply template on a resource automatically based on its filtering rules.
 - This resides in cloud and continousely listens on the events of a resource and act accordingly <br />
   
-Refer slides from 8-17 in the presentation
+Refer slides from 8-17 in the presentation [Link](https://github.com/opsramp/sdk2.0/blob/main/documentation/SDK%202.0%20-%20Dell%20Training%20Preso.pptx)
 
 </details>
 
@@ -77,7 +77,7 @@ Refer slides from 8-17 in the presentation
 - Customize
   - Customize monitoring and Alert thresholds
 
-Refer slides from 19-29 in the presentation
+Refer slides from 19-29 in the presentation [Link](https://github.com/opsramp/sdk2.0/blob/main/documentation/SDK%202.0%20-%20Dell%20Training%20Preso.pptx)
 
 ###### Sample standalone app
 
@@ -117,10 +117,10 @@ Refer slides from 19-29 in the presentation
 ###### Publishing App
 [APIs](https://github.com/opsramp/sdk2.0/blob/main/documentation/app_publish_rest_calls.md)
 
-Refer slides from 50 in the presentation
+Refer slides from 50 in the presentation [Link](https://github.com/opsramp/sdk2.0/blob/main/documentation/SDK%202.0%20-%20Dell%20Training%20Preso.pptx)
   
 ###### Installing App
-Refer slides from 51 in the presentation
+Refer slides from 51 in the presentation [Link](https://github.com/opsramp/sdk2.0/blob/main/documentation/SDK%202.0%20-%20Dell%20Training%20Preso.pptx)
   
 ###### Resource Discovery
 
