@@ -1,0 +1,30 @@
+{{- with .Values.service}}
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "sdkApp.name" $ }}
+  labels: 
+    {{- range $k,$v:= .labels }}
+    {{ $k }}: {{$v}}
+    {{- end }}
+spec:
+  {{- with .type }}
+  type: {{ . }}
+  {{- end }}
+  selector:
+    app: {{ include "sdkApp.name" $ }}
+  ports:
+    {{- if .ports}}
+    {{- range .ports }}
+    - name: {{ .name }}  
+      protocol: {{ .protocol | default "TCP"}}
+      port: {{ .servicePort | default 80 }}
+      targetPort: {{.containerPort | default 80}}
+    {{- end }}
+    {{- else }}
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+    {{- end}}
+{{- end }}

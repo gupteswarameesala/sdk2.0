@@ -1,0 +1,109 @@
+nameOverride: {{ appName }}
+
+clusterDomain: cluster.local
+
+securityContext:
+  fsGroup: 3000
+
+service:
+  type:
+  ports:
+    - name: &http http
+      protocol: &protocol TCP
+      servicePort: &servicePort
+      containerPort: &containerPort 25000
+    - name: &debug debug
+      protocol: &debugProtocol TCP
+      servicePort: &debugServicePort 26020
+      containerPort: &debugContainerPort 26020
+  labels:
+    gatewayServiceType: app
+  publishInfo:
+
+appContainer:
+  repository: artifact.registry
+  imagePullPolicy: IfNotPresent
+  ports: 
+    - name: http
+      protocol: TCP
+      containerPort: *containerPort
+  env: # Remove after demo
+    - name: QUEUE_SERVICE_HOST_NAME
+      value: localhost
+    - name: READ_FROM_FILE
+      value: false
+    - name: NOTIFICATION_DELAY_TIME_IN_MINUTES
+      value: 0 
+    - name: QUEUE_SERVICE_HOST_PORT
+      value: &sidecarPort 25001
+    - name: QUEUE_SERVICE_URI
+      value: http://localhost:25001
+    - name: IS_GC_ENABLED
+      value: true
+    - name: IS_THREAD_DUMP_ENABLED
+      value: false
+    - name: GC_FIRE_TIME_IN_MINUTES
+      value: 15
+    - name: THREAD_DUMP_GENERATE_FREQUENCY
+      value: 30 
+    - name: JAVA_OPTS
+      value: -XX:InitialRAMPercentage=30 -XX:MaxRAMPercentage=80 -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:26020 -Dorg.slf4j.simpleLogger.defaultLogLevel=error -Dorg.slf4j.simpleLogger.showDateTime=true -Dorg.slf4j.simpleLogger.dateTimeFormat=dd/MMM/yy-HH:mm:ss,SSS -Dorg.slf4j.simpleLogger.showShortLogName=true -Dorg.slf4j.simpleLogger.log.com.opsramp.gateway=debug
+  envFrom:
+    - type: configMapRef
+      name: service-registry-info
+    - type: configMapRef
+      name: database-service-info
+    - type: configMapRef
+      name: cache-service-info
+    - type: configMapRef
+      name: gateway-info
+
+sidecarContainer: 
+  repository: artifact.registry
+  imagePullPolicy: IfNotPresent
+  env: # Remove after demo
+    - name: "SERVICE_ADAPTER_HOST_NAME"
+      value: "localhost"
+    - name: "SERVICE_ADAPTER_HOST_PORT"
+      value: *containerPort
+  envFrom:
+    - type: configMapRef
+      name: service-registry-info
+
+configMaps:
+  - name: appConfig.json
+    container: appContainer
+    mountPath: /opt/app/config/config.json
+    data:
+      listener:
+        port: *containerPort
+        pathPrefix: &listenerPathPrefix
+        channels:
+          listensOn:
+            - name: {{ appName }}
+              maxInflight: 25
+              ackWaitInSecs: 10
+              maxRetries: 5
+          publishesOn:
+  - name: sidecarConfig.json
+    container: sideContainer
+    mountPath: /opt/app/config.json
+    data:
+      maxRetries: 5
+      retryWaitInSeconds: 30
+      listener: # rename it to appListener
+        port: *containerPort # Needs to be changed to containerPort after demo
+        pathPrefix: *listenerPathPrefix
+  - name: appDependencies.json
+    container: appContainer
+    mountPath: /opt/app/config/dependencies.json
+    data:
+      - service-registry
+      - database-service
+      - cache-service
+
+autoScaling:
+  min: 1
+  max: 3
+  utilization:
+    memory: 80

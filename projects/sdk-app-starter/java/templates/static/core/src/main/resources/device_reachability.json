@@ -1,0 +1,12 @@
+{
+"apiVersion":"debug/v1",
+"module": "Device",
+"app": "sample-python-app",
+"action": "Reachability",
+"payload": {
+    "vcenterName":"vcenter5",
+    "protocol":"http",
+    "ipAddress":"172.25.252.194",
+    "port":"45000"
+}
+}

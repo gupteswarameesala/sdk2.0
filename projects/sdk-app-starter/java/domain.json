@@ -1,0 +1,221 @@
+{
+    "appName": "sdkapp-code-generator-java",
+    "appVersion": "1.0.0",
+    "discoveryConfiguration": [
+        {
+            "propertyName": "ipAddress",
+            "label": "IP Address",
+            "dataType": "string",
+            "placeholder" : "Enter IP Address or hostname"
+        },
+        {
+            "propertyName": "port",
+            "label": "Port",
+            "dataType": "boolean"
+        },
+        {
+            "propertyName": "credentials",
+            "label": "Credentials",
+            "dataType": "string",
+            "credentialType": "APPLICATION",
+            "placeholder": "Select Credentials"
+
+        },
+         {
+            "propertyName": "notificationAlert",
+            "label": "Notification Alert",
+            "dataType": "boolean"
+         },
+        {
+            "propertyName": "alertConfiguration",
+            "label": "Notification Alert",
+            "dataType": "boolean"
+
+         },
+        {
+            "propertyName": "alertSeverity",
+            "label": "Notification Alert",
+            "dataType": "string"
+         },
+        {
+            "propertyName": "alertOnRootResource",
+            "label": "Notification Alert",
+            "dataType": "boolean"
+         },
+        {
+            "propertyName": "alertSeverityMapping",
+            "label": "Notification Alert",
+            "dataType": "string"
+         }
+
+
+    ],
+    "required": [
+        "ipAddress","port"
+
+    ],
+    "data": {
+        "port": "45000"
+    },
+    "nativeTypeMapping": [
+        {
+            "nativeType": "host",
+            "opsrampResourceType": "server"
+        },
+        {
+            "nativeType": "vm",
+            "opsrampResourceType": "server"
+        }
+    ],
+    "nativeType": [
+        {
+            "name": "host",
+            "metric": [
+                {
+                    "name": "system_os_uptime",
+                    "units": "s",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "system_os_uptime",
+                    "alertDescription": "system_os_uptime",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                },
+                {
+                    "name": "system_network_interface_utilization",
+                    "units": "%",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "system_network_interface_utilization",
+                    "alertDescription": "system_network_interface_utilization",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                },
+                {
+                    "name": "system_disk_usage_freespace",
+                    "units": "GB",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "system_disk_usage_freespace",
+                    "alertDescription": "system_disk_usage_freespace",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                },
+                {
+                    "name": "system_cpu_load",
+                    "units": "%",
+                    "alertOn": "STATIC",
+                    "factor": 1,
+                    "dataPoint": "Gauge",
+                    "alertSummary": "system_cpu_load",
+                    "alertDescription": "system_cpu_load",
+                    "warning": {
+                        "operator": "GREATER_THAN",
+                        "value": "50",
+                        "repeat": 1
+                    },
+                    "critical": {
+                        "operator": "GREATER_THAN",
+                        "value": "70",
+                        "repeat": 2
+                    },
+                    "availability": true,
+                    "graphPoint": true,
+                    "raiseAlert": true,
+                    "formatPlottedValue": false,
+                    "formatGraph": false,
+                    "formatAlert": false
+                },
+              {
+                "name": "system_process_stats_count",
+                "units": "count",
+                "alertOn": "STATIC",
+                "factor": 1,
+                "dataPoint": "Gauge",
+                "alertSummary": "system_process_stats_count",
+                "alertDescription": "system_process_stats_count",
+                "warning": {
+                  "operator": "GREATER_THAN",
+                  "value": "50",
+                  "repeat": 1
+                },
+                "critical": {
+                  "operator": "GREATER_THAN",
+                  "value": "70",
+                  "repeat": 2
+                },
+                "availability": true,
+                "graphPoint": true,
+                "raiseAlert": true,
+                "formatPlottedValue": false,
+                "formatGraph": false,
+                "formatAlert": false
+              }
+
+            ],
+            "monitors": [
+                {
+                    "title": "Performance Monitor",
+                    "frequency": 5,
+                    "metric": ["system_os_uptime","system_network_interface_utilization","system_disk_usage_freespace","system_cpu_load",
+                        "system_process_stats_count"]
+                }
+
+            ]
+        },
+        {
+            "name": "vm",
+            "metric": [
+
+            ],
+            "monitors": [
+
+            ]
+        }
+    ]
+}

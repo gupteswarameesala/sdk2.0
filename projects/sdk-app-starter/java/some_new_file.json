@@ -1,0 +1,639 @@
+{
+    "name": "sample-generated-app",
+    "displayName": "helloworld-app-python",
+    "appVersion": "3.0.0",
+    "description": "This is a sample python App",
+    "category": "SDK",
+    "appScope": "Private",
+    "assets": {
+        "icon": {
+            "type": "png",
+            "url": "https://beta.apps.opsramp.com/api/v1/apps/helloworld-app-python/icon"
+        },
+        "md": {
+            "url": null
+        },
+        "images": []
+    },
+    "version": {
+        "apiVersion": "api/v2",
+        "kind": "AppVersion",
+        "metadata": {
+            "appName": "helloworld-app-python",
+            "displayName": "helloworld-app-python",
+            "description": "Sample app Integrates with sample vcenter APIs",
+            "version": "3.0.0",
+            "categories": [
+                "DISCOVERY AND MONITORING"
+            ]
+        },
+        "spec": {
+            "assets": {
+                "helm": {
+                    "pullType": "image",
+                    "url": "us-docker.pkg.dev/gateway-images/gateway-cluster-charts/helloworld-app-python:3.0.0"
+                },
+                "maven": {
+                    "url": null,
+                    "digest": null
+                },
+                "icon": {
+                    "type": null,
+                    "url": null
+                },
+                "md": {
+                    "url": null
+                },
+                "images": [],
+                "manifest": {
+                    "data": {
+                        "port": "45000"
+                    },
+                    "nativeTypes": {
+                        "host": {
+                            "resourceType": "Server",
+                            "metrics": {
+                                "system_cpu_usage_utilization": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_cpu_usage_utilization",
+                                    "displayName": "system_cpu_usage_utilization",
+                                    "description": "provides system cpu usage Utilization in percentage",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_memory_usage_utilization",
+                                    "alertDescription": "system_memory_usage_utilization",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "65",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_memory_usage_utilization": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_memory_usage_utilization",
+                                    "displayName": "system_memory_usage_utilization",
+                                    "description": "provides system memory usage Utilization in percentage",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_memory_usage_utilization",
+                                    "alertDescription": "system_memory_usage_utilization",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_disk_usage_usedspace": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_disk_usage_usedspace",
+                                    "displayName": "system_disk_usage_usedspace",
+                                    "description": "provides system disk usage",
+                                    "units": "GB",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_disk_usage_usedspace",
+                                    "alertDescription": "system_disk_usage_usedspace",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_disk_usage_freespace": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_disk_usage_freespace",
+                                    "displayName": "system_disk_usage_freespace",
+                                    "description": "provides system disk usage free sapce",
+                                    "units": "GB",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_disk_usage_freespace",
+                                    "alertDescription": "system_disk_usage_freespace",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_memory_usage_usedspace": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_memory_usage_usedspace",
+                                    "displayName": "system_memory_usage_usedspace",
+                                    "description": "provides system memory used sapce",
+                                    "units": "GB",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_memory_usage_usedspace",
+                                    "alertDescription": "system_memory_usage_usedspace",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_network_interface_utilization": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_network_interface_utilization",
+                                    "displayName": "system_network_interface_utilization",
+                                    "description": "provides system network interface utilization",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_network_interface_utilization",
+                                    "alertDescription": "system_network_interface_utilization",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_os_uptime": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_os_uptime",
+                                    "displayName": "system_os_uptime",
+                                    "description": "provides system os uptime",
+                                    "units": "s",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_os_uptime",
+                                    "alertDescription": "system_os_uptime",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_cpu_usage_stats": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_cpu_usage_stats",
+                                    "displayName": "system_cpu_usage_stats",
+                                    "description": "provides system cpu usage statistics",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_cpu_usage_stats",
+                                    "alertDescription": "system_cpu_usage_stats",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_process_stats_count": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_process_stats_count",
+                                    "displayName": "system_process_stats_count",
+                                    "description": "provides system statistics count",
+                                    "units": "count",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_process_stats_count",
+                                    "alertDescription": "system_process_stats_count",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_cpu_load": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_cpu_load",
+                                    "displayName": "system_cpu_load",
+                                    "description": "provides system cpu load",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_cpu_load",
+                                    "alertDescription": "system_cpu_load",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                }
+                            },
+                            "monitors": {
+                                "Performance Monitor": {
+                                    "title": "Performance Monitor",
+                                    "frequency": "5",
+                                    "metrics": [
+                                        "system_cpu_usage_utilization",
+                                        "system_memory_usage_utilization",
+                                        "system_disk_usage_usedspace",
+                                        "system_disk_usage_freespace",
+                                        "system_memory_usage_usedspace",
+                                        "system_network_interface_utilization",
+                                        "system_os_uptime",
+                                        "system_cpu_usage_stats",
+                                        "system_process_stats_count",
+                                        "system_cpu_load"
+                                    ]
+                                }
+                            }
+                        },
+                        "vm": {
+                            "resourceType": "Server",
+                            "metrics": {
+                                "system_cpu_usage_utilization": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_cpu_usage_utilization",
+                                    "displayName": "system_cpu_usage_utilization",
+                                    "description": "provides system cpu usage Utilization in percentage",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_memory_usage_utilization",
+                                    "alertDescription": "system_memory_usage_utilization",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "65",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_memory_usage_utilization": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_memory_usage_utilization",
+                                    "displayName": "system_memory_usage_utilization",
+                                    "description": "provides system memory usage Utilization in percentage",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_memory_usage_utilization",
+                                    "alertDescription": "system_memory_usage_utilization",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_disk_usage_usedspace": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_disk_usage_usedspace",
+                                    "displayName": "system_disk_usage_usedspace",
+                                    "description": "provides system disk usage",
+                                    "units": "GB",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_disk_usage_usedspace",
+                                    "alertDescription": "system_disk_usage_usedspace",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_disk_usage_freespace": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_disk_usage_freespace",
+                                    "displayName": "system_disk_usage_freespace",
+                                    "description": "provides system disk usage free sapce",
+                                    "units": "GB",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_disk_usage_freespace",
+                                    "alertDescription": "system_disk_usage_freespace",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_memory_usage_usedspace": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_memory_usage_usedspace",
+                                    "displayName": "system_memory_usage_usedspace",
+                                    "description": "provides system memory used sapce",
+                                    "units": "GB",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_memory_usage_usedspace",
+                                    "alertDescription": "system_memory_usage_usedspace",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_network_interface_utilization": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_network_interface_utilization",
+                                    "displayName": "system_network_interface_utilization",
+                                    "description": "provides system network interface utilization",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_network_interface_utilization",
+                                    "alertDescription": "system_network_interface_utilization",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_os_uptime": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_os_uptime",
+                                    "displayName": "system_os_uptime",
+                                    "description": "provides system os uptime",
+                                    "units": "s",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_os_uptime",
+                                    "alertDescription": "system_os_uptime",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_cpu_usage_stats": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_cpu_usage_stats",
+                                    "displayName": "system_cpu_usage_stats",
+                                    "description": "provides system cpu usage statistics",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_cpu_usage_stats",
+                                    "alertDescription": "system_cpu_usage_stats",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_process_stats_count": {
+                                    "alertOn": "NONE",
+                                    "formatAlertValue": true,
+                                    "name": "system_process_stats_count",
+                                    "displayName": "system_process_stats_count",
+                                    "description": "provides system statistics count",
+                                    "units": "count",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_process_stats_count",
+                                    "alertDescription": "system_process_stats_count",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "1",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "2",
+                                        "repeat": 2
+                                    }
+                                },
+                                "system_cpu_load": {
+                                    "name": "system_cpu_load",
+                                    "displayName": "system_cpu_load",
+                                    "description": "provides system cpu load",
+                                    "units": "%",
+                                    "factor": 1,
+                                    "dataPoint": "GUAGE",
+                                    "plotValue": true,
+                                    "formatValue": true,
+                                    "alertSummary": "system_cpu_load",
+                                    "alertDescription": "system_cpu_load",
+                                    "warning": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "50",
+                                        "repeat": 1
+                                    },
+                                    "critical": {
+                                        "operator": "GREATER_THAN",
+                                        "value": "70",
+                                        "repeat": 2
+                                    }
+                                }
+                            },
+                            "monitors": {
+                                "Performance Monitor": {
+                                    "title": "Performance Monitor",
+                                    "frequency": "5",
+                                    "metrics": [
+                                        "system_cpu_usage_utilization",
+                                        "system_memory_usage_utilization",
+                                        "system_disk_usage_usedspace",
+                                        "system_disk_usage_freespace",
+                                        "system_memory_usage_usedspace",
+                                        "system_network_interface_utilization",
+                                        "system_os_uptime",
+                                        "system_cpu_usage_stats",
+                                        "system_process_stats_count",
+                                        "system_cpu_load"
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "schema": {
+                        "properties": {
+                            "ipAddress": {
+                                "type": "string"
+                            },
+                            "port": {
+                                "type": "string"
+                            },
+                            "vcenterName": {
+                                "type": "string"
+                            },
+                            "protocol": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "ipAddress",
+                            "vcenterName",
+                            "port",
+                            "protocol"
+                        ],
+                        "type": "object"
+                    },
+                    "uischema": {
+                        "elements": [
+                            {
+                                "label": "IP Address",
+                                "options": {
+                                    "placeholder": "Enter IP Address"
+                                },
+                                "scope": "#/properties/ipAddress",
+                                "type": "Control"
+                            },
+                            {
+                                "label": "Port",
+                                "options": {
+                                    "placeholder": "Enter Port Name"
+                                },
+                                "scope": "#/properties/port",
+                                "type": "Control"
+                            },
+                            {
+                                "label": "VCenter Name",
+                                "options": {
+                                    "placeholder": "Enter VCenter Name"
+                                },
+                                "scope": "#/properties/vcenterName",
+                                "type": "Control"
+                            },
+                            {
+                                "label": "Protocol",
+                                "scope": "#/properties/protocol",
+                                "type": "Control"
+                            }
+                        ],
+                        "type": "VerticalLayout"
+                    }
+                }
+            }
+        }
+    }
+}

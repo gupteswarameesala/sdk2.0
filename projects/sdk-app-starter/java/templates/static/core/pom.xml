@@ -1,0 +1,152 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<groupId>com.opsramp.content</groupId>
+		<artifactId>{{appName}}</artifactId>
+		<version>{{appVersion}}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>{{appName}}-core</artifactId>
+	
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<jcraft-jsch.version>0.1.55</jcraft-jsch.version>
+		<serializer.version>2.8.1</serializer.version>
+		<common-io.version>2.11.0</common-io.version>
+		<common-codec.version>1.15</common-codec.version>
+		<java-uuid-generator.version>4.0.1</java-uuid-generator.version>
+		<google-guava.version>31.0.1-jre</google-guava.version>
+		<org-json.version>20211205</org-json.version>
+		<jackson-core.version>2.13.1</jackson-core.version>
+		<jackson-databind.version>2.13.1</jackson-databind.version>
+		<junit-jupiter-engine.version>5.8.0-M1</junit-jupiter-engine.version>
+		<mockito-inline.version>3.11.0</mockito-inline.version>
+		<mockito-core.version>3.11.0</mockito-core.version>
+		<jaxb-api.version>2.4.0-b180830.0359</jaxb-api.version>
+		<google-gson.version>2.8.9</google-gson.version>
+		<httpclient.version>4.5.13</httpclient.version>
+		<javax.ws.rs-api.version>2.1.1</javax.ws.rs-api.version>
+		<slf4j-simple.version>1.7.32</slf4j-simple.version>
+		<maven-compiler-plugin>3.8.1</maven-compiler-plugin>
+		<maven-surefire-plugin>3.0.0-M3</maven-surefire-plugin>
+	</properties>
+	<dependencies>
+		<dependency>
+		<groupId>com.opsramp.content</groupId>
+		<artifactId>app-core</artifactId>
+		<version>1.0.2</version>
+    </dependency>
+
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>${common-io.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<version>${common-codec.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.fasterxml.uuid</groupId>
+			<artifactId>java-uuid-generator</artifactId>
+			<version>${java-uuid-generator.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${google-guava.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.json/json -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>${org-json.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>${jackson-core.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson-databind.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit-jupiter-engine.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-inline</artifactId>
+			<version>${mockito-inline.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito-core.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+		    <groupId>javax.xml.bind</groupId>
+		    <artifactId>jaxb-api</artifactId>
+		    <version>${jaxb-api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>${google-gson.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>${httpclient.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>commons-codec</groupId>
+					<artifactId>commons-codec</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<version>${javax.ws.rs-api.version}</version>
+		</dependency>
+
+<!-- 		<dependency> -->
+<!-- 			<groupId>org.slf4j</groupId> -->
+<!-- 			<artifactId>slf4j-simple</artifactId> -->
+<!-- 			<version>${slf4j-simple.version}</version> -->
+<!-- 		</dependency> -->
+      <dependency>
+         <groupId>ch.qos.logback</groupId>
+         <artifactId>logback-classic</artifactId>
+         <version>1.2.3</version>
+       </dependency>
+
+		<dependency>
+    		<groupId>com.jcraft</groupId>
+    		<artifactId>jsch</artifactId>
+    		<version>${jcraft-jsch.version}</version>
+		</dependency>
+	</dependencies>
+</project>
