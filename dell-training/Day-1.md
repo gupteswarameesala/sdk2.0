@@ -46,7 +46,7 @@ Refer slides from 8-17 in the presentation [Link](https://github.com/opsramp/sdk
   
 - [App development phases](#app-development-phases) 
 - [Sample standalone app](#sample-standalone-app) 
-- [App Bootstrap](#app-bootstrap)
+- [App bootstrap](#app-bootstrap)
 - [App incoming message flow](#app-incoming-message-flow)
 - [App outgoing message flow to side car](#app-outgoing-message-flow-to-side-car)
 - [Domain Json](#domain-json)
@@ -83,7 +83,7 @@ Refer slides from 19-29 in the presentation [Link](https://github.com/opsramp/sd
 
 [Code](https://github.com/opsramp/sdk2.0/tree/main/projects/sample-app-python-basic)
   
-###### App Bootstrap
+###### App bootstrap
 (App intialization flow)[https://github.com/opsramp/sdk2.0/blob/main/documentation/app_bootstrap.md)
   
 ###### App incoming message flow
