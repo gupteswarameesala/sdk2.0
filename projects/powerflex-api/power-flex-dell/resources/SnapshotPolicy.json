@@ -1,0 +1,47 @@
+[
+    {
+        "numOfRetainedSnapshotsPerLevel": [
+            1
+        ],
+        "snapshotAccessMode": "ReadOnly",
+        "secureSnapshots": false,
+        "timeOfLastAutoSnapshot": 0,
+        "nextAutoSnapshotCreationTime": 0,
+        "timeOfLastAutoSnapshotCreationFailure": 0,
+        "lastAutoSnapshotCreationFailureReason": "NR",
+        "lastAutoSnapshotFailureInFirstLevel": false,
+        "numOfAutoSnapshots": 0,
+        "numOfLockedSnapshots": 0,
+        "numOfExpiredButLockedSnapshots": 0,
+        "numOfCreationFailures": 0,
+        "autoSnapshotCreationCadenceInMin": 5,
+        "snapshotPolicyState": "Paused",
+        "maxVTreeAutoSnapshots": 1,
+        "numOfSourceVolumes": 2,
+        "systemId": "62cd3a903194c50f",
+        "name": "apex-test-snapshot-policy",
+        "id": "6c771cab00000000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/SnapshotPolicy::6c771cab00000000"
+            },
+            {
+                "rel": "/api/SnapshotPolicy/relationship/Statistics",
+                "href": "/api/instances/SnapshotPolicy::6c771cab00000000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/SnapshotPolicy/relationship/SourceVolume",
+                "href": "/api/instances/SnapshotPolicy::6c771cab00000000/relationships/SourceVolume"
+            },
+            {
+                "rel": "/api/SnapshotPolicy/relationship/AutoSnapshotVolume",
+                "href": "/api/instances/SnapshotPolicy::6c771cab00000000/relationships/AutoSnapshotVolume"
+            },
+            {
+                "rel": "/api/parent/relationship/systemId",
+                "href": "/api/instances/System::62cd3a903194c50f"
+            }
+        ]
+    }
+]

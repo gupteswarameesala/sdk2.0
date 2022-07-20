@@ -1,0 +1,178 @@
+[
+    {
+        "sdcApproved": true,
+        "sdcIps": [
+            "172.16.2.71",
+            "172.16.1.71"
+        ],
+        "osType": "Esx",
+        "perfProfile": "HighPerformance",
+        "peerMdmId": null,
+        "softwareVersionInfo": "R3_6.0.0",
+        "mdmConnectionState": "Connected",
+        "memoryAllocationFailure": null,
+        "socketAllocationFailure": null,
+        "sdcType": "AppSdc",
+        "sdcGuid": "4FFC9F53-C399-45D7-B612-176D7EDD4515",
+        "installedSoftwareVersionInfo": "R3_6.0.0",
+        "kernelVersion": "7.0.3",
+        "kernelBuildNumber": "Releasebuild-194825",
+        "sdcIp": "172.16.2.71",
+        "sdcApprovedIps": null,
+        "sdrId": null,
+        "versionInfo": "R3_6.0.0",
+        "systemId": "08a9c0c351862e0f",
+        "name": "pflex-compute-01.ngcs-lab.local",
+        "id": "d649eab100000000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sdc::d649eab100000000"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Statistics",
+                "href": "/api/instances/Sdc::d649eab100000000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Volume",
+                "href": "/api/instances/Sdc::d649eab100000000/relationships/Volume"
+            },
+            {
+                "rel": "/api/parent/relationship/systemId",
+                "href": "/api/instances/System::08a9c0c351862e0f"
+            }
+        ]
+    },
+    {
+        "sdcApproved": true,
+        "sdcIps": [
+            "172.16.1.73",
+            "172.16.2.73"
+        ],
+        "osType": "Esx",
+        "perfProfile": "HighPerformance",
+        "peerMdmId": null,
+        "softwareVersionInfo": "R3_6.0.0",
+        "mdmConnectionState": "Connected",
+        "memoryAllocationFailure": null,
+        "socketAllocationFailure": null,
+        "sdcType": "AppSdc",
+        "sdcGuid": "4FFC9F53-C399-45D7-B612-176D7EDD4717",
+        "installedSoftwareVersionInfo": "R3_6.0.0",
+        "kernelVersion": "7.0.3",
+        "kernelBuildNumber": "Releasebuild-194825",
+        "sdcIp": "172.16.1.73",
+        "sdcApprovedIps": null,
+        "sdrId": null,
+        "versionInfo": "R3_6.0.0",
+        "systemId": "08a9c0c351862e0f",
+        "name": "pflex-compute-03.ngcs-lab.local",
+        "id": "d649eab300000002",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sdc::d649eab300000002"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Statistics",
+                "href": "/api/instances/Sdc::d649eab300000002/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Volume",
+                "href": "/api/instances/Sdc::d649eab300000002/relationships/Volume"
+            },
+            {
+                "rel": "/api/parent/relationship/systemId",
+                "href": "/api/instances/System::08a9c0c351862e0f"
+            }
+        ]
+    },
+    {
+        "sdcApproved": true,
+        "sdcIps": [
+            "172.16.2.72",
+            "172.16.1.72"
+        ],
+        "osType": "Esx",
+        "perfProfile": "HighPerformance",
+        "peerMdmId": null,
+        "softwareVersionInfo": "R3_6.0.0",
+        "mdmConnectionState": "Connected",
+        "memoryAllocationFailure": null,
+        "socketAllocationFailure": null,
+        "sdcType": "AppSdc",
+        "sdcGuid": "4FFC9F53-C399-45D7-B612-176D7EDD4616",
+        "installedSoftwareVersionInfo": "R3_6.0.0",
+        "kernelVersion": "7.0.3",
+        "kernelBuildNumber": "Releasebuild-194825",
+        "sdcIp": "172.16.2.72",
+        "sdcApprovedIps": null,
+        "sdrId": null,
+        "versionInfo": "R3_6.0.0",
+        "systemId": "08a9c0c351862e0f",
+        "name": "pflex-compute-02.ngcs-lab.local",
+        "id": "d649eab200000001",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sdc::d649eab200000001"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Statistics",
+                "href": "/api/instances/Sdc::d649eab200000001/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Volume",
+                "href": "/api/instances/Sdc::d649eab200000001/relationships/Volume"
+            },
+            {
+                "rel": "/api/parent/relationship/systemId",
+                "href": "/api/instances/System::08a9c0c351862e0f"
+            }
+        ]
+    },
+    {
+        "sdcApproved": true,
+        "sdcIps": [
+            "172.16.2.74",
+            "172.16.1.74"
+        ],
+        "osType": "Esx",
+        "perfProfile": "HighPerformance",
+        "peerMdmId": null,
+        "softwareVersionInfo": "R3_6.0.0",
+        "mdmConnectionState": "Connected",
+        "memoryAllocationFailure": null,
+        "socketAllocationFailure": null,
+        "sdcType": "AppSdc",
+        "sdcGuid": "4FFC9F53-C399-45D7-B612-176D7EDD4818",
+        "installedSoftwareVersionInfo": "R3_6.0.0",
+        "kernelVersion": "7.0.3",
+        "kernelBuildNumber": "Releasebuild-194825",
+        "sdcIp": "172.16.2.74",
+        "sdcApprovedIps": null,
+        "sdrId": null,
+        "versionInfo": "R3_6.0.0",
+        "systemId": "08a9c0c351862e0f",
+        "name": "pflex-compute-04.ngcs-lab.local",
+        "id": "d649eab400000003",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sdc::d649eab400000003"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Statistics",
+                "href": "/api/instances/Sdc::d649eab400000003/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sdc/relationship/Volume",
+                "href": "/api/instances/Sdc::d649eab400000003/relationships/Volume"
+            },
+            {
+                "rel": "/api/parent/relationship/systemId",
+                "href": "/api/instances/System::08a9c0c351862e0f"
+            }
+        ]
+    }
+]

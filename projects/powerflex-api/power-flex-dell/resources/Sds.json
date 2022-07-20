@@ -1,0 +1,290 @@
+[
+    {
+        "ipList": [
+            {
+                "ip": "172.16.1.11",
+                "role": "all"
+            },
+            {
+                "ip": "172.16.2.11",
+                "role": "all"
+            }
+        ],
+        "onVmWare": false,
+        "protectionDomainId": "04fe135a00000000",
+        "perfProfile": "Custom",
+        "faultSetId": null,
+        "softwareVersionInfo": "R3_6.300.0",
+        "sdsState": "Normal",
+        "membershipState": "Joined",
+        "mdmConnectionState": "Connected",
+        "drlMode": "Volatile",
+        "configuredDrlMode": "Volatile",
+        "rmcacheEnabled": false,
+        "rmcacheSizeInKb": 131072,
+        "rmcacheFrozen": false,
+        "rmcacheMemoryAllocationState": "RmcacheDisabled",
+        "rfcacheEnabled": true,
+        "maintenanceState": "NoMaintenance",
+        "maintenanceType": "NoMaintenance",
+        "sdsDecoupled": null,
+        "sdsConfigurationFailure": null,
+        "sdsReceiveBufferAllocationFailures": null,
+        "rfcacheErrorLowResources": false,
+        "rfcacheErrorApiVersionMismatch": false,
+        "rfcacheErrorInconsistentCacheConfiguration": false,
+        "rfcacheErrorInconsistentSourceConfiguration": false,
+        "rfcacheErrorInvalidDriverPath": false,
+        "certificateInfo": null,
+        "authenticationError": "None",
+        "raidControllers": null,
+        "fglNumConcurrentWrites": 1000,
+        "fglMetadataCacheState": "Disabled",
+        "fglMetadataCacheSize": 0,
+        "numRestarts": 1,
+        "lastUpgradeTime": 0,
+        "rfcacheErrorDeviceDoesNotExist": false,
+        "numOfIoBuffers": null,
+        "name": "Sds-pflex-storage-01.ngcs-lab.l",
+        "port": 7072,
+        "id": "16a3797600000000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sds::16a3797600000000"
+            },
+            {
+                "rel": "/api/Sds/relationship/Statistics",
+                "href": "/api/instances/Sds::16a3797600000000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sds/relationship/SpSds",
+                "href": "/api/instances/Sds::16a3797600000000/relationships/SpSds"
+            },
+            {
+                "rel": "/api/Sds/relationship/Device",
+                "href": "/api/instances/Sds::16a3797600000000/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/protectionDomainId",
+                "href": "/api/instances/ProtectionDomain::04fe135a00000000"
+            }
+        ]
+    },
+    {
+        "ipList": [
+            {
+                "ip": "172.16.1.12",
+                "role": "all"
+            },
+            {
+                "ip": "172.16.2.12",
+                "role": "all"
+            }
+        ],
+        "onVmWare": false,
+        "protectionDomainId": "04fe135a00000000",
+        "perfProfile": "Custom",
+        "faultSetId": null,
+        "softwareVersionInfo": "R3_6.300.0",
+        "sdsState": "Normal",
+        "membershipState": "Joined",
+        "mdmConnectionState": "Connected",
+        "drlMode": "Volatile",
+        "configuredDrlMode": "Volatile",
+        "rmcacheEnabled": false,
+        "rmcacheSizeInKb": 131072,
+        "rmcacheFrozen": false,
+        "rmcacheMemoryAllocationState": "RmcacheDisabled",
+        "rfcacheEnabled": true,
+        "maintenanceState": "NoMaintenance",
+        "maintenanceType": "NoMaintenance",
+        "sdsDecoupled": null,
+        "sdsConfigurationFailure": null,
+        "sdsReceiveBufferAllocationFailures": null,
+        "rfcacheErrorLowResources": false,
+        "rfcacheErrorApiVersionMismatch": false,
+        "rfcacheErrorInconsistentCacheConfiguration": false,
+        "rfcacheErrorInconsistentSourceConfiguration": false,
+        "rfcacheErrorInvalidDriverPath": false,
+        "certificateInfo": null,
+        "authenticationError": "None",
+        "raidControllers": null,
+        "fglNumConcurrentWrites": 1000,
+        "fglMetadataCacheState": "Disabled",
+        "fglMetadataCacheSize": 0,
+        "numRestarts": 1,
+        "lastUpgradeTime": 0,
+        "rfcacheErrorDeviceDoesNotExist": false,
+        "numOfIoBuffers": null,
+        "name": "Sds-pflex-storage-02.ngcs-lab.l",
+        "port": 7072,
+        "id": "16a3797700000001",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sds::16a3797700000001"
+            },
+            {
+                "rel": "/api/Sds/relationship/Statistics",
+                "href": "/api/instances/Sds::16a3797700000001/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sds/relationship/SpSds",
+                "href": "/api/instances/Sds::16a3797700000001/relationships/SpSds"
+            },
+            {
+                "rel": "/api/Sds/relationship/Device",
+                "href": "/api/instances/Sds::16a3797700000001/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/protectionDomainId",
+                "href": "/api/instances/ProtectionDomain::04fe135a00000000"
+            }
+        ]
+    },
+    {
+        "ipList": [
+            {
+                "ip": "172.16.1.13",
+                "role": "all"
+            },
+            {
+                "ip": "172.16.2.13",
+                "role": "all"
+            }
+        ],
+        "onVmWare": false,
+        "protectionDomainId": "04fe135a00000000",
+        "perfProfile": "Custom",
+        "faultSetId": null,
+        "softwareVersionInfo": "R3_6.300.0",
+        "sdsState": "Normal",
+        "membershipState": "Joined",
+        "mdmConnectionState": "Connected",
+        "drlMode": "Volatile",
+        "configuredDrlMode": "Volatile",
+        "rmcacheEnabled": false,
+        "rmcacheSizeInKb": 131072,
+        "rmcacheFrozen": false,
+        "rmcacheMemoryAllocationState": "RmcacheDisabled",
+        "rfcacheEnabled": true,
+        "maintenanceState": "NoMaintenance",
+        "maintenanceType": "NoMaintenance",
+        "sdsDecoupled": null,
+        "sdsConfigurationFailure": null,
+        "sdsReceiveBufferAllocationFailures": null,
+        "rfcacheErrorLowResources": false,
+        "rfcacheErrorApiVersionMismatch": false,
+        "rfcacheErrorInconsistentCacheConfiguration": false,
+        "rfcacheErrorInconsistentSourceConfiguration": false,
+        "rfcacheErrorInvalidDriverPath": false,
+        "certificateInfo": null,
+        "authenticationError": "None",
+        "raidControllers": null,
+        "fglNumConcurrentWrites": 1000,
+        "fglMetadataCacheState": "Disabled",
+        "fglMetadataCacheSize": 0,
+        "numRestarts": 1,
+        "lastUpgradeTime": 0,
+        "rfcacheErrorDeviceDoesNotExist": false,
+        "numOfIoBuffers": null,
+        "name": "Sds-pflex-storage-03.ngcs-lab.l",
+        "port": 7072,
+        "id": "16a3797800000002",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sds::16a3797800000002"
+            },
+            {
+                "rel": "/api/Sds/relationship/Statistics",
+                "href": "/api/instances/Sds::16a3797800000002/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sds/relationship/SpSds",
+                "href": "/api/instances/Sds::16a3797800000002/relationships/SpSds"
+            },
+            {
+                "rel": "/api/Sds/relationship/Device",
+                "href": "/api/instances/Sds::16a3797800000002/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/protectionDomainId",
+                "href": "/api/instances/ProtectionDomain::04fe135a00000000"
+            }
+        ]
+    },
+    {
+        "ipList": [
+            {
+                "ip": "172.16.1.14",
+                "role": "all"
+            },
+            {
+                "ip": "172.16.2.14",
+                "role": "all"
+            }
+        ],
+        "onVmWare": false,
+        "protectionDomainId": "04fe135a00000000",
+        "perfProfile": "Custom",
+        "faultSetId": null,
+        "softwareVersionInfo": "R3_6.300.0",
+        "sdsState": "Normal",
+        "membershipState": "Joined",
+        "mdmConnectionState": "Connected",
+        "drlMode": "Volatile",
+        "configuredDrlMode": "Volatile",
+        "rmcacheEnabled": false,
+        "rmcacheSizeInKb": 131072,
+        "rmcacheFrozen": false,
+        "rmcacheMemoryAllocationState": "RmcacheDisabled",
+        "rfcacheEnabled": true,
+        "maintenanceState": "NoMaintenance",
+        "maintenanceType": "NoMaintenance",
+        "sdsDecoupled": null,
+        "sdsConfigurationFailure": null,
+        "sdsReceiveBufferAllocationFailures": null,
+        "rfcacheErrorLowResources": false,
+        "rfcacheErrorApiVersionMismatch": false,
+        "rfcacheErrorInconsistentCacheConfiguration": false,
+        "rfcacheErrorInconsistentSourceConfiguration": false,
+        "rfcacheErrorInvalidDriverPath": false,
+        "certificateInfo": null,
+        "authenticationError": "None",
+        "raidControllers": null,
+        "fglNumConcurrentWrites": 1000,
+        "fglMetadataCacheState": "Disabled",
+        "fglMetadataCacheSize": 0,
+        "numRestarts": 1,
+        "lastUpgradeTime": 0,
+        "rfcacheErrorDeviceDoesNotExist": false,
+        "numOfIoBuffers": null,
+        "name": "Sds-pflex-storage-04.ngcs-lab.l",
+        "port": 7072,
+        "id": "16a3797900000003",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Sds::16a3797900000003"
+            },
+            {
+                "rel": "/api/Sds/relationship/Statistics",
+                "href": "/api/instances/Sds::16a3797900000003/relationships/Statistics"
+            },
+            {
+                "rel": "/api/Sds/relationship/SpSds",
+                "href": "/api/instances/Sds::16a3797900000003/relationships/SpSds"
+            },
+            {
+                "rel": "/api/Sds/relationship/Device",
+                "href": "/api/instances/Sds::16a3797900000003/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/protectionDomainId",
+                "href": "/api/instances/ProtectionDomain::04fe135a00000000"
+            }
+        ]
+    }
+]

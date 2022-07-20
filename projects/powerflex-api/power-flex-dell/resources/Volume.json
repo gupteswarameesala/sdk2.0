@@ -1,0 +1,88 @@
+[
+    {
+        "storagePoolId": "fe7a72a300000000",
+        "dataLayout": "MediumGranularity",
+        "vtreeId": "49a2cd4200000000",
+        "sizeInKb": 8388608,
+        "snplIdOfAutoSnapshot": null,
+        "volumeType": "ThickProvisioned",
+        "consistencyGroupId": null,
+        "ancestorVolumeId": null,
+        "notGenuineSnapshot": false,
+        "accessModeLimit": "ReadWrite",
+        "secureSnapshotExpTime": 0,
+        "useRmcache": false,
+        "managedBy": "ScaleIO",
+        "lockedAutoSnapshot": false,
+        "lockedAutoSnapshotMarkedForRemoval": false,
+        "autoSnapshotGroupId": null,
+        "compressionMethod": "Invalid",
+        "pairIds": null,
+        "timeStampIsAccurate": false,
+        "creationTime": 1651220114,
+        "mappedSdcInfo": [
+            {
+                "sdcId": "d649eab400000003",
+                "sdcName": "pflex-compute-04.ngcs-lab.local",
+                "sdcIp": "172.16.2.74",
+                "accessMode": "ReadWrite",
+                "limitIops": 0,
+                "limitBwInMbps": 0,
+                "isDirectBufferMapping": false
+            },
+            {
+                "sdcId": "d649eab200000001",
+                "sdcName": "pflex-compute-02.ngcs-lab.local",
+                "sdcIp": "172.16.2.72",
+                "accessMode": "ReadWrite",
+                "limitIops": 0,
+                "limitBwInMbps": 0,
+                "isDirectBufferMapping": false
+            },
+            {
+                "sdcId": "d649eab300000002",
+                "sdcName": "pflex-compute-03.ngcs-lab.local",
+                "sdcIp": "172.16.1.73",
+                "accessMode": "ReadWrite",
+                "limitIops": 0,
+                "limitBwInMbps": 0,
+                "isDirectBufferMapping": false
+            },
+            {
+                "sdcId": "d649eab100000000",
+                "sdcName": "pflex-compute-01.ngcs-lab.local",
+                "sdcIp": "172.16.2.71",
+                "accessMode": "ReadWrite",
+                "limitIops": 0,
+                "limitBwInMbps": 0,
+                "isDirectBufferMapping": false
+            }
+        ],
+        "originalExpiryTime": 0,
+        "retentionLevels": [],
+        "snplIdOfSourceVolume": null,
+        "volumeReplicationState": "UnmarkedForReplication",
+        "replicationJournalVolume": false,
+        "replicationTimeStamp": 0,
+        "name": "TEST-01",
+        "id": "26b870fc00000000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/Volume::26b870fc00000000"
+            },
+            {
+                "rel": "/api/Volume/relationship/Statistics",
+                "href": "/api/instances/Volume::26b870fc00000000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/parent/relationship/vtreeId",
+                "href": "/api/instances/VTree::49a2cd4200000000"
+            },
+            {
+                "rel": "/api/parent/relationship/storagePoolId",
+                "href": "/api/instances/StoragePool::fe7a72a300000000"
+            }
+        ]
+    }
+]

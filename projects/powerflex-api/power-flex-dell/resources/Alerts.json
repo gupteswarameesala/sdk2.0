@@ -1,0 +1,25 @@
+[
+  {
+    "alertType": "TRIAL_LICENSE_USED",
+    "affectedObject": {
+      "type": "com.emc.ecs.api.model.gen.System",
+      "id": "08a9c0c351862e0f",
+      "objectI d": "08a9c0c351862e0f"
+    },
+    "uuid": "59066300-ba53-48cb-b6b3-53fc07ebef03",
+    "alertValues": {
+      
+    },
+    "severity": "ALERT_LOW",
+    "lastObserved": "20 22-06-20T08:11:13.133Z",
+    "startTime": "2022-06-01T10:12:55.795Z",
+    "name": "59066300-ba53-48cb-b6b3-53fc07ebef03",
+    "id": "59066300-ba53-48cb-b6b3-53fc07ebef03",
+    "links": [
+      {
+        "rel": "self",
+        "href": "/api/instances/Alert::59066300-ba53-48cb-b6b3-53fc07ebef03"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2 @@
+no vtree resource support in sdk
+no spsds ---there in storage_pool 161 line bt need to def specify storage_pool_id(if for monitoring no issue)
