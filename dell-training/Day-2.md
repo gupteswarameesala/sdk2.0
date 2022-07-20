@@ -12,14 +12,15 @@
 
 ### App development phases
 
-![App development phases](images/app-development-phases.png)
+![App development phases](/images/app-development-phases.png)
 
 ### App Anatomy
 
-![App Anatomy](images/app-anatomy.png)
+![App Anatomy](/images/app-anatomy.png)
   
 ### App Sidecar
-![App sidecar](images/app-sidecar.png)
+
+![App sidecar](/images/app-sidecar.png)
 
 - Sidecar is a utlity to App
 - Filters resources and relationships
