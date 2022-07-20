@@ -1,5 +1,6 @@
 # Day 2 Summary
-  
+
+- [App development phases](#app-development-phases)
 - [App Anatomy](#app-anatomy) 
 - [App Sidecar](#app-sidecar) 
 - [Deploying vcenter simulator](#deploying-vcenter-simulator) 
@@ -8,7 +9,11 @@
 - [Powerflex domain analysis](#powerflex-domain-analysis)
 - [Generating Powerflex App with code generator](#generating-powerflex-app-with-code-generator)
 - [Deploying Gateway in local through docker desktop](#deploying-gateway-in-local-through-docker-desktop)
-  
+
+### App development phases
+
+![App development phases](images/app-development-phases.png)
+
 ### App Anatomy
 
 ![App Anatomy](images/app-anatomy.png)
