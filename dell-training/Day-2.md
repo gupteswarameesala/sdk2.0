@@ -32,7 +32,7 @@
 [Code](https://github.com/opsramp/sdk2.0/tree/main/projects/target_endpoint_pythonsdkapp_addedfourthAPI)
 
 ### Developing standalone stub code
-To be filled
+[Code](https://github.com/opsramp/sdk2.0/tree/main/projects/sample-requestcontext)
   
 ### Request context
 
@@ -42,10 +42,14 @@ To be filled
 - It used to pass data from resource type to another resource type during discovery lifecycle 
 
 ### Powerflex domain analysis
-To be filled
+[Json file](https://github.com/opsramp/sdk2.0/blob/main/documentation/domain-powerflex-da.json)
   
 ### Generating Powerflex App with code generator
-To be filled
+[Code](https://github.com/opsramp/sdk2.0/tree/main/projects/powerflex-code-generated)
 
 ### Deploying Gateway in local through docker desktop
-To be filled
+- Enable kubernetes in Docker desktop
+- Download and install helm for windows
+- set path variable
+- Download Opsramp windows gateway collector binary
+- Register gateway
