@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "386e4ee5-f51d-4c6b-b228-3dec4fa873c8",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17097007"
+	},
+	"item": [
+		{
+			"name": "Post Discovery Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AM-Poll-Id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"Update\",\n  \"app\": \"powerflex-app\",\n  \"appIntegrationId\": \"INTG-f07fe727-6c9d-4919-99f2-c12af3ce8db9\",\n  \"appVersion\": \"1.0.0\",\n  \"configurationId\": \"ADAPTER-MANIFEST-d2303888-9c99-47ce-a56e-d0d4b80d5146\",\n  \"configurationName\": \"discovery\",\n  \"gateway\": \"96c20c31-cc24-433b-b892-9f04d2cc891e\",\n  \"managementProfileId\": \"96c20c31-cc24-433b-b892-9f04d2cc891e\",\n  \"messageId\": \"2161b8d4-e7fe-4c9b-8df0-c869ddd94578\",\n  \"messageVersion\": \"2.0.0\",\n  \"module\": \"Discovery\",\n  \"payload\": {\n    \"data\": {\n      \"credential\": [\n            {\n            \"credentialId\": \"CuRYsaUYfqRbEdDAX59HfYqv\",\n            \"credentialValue\": {\n                \"action\": \"Update\",\n                \"app\": \"dell-powerscale\",\n                \"appIntegrationId\": \"INTG-553f6cca-bf81-4bff-aa66-acd0f157c6c3\",\n                \"appVersion\": \"1.0.0\",\n                \"configurationId\": \"ADAPTER-MANIFEST-bcb5b23b-374d-4b04-93a1-00376a4d490e\",\n                \"configurationName\": \"demo\",\n                \"credentialId\": \"CuRYsaUYfqRbEdDAX59HfYqv\",\n                \"deployment\": \"Image\",\n                \"gateway\": \"7c61fc5b-2426-4580-9532-5e0346f9b746\",\n                \"managementProfileId\": \"7c61fc5b-2426-4580-9532-5e0346f9b746\",\n                \"messageId\": \"62069742-a34f-419a-a4e9-73351f5bf8da\",\n                \"messageVersion\": \"2.0.0\",\n                \"module\": \"App\",\n                \"data\": {\n                    \"cipher\": \"0sd1qkMTMBKEzsocf4XHRHHIZ1uOo0RoHFUpRoI/yQgJXAg5mv0CQmbzszIkStXDrmrFPVs9yg7emOsJjSojgpA4DaRUMVV0fKudki/9TTzAo2O+PZMr7f02c+1hKS1RXisWVvUEY8fz71Fnn4vs3lPHWVgz0WH53fPbf1cOpPV1DPM5oRAu6hkUwvKkGQdmfiREROzFtrb5XUc1tk2wIdz4iyILQH7l8ohPh7oIkkp1tJP24nZ+f3Zru5fyL7FRwDpgsX4d76IsEa/+445Yg8sQ\",\n                    \"classId\": \"credential.cipher\",\n                    \"key1\": \"18180724675\",\n                    \"type\": \"APPLICATION\",\n                    \"uuid\": \"CuRYsaUYfqRbEdDAX59HfYqv\",\n                    \"ver\": 2\n                },\n                \"requireAck\": false,\n                \"sha\": \"1bf5d42c08214fcc36675ba468a28fce5132cb3a968c54e4644677bb1e05e046\",\n                \"subtype\": \"Credential\"\n            },\n            \"fieldName\": \"credentials\"\n            }\n        ],\n      \"ipAddress\": \"192.168.1.25\",\n      \"port\": \"45000\",\n      \"protocol\": \"http\",\n      \"vcenterName\":\"vcenter1\"\n    },\n    \"nativeTypes\": {\n\n        \"vcenter\":{\n        \"resourceType\": \"server\"\n        },\n        \"host\":{\n        \"resourceType\": \"server\"\n        },\n        \"vm\":{\n        \"resourceType\": \"server\"\n        }\n    }\n  },\n  \"requireAck\": false,\n  \"sha\": \"705c48b9c677cdfa2a355b21b8f413f124b134a8189dc89d262f11834b9633d0\",\n  \"subtype\": \"Configuration\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:25000/api/v2/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "25000",
+					"path": [
+						"api",
+						"v2",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AM-Poll-Id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"Update\",\n  \"app\": \"power-flex-dell\",\n  \"appIntegrationId\": \"INTG-86032f6a-78f3-4620-8460-3466a41aa247\",\n  \"appVersion\": \"1.0.0\",\n  \"configurationId\": \"ADAPTER-MANIFEST-80ee8f1a-26b5-43e5-af62-2e50edc8d070\",\n  \"messageId\": \"ba623a75-e9ad-45d0-8142-476afd4195ec\",\n  \"messageVersion\": \"2.0.0\",\n  \"module\": \"Monitoring\",\n  \"payload\": {\n    \"appConfig\": {\n      \"data\": {\n        \"alertConfiguration\\n\": \"false\",\n        \"credential\": [\n          {\n            \"credentialId\": \"tTn2gSZkKzN2kUS4CaTjAKuT\",\n            \"credentialValue\": {\n              \"data\": {\n                \"cipher\": \"jIim958AQbRgM1TWDq+DrKrb3w441+eJ0u/hbI/uA\\nHFfBXFLz57MLiGiYeFtsPXpUfVT7unEEPdRFdmzqw7QepPMRwhm+e6qxOwo9ZrOKIk36mjlB0Tv\",\n                \"classId\": \"credential.cipher\",\n                \"key1\": \"181c2af1a4c\",\n                \"\\ntype\": \"APPLICATION\",\n                \"uuid\": \"tTn2gSZkKzN2kUS4CaTjAKuT\",\n                \"ver\": 2\n              }\n            },\n            \"fieldName\": \"credentials\"\n          }\n        ],\n        \"credentialId\": [\n          {\n            \"fieldName\": \"credentials\",\n            \"value\": \"tTn2gSZkKzN2kUS4CaTjAKuT\"\n          }\n        ],\n         \"ipAddress\": \"192.168.1.25\",\n      \"port\": \"45000\",\n      \"protocol\": \"http\",\n      \"vcenterName\":\"vcenter1\"\n      },\n      \"nativeTypes\": {\n        \"vcenter\": {\n          \"resourceType\": \"server\"\n        }\n      }\n    },\n    \"monitorId\": \"f852100d-c00b-4a96-85e0-c5f31908b196\",\n    \"nativeType\": {\n      \"vcenter\": [\n        \"resource_event_statistics\"\n      ]\n    },\n    \"resources\": [\n      {\n        \"appConfigId\": \"ADAPTER-MANIFEST-80ee8f1a-26b5-43e5-af62-2e50edc8d070\",\n        \"credential\": [],\n        \"credentialId\": [],\n        \"moId\": \"vcenter1@192.168.1.25\",\n        \"resourceId\": \"e0a884dc-0c56-426a-b853-40adeb697053\",\n        \"signature\": \"to be filled\",\n        \"templateCustomization\": {},\n        \"templates\": [\n          {\n            \"app\": \"power-fle\\nx-dell\",\n            \"nativeType\": \"vcenter\",\n            \"templateId\": \"27dcc66a-a273-4fc5-8852-d6acaad97d03\"\n          }\n        ]\n      }\n    ],\n    \"templateId\": \"27dcc66a-a273-4fc5-8852-d6acaad9\\n7d03\"\n  },\n  \"subtype\": \"Configuration\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:25000/api/v2/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "25000",
+					"path": [
+						"api",
+						"v2",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
