@@ -33,7 +33,7 @@ Only host will name vcenter1host1 will be discovered,  please find the screensho
 
 Few other condition operators supported for filtering are: Contains, Not Contains, Equals, Not Equals, Starts With, Ends With, Regex
 
-Note: During resourcetype filtering, user need to cautious in selecting the resource types
+Note: During Resource Type filtering, user need to cautious in selecting the resource types
 Ex: If we unselect Hosts and select only VMs, the VMs will not be discovered, since its parent is missing
 We can't unselect parent and expect child to be discovered, user need to select from bottom up approach.
 If child needs to be discovered, than parent resource type should be selected.
