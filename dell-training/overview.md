@@ -4,9 +4,10 @@
 - [Prepare Domain model json](#prepare-domain-model-json)
 - [Generate code from domain json](#generate-code-from-domain-json)
 - [Fill target stubs](#fill-target-stubs)
-- [Building project](#building-project)
-- [Publishing app](#publishing-app)
-- [Installing app](#installing-app)
+- [Build project](#build-project)
+- [Gateway setup](#gateway-setup)
+- [Publish app](#publish-app)
+- [Install app](#install-app)
 - [Add configuration](#add-configuration)
 - [Resource discovery and monitoring reports](#resource-discovery-and-monitoring-reports)
 - [Debugging logs](#debugging-logs)
@@ -553,7 +554,7 @@ App developer need to fill the stubs by following below steps
 3. Return data back with opsramp domain model
 
 
-## Building project
+## Build project
 
 Run the below make file from the project folder
 
@@ -626,7 +627,12 @@ version: 1.0.0
 ---------------------------------------------
 ```
 
-## Publishing app
+## Gateway setup
+[Setup through OVA](https://github.com/opsramp/sdk2.0/blob/main/documentation/gateway-setup.md) <br />
+[Setup up from scratch](https://github.com/opsramp/sdk2.0/blob/main/documentation/PA-SetupandDebugging-130722-0522-52.pdf)
+
+
+## Publish app
 
 Publishing App requries following data
 
@@ -637,7 +643,7 @@ Publishing App requries following data
 Follow the APIs in the [link](https://github.com/opsramp/sdk2.0/blob/41574c5f5a0edad7000054950e6b0372842dd37b/documentation/app_publish_rest_calls.md) 
 to publish the App
 
-## Installing app
+## Install app
 
 Once app is published, login to cloud portal and check whether app is available in the manage apps list
 
