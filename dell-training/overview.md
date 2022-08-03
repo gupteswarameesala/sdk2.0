@@ -16,7 +16,7 @@
 
 **Setup pycharam** <br>
 
-1. Make sure python is installed
+1. Make sure python with version 3.8 and above is installed
 2. Download **pycharam** community version from this link https://www.jetbrains.com/pycharm/download/#section=linux <br>
 3. The file pycharm*.tar.gz will be downloaded, extract this file <br>
 4. Go to bin folder in the extracted folder and run **sh pycharam.sh** <br>
@@ -530,7 +530,7 @@ Once the domain.json file is done, than we need to generate code to build the Ap
 - Open a terminal pointing app folder
 - create virtual environment python3 -m venv env
 - source env/bin/activate
-- Run **python3 app.py** make sure App is running fine locally
+- Run **gunicorn --bind 0.0.0.0:25000 app:app** make sure App is running locally
 
 Code generator generates below artifacts
 
