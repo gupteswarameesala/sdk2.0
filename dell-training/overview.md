@@ -7,9 +7,12 @@
 - [Building project](#building-project)
 - [Publishing app](#publishing-app)
 - [Installing app](#installing-app)
+- [Add configuration](#add-configuration)
+- [Resource discovery and monitoring reports](#resource-discovery-and-monitoring-reports)
+- [Debugging logs](#debugging-logs)
 
 
-###### Setup
+## Setup
 
 **Setup pycharam** <br>
 
@@ -25,7 +28,7 @@
 python3 -m pip install --user virtualenv
 ```
 
-###### Prepare Domain model json
+## Prepare Domain model json
 
 ```json
 {
@@ -515,19 +518,19 @@ python3 -m pip install --user virtualenv
 
 ```
 
-###### Generate code from domain json
+## Generate code from domain json
 
 Once the domain.json file is done, than we need to generate code to build the App, follow the below steps
 
-- Clone the sdk-app-starter project in local environment[https://github.com/opsramp/sdk2.0/tree/main/projects/sdk-app-starter/python]
-- Replace the above domain.json file into the above project
+- Clone the sdk-app-starter project in local environment[https://github.com/opsramp/sdk2.0/tree/main/projects/sdk-app-starter]
+- Replace the above domain.json file in python folder present in the above project 
 - Execute this command coming to sdk-app-starter project: **python3 app.py destination-folder-path python**
 - An App will be created with the destination-folder-path
 - Once app created successfully, than open the project in pycharm
 - Open a terminal pointing app folder
 - create virtual environment python3 -m venv env
 - source env/bin/activate
-- Run **python3 app.py** make sure App is running
+- Run **python3 app.py** make sure App is running fine locally
 
 Code generator generates below artifacts
 
@@ -538,7 +541,7 @@ Code generator generates below artifacts
 - Make file
 
 
-###### Fill target stubs
+## Fill target stubs
 
 App developer need to fill the stubs by following below steps
 
@@ -547,7 +550,7 @@ App developer need to fill the stubs by following below steps
 3. Return data back with opsramp domain model
 
 
-###### Building project
+## Building project
 
 Run the below make file from the project folder
 
@@ -561,7 +564,7 @@ Running this command will run the following steps in sequence
 - Pushing docker image to repo
 - Pushing helm chart to repo
 
-###### Publishing app
+## Publishing app
 
 Publishing App requries following data
 
@@ -572,7 +575,7 @@ Publishing App requries following data
 Follow the APIs in the [link](https://github.com/opsramp/sdk2.0/blob/41574c5f5a0edad7000054950e6b0372842dd37b/documentation/app_publish_rest_calls.md) 
 to publish the App
 
-###### Installing app
+## Installing app
 
 Once app is published, login to cloud portal and check whether app is available in the manage apps list
 
@@ -580,9 +583,70 @@ Login to cloud portal
 1. Select -->Partner-->Client
 2. Go to Setup-->Integrations and Apps
 3. Click on Manage Apps button to see list of Apps
-4. The published App should be seen here
+4. The published App should be seen like below
 
-6. 
+![Install App](https://github.com/opsramp/sdk2.0/blob/8ffd5ad6acb135050872d8c875ebae90035e57a4/images/install-bright-cluster-manager.png)
+
+5. Select the gateway to install the App
+![Select Gateway](https://github.com/opsramp/sdk2.0/blob/c810cb26cf62248573f0889d7d33379dc765f1c3/images/gateway-install-bcm-app.png)
+
+## Add configuration
+
+Add the target configuration details for the App to discover and monitor the resources
+
+![Add configuration](https://github.com/opsramp/sdk2.0/blob/5868e0009ef0c5e749c61a70b959e073465e80d2/images/add-configuration-bcm.png)
+
+## Resource discovery and monitoring reports
+
+Cluster discovery
+
+![Cluster discovery](https://github.com/opsramp/sdk2.0/blob/1f0f005750e2a1d35eed764f4972b2fc9d335cf4/images/bcm-cluster-discovery.png)
+
+Components in the Cluster node
+
+![Components in the Cluster node](https://github.com/opsramp/sdk2.0/blob/c630491c9f48f1a89bc118810398c4479b2718ac/images/bcm-components-in-cluster.png)
+
+BCM Head Node Attributes
+
+![BCM Head Node Attributes](https://github.com/opsramp/sdk2.0/blob/888e7d1f2c51899dd38618d7afdc500fd6d626c2/images/bcm-head-node-attributes.png)
+
+Applied Monitors
+
+![Applied Monitors](https://github.com/opsramp/sdk2.0/blob/main/images/bcm-applied-monitors.png)
+
+Metrics
+
+![Metrics](https://github.com/opsramp/sdk2.0/blob/main/images/bcm-metrics.png)
+
+## Debugging logs
+
+Login to gateway
+
+Check whether app is running or not using kubectl get pods command
+
+```shell
+sudo kubectl get pods
+```
+
+![kubectl get pods](https://github.com/opsramp/sdk2.0/blob/1e9bbdd154fa26d7c3d52e5cfa88ff7e04b03e14/images/bcm-kubectl-get-pods.png)
+
+Check Sidecar logs
+
+```shell
+sudo kubectl logs -f dell-brightclustermanager-7b54d77fbd-9vb2j -c dell-brightclustermanager-sidecar
+```
+
+![Sidecar logs](https://github.com/opsramp/sdk2.0/blob/1e9bbdd154fa26d7c3d52e5cfa88ff7e04b03e14/images/bcm-sidecar-logs.png)
+
+Check App logs
+
+```shell
+sudo kubectl logs -f dell-brightclustermanager-7b54d77fbd-9vb2j -c dell-brightclustermanager-app
+```
+
+![App logs](https://github.com/opsramp/sdk2.0/blob/main/images/bcm-app-logs.png)
+
+
 
 
 
