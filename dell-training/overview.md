@@ -561,11 +561,70 @@ Run the below make file from the project folder
 sh make.sh
 ```
 
-Running this command will run the following steps in sequence
+Running this command will execute the following steps in sequence
 - Building python code
 - Building docker image
 - Pushing docker image to repo
 - Pushing helm chart to repo
+
+Make file log
+
+```shell
+(venv) demouser@abc123:~/dell-brightclustermanager$ sudo sh make.sh
+sudo password for demouser:
+Building dell-brightclustermanager docker image...!!
+Sending build context to Docker daemon 41.52MB
+Step 1/7 : FROM ubuntu:20.04
+---> 20fffa419e3a
+Step 2/7 : WORKDIR /app
+---> Using cache
+---> 2c2034d4c83c
+Step 3/7 : RUN apt-get update && apt-get install -y python3-pip
+---> Using cache
+---> 7d441cf66925
+Step 4/7 : COPY requirements.txt /app/requirements.txt
+---> Using cache
+---> ce7ab9f06e97
+Step 5/7 : RUN pip install -r requirements.txt
+---> Using cache
+---> 4f32a1f590d8
+Step 6/7 : COPY . /app
+---> e0d96611fe28
+Step 7/7 : CMD 25000", "app:app"
+---> Running in 39362e2d91b4
+Removing intermediate container 39362e2d91b4
+---> 7d32a8f82af8
+Successfully built 7d32a8f82af8
+Successfully tagged us-docker.pkg.dev/gateway-images/gateway-cluster-images/dell-brightclustermanager:1.0.0
+---------------------------------------------
+Pushing dell-brightclustermanager docker image to repo!!
+The push refers to repository us-docker.pkg.dev/gateway-images/gateway-cluster-images/dell-brightclustermanager
+acf0a57f9cd5: Pushed
+8a791b080d48: Layer already exists
+86db6618cd96: Layer already exists
+41387345cb29: Layer already exists
+710841616aa3: Layer already exists
+af7ed92504ae: Layer already exists
+1.0.0: digest: sha256:e298480fde88f751b60078daff525ed2b990edc713b2609afc423289500f3dae size: 1579
+---------------------------------------------
+Saving dell-brightclustermanager helm chart
+ref: us-docker.pkg.dev/gateway-images/gateway-cluster-charts/dell-brightclustermanager:1.0.0
+digest: 421ae05cae991d4f594010275c5b432422c9d0b5f8d94f299504d74fe78af89d
+size: 3.0 KiB
+name: dell-brightclustermanager
+version: 1.0.0
+1.0.0: saved
+---------------------------------------------
+Pushing dell-brightclustermanager helm chart to repo
+The push refers to repository us-docker.pkg.dev/gateway-images/gateway-cluster-charts/dell-brightclustermanager
+ref: us-docker.pkg.dev/gateway-images/gateway-cluster-charts/dell-brightclustermanager:1.0.0
+digest: 31040b014b29f21471dee57f2120d59a5c1b5a30fd7e626363a2f153bf384927
+size: 3.0 KiB
+name: dell-brightclustermanager
+version: 1.0.0
+1.0.0: pushed to remote (1 layer, 3.0 KiB total)
+---------------------------------------------
+```
 
 ## Publishing app
 
