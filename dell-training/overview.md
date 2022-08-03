@@ -527,6 +527,9 @@ Once the domain.json file is done, than we need to generate code to build the Ap
 - Execute this command coming to sdk-app-starter project: **python3 app.py destination-folder-path python**
 - An App will be created with the destination-folder-path
 - Once app created successfully, than open the project in pycharm
+  
+  ![pycharam editor](https://github.com/opsramp/sdk2.0/blob/9af5decfb70dbe9a27e2b5f4ce1ecfaafb83aa7e/images/bcm-pycharm-editor.png)
+  
 - Open a terminal pointing app folder
 - create virtual environment python3 -m venv env
 - source env/bin/activate
