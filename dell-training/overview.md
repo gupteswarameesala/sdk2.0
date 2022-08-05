@@ -11,6 +11,7 @@
 - [Add configuration](#add-configuration)
 - [Resource discovery and monitoring reports](#resource-discovery-and-monitoring-reports)
 - [Debugging logs](#debugging-logs)
+- [Sample project for reference](#sample-project-for-reference)
 
 
 ## Setup
@@ -713,6 +714,9 @@ sudo kubectl logs -f dell-brightclustermanager-7b54d77fbd-9vb2j -c dell-brightcl
 ```
 
 ![App logs](https://github.com/opsramp/sdk2.0/blob/main/images/bcm-app-logs.png)
+
+## Sample project for reference
+[Sample project](https://github.com/opsramp/sdk2.0/tree/main/projects/sample-app-python-code-generated)
 
 
 
