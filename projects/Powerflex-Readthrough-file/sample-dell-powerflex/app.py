@@ -1,0 +1,23 @@
+from logger import Logger
+from server import Init
+from core import Registery, Constants
+from handler import DiscoveryHandler, MonitoringHandler
+from discovery import DellPowerflexManagerDiscovery,DellPowerflexManagerServerDiscovery,DellPowerflexManagerSwitchDiscovery,DellPowerflexManagerVcenterDiscovery,DellPowerflexGatewayDiscovery,DellPowerflexStoragePoolDiscovery,DellPowerflexMdmClusterDiscovery,DellPowerflexSdcDiscovery,DellPowerflexProtectionDomainDiscovery,DellPowerflexSdsDiscovery,DellPowerflexDeviceDiscovery,DellPowerflexVolumeDiscovery,DellPowerflexVtreeDiscovery
+from monitoring import DellPowerflexManagerMonitoring,DellPowerflexManagerServerMonitoring,DellPowerflexManagerSwitchMonitoring,DellPowerflexManagerVcenterMonitoring,DellPowerflexGatewayMonitoring,DellPowerflexStoragePoolMonitoring,DellPowerflexMdmClusterMonitoring,DellPowerflexSdcMonitoring,DellPowerflexProtectionDomainMonitoring,DellPowerflexSdsMonitoring,DellPowerflexDeviceMonitoring,DellPowerflexVolumeMonitoring,DellPowerflexVtreeMonitoring
+from debug import DeviceReachability
+
+from server._controller import app
+app = app
+
+def initialize_app():
+    Logger().setup_logger_config()
+    Registery.RegisterHandlers({Constants.DISCOVERY_HANDLER_IDENTITY:DiscoveryHandler,Constants.MONITORING_HANDLER_IDENTITY:MonitoringHandler})
+    Registery.RegisterDiscoveryEntities([DellPowerflexManagerDiscovery,DellPowerflexManagerServerDiscovery,DellPowerflexManagerSwitchDiscovery,DellPowerflexManagerVcenterDiscovery,DellPowerflexGatewayDiscovery,DellPowerflexStoragePoolDiscovery,DellPowerflexMdmClusterDiscovery,DellPowerflexSdcDiscovery,DellPowerflexProtectionDomainDiscovery,DellPowerflexSdsDiscovery,DellPowerflexDeviceDiscovery,DellPowerflexVolumeDiscovery,DellPowerflexVtreeDiscovery])
+    Registery.RegisterMonitoringEntities({'Dell PowerFlex Manager':DellPowerflexManagerMonitoring,'Dell PowerFlex Manager Server':DellPowerflexManagerServerMonitoring,'Dell PowerFlex Manager Switch':DellPowerflexManagerSwitchMonitoring,'Dell PowerFlex Manager VCenter':DellPowerflexManagerVcenterMonitoring,'Dell PowerFlex Gateway':DellPowerflexGatewayMonitoring,'Dell PowerFlex Storage Pool':DellPowerflexStoragePoolMonitoring,'Dell PowerFlex MDM Cluster':DellPowerflexMdmClusterMonitoring,'Dell PowerFlex SDC':DellPowerflexSdcMonitoring,'Dell PowerFlex Protection Domain':DellPowerflexProtectionDomainMonitoring,'Dell PowerFlex SDS':DellPowerflexSdsMonitoring,'Dell PowerFlex Device':DellPowerflexDeviceMonitoring,'Dell PowerFlex Volume':DellPowerflexVolumeMonitoring,'Dell PowerFlex VTree':DellPowerflexVtreeMonitoring})
+    Registery.RegisterDebugHandlers({Constants.DEVICE_REACHABILITY:DeviceReachability})
+    #Init().start_server()
+
+if __name__ == "__main__":
+    initialize_app()
+else:
+    gunicorn_app = initialize_app()

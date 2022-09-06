@@ -1,0 +1,118 @@
+[
+    {
+        "sdsId": "16a3797700000001",
+        "storagePoolId": "fe7a72a300000000",
+        "fglNvdimmMetadataAmortizationX100": null,
+        "fglNvdimmWriteCacheSize": null,
+        "id": "ff77ddf200010000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/SpSds::ff77ddf200010000"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Statistics",
+                "href": "/api/instances/SpSds::ff77ddf200010000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Device",
+                "href": "/api/instances/SpSds::ff77ddf200010000/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/sdsId",
+                "href": "/api/instances/Sds::16a3797700000001"
+            },
+            {
+                "rel": "/api/parent/relationship/storagePoolId",
+                "href": "/api/instances/StoragePool::fe7a72a300000000"
+            }
+        ]
+    },
+    {
+        "sdsId": "16a3797900000003",
+        "storagePoolId": "fe7a72a300000000",
+        "fglNvdimmMetadataAmortizationX100": null,
+        "fglNvdimmWriteCacheSize": null,
+        "id": "ff79ddef00030000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/SpSds::ff79ddef00030000"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Statistics",
+                "href": "/api/instances/SpSds::ff79ddef00030000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Device",
+                "href": "/api/instances/SpSds::ff79ddef00030000/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/sdsId",
+                "href": "/api/instances/Sds::16a3797900000003"
+            },
+            {
+                "rel": "/api/parent/relationship/storagePoolId",
+                "href": "/api/instances/StoragePool::fe7a72a300000000"
+            }
+        ]
+    },
+    {
+        "sdsId": "16a3797600000000",
+        "storagePoolId": "fe7a72a300000000",
+        "fglNvdimmMetadataAmortizationX100": null,
+        "fglNvdimmWriteCacheSize": null,
+        "id": "ff77ddf000000000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/SpSds::ff77ddf000000000"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Statistics",
+                "href": "/api/instances/SpSds::ff77ddf000000000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Device",
+                "href": "/api/instances/SpSds::ff77ddf000000000/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/sdsId",
+                "href": "/api/instances/Sds::16a3797600000000"
+            },
+            {
+                "rel": "/api/parent/relationship/storagePoolId",
+                "href": "/api/instances/StoragePool::fe7a72a300000000"
+            }
+        ]
+    },
+    {
+        "sdsId": "16a3797800000002",
+        "storagePoolId": "fe7a72a300000000",
+        "fglNvdimmMetadataAmortizationX100": null,
+        "fglNvdimmWriteCacheSize": null,
+        "id": "ff79ddf100020000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/SpSds::ff79ddf100020000"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Statistics",
+                "href": "/api/instances/SpSds::ff79ddf100020000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/SpSds/relationship/Device",
+                "href": "/api/instances/SpSds::ff79ddf100020000/relationships/Device"
+            },
+            {
+                "rel": "/api/parent/relationship/sdsId",
+                "href": "/api/instances/Sds::16a3797800000002"
+            },
+            {
+                "rel": "/api/parent/relationship/storagePoolId",
+                "href": "/api/instances/StoragePool::fe7a72a300000000"
+            }
+        ]
+    }
+]

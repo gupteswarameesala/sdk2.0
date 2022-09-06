@@ -1,0 +1,24 @@
+{
+  "Dell PowerFlex System": [
+    "{0}://{1}:443/api/instances/System::{2}/relationships/Statistics"
+  ],
+  "Dell PowerFlex MDM Cluster": [
+    "{0}://{1}:443/api/types/System/instances"
+  ],
+  "Dell PowerFlex Storage Pool": [
+    "{0}://{1}:443/api/instances/StoragePool::{2}/relationships/Statistics",
+    "{0}://{1}:443/api/instances/StoragePool::{2}"
+  ],
+  "Dell PowerFlex SDC": [
+    "{0}://{1}:443/api/instances/Sdc::{2}"
+  ],
+  "Dell PowerFlex SDS": [
+    "{0}://{1}:443/api/instances/Sds::{2}"
+  ],
+  "Dell PowerFlex Device": [
+    "{0}://{1}:443/api/instances/Device::{2}"
+  ],
+  "Dell PowerFlex Protection Domain": [
+    "{0}://{1}:443/api/instances/ProtectionDomain::{2}"
+  ]
+}

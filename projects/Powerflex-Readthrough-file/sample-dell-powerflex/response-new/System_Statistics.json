@@ -1,0 +1,544 @@
+{
+    "numOfVtreeMigrationsInSystem": 0,
+    "backgroundScanFixedReadErrorCount": 0,
+    "pendingMovingOutBckRebuildJobs": 0,
+    "rfcachePoolWritePending": 0,
+    "degradedHealthyCapacityInKb": 0,
+    "rplCgRpoCompliance": 100,
+    "numSdsSdrDisconnections": 0,
+    "activeMovingOutFwdRebuildJobs": 0,
+    "rfcachePoolWritePendingG1Sec": 0,
+    "bckRebuildWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "netFglUncompressedDataSizeInKb": 0,
+    "primaryReadFromDevBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "numOfSnapPolicies": 1,
+    "BackgroundScannedInMB": 76992837,
+    "protectedMaintenanceModeWaitSendQLength": 0,
+    "maxUserDataCapacityInKb": 168594339840,
+    "rfcacheReadsSkippedAlignedSizeTooLarge": 0,
+    "rfcachePoolSize": 0,
+    "pendingMovingInRebalanceJobs": 0,
+    "fglMetadataCacheHitrate": 0.0,
+    "rfcacheWritesSkippedHeavyLoad": 0,
+    "rfcachePoolPagesInuse": 0,
+    "unusedCapacityInKb": 168527230976,
+    "userDataSdcReadLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheFdAvgWriteTime": 0,
+    "rmcacheEntryEvictionCount": 0,
+    "totalReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "totalWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "journalerReadLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "persistentChecksumCapacityInKb": 109854720,
+    "rmPendingAllocatedInKb": 0,
+    "numOfVolumes": 5,
+    "rfcacheIosOutstanding": 0,
+    "rmcacheBigBlockEvictionSizeCountInKb": 0,
+    "numRpoViolatingRplCgsSrc": 0,
+    "capacityAvailableForVolumeAllocationInKb": 84188069888,
+    "numOfMappedToAllVolumes": 0,
+    "currentTickerValue": 16081465,
+    "netThinUserDataCapacityInKb": 0,
+    "backgroundScanFixedCompareErrorCount": 0,
+    "volMigrationWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "thinAndSnapshotRatio": 1.25,
+    "rebuildPerReceiveJobNetThrottlingInKbps": 0,
+    "fglUserDataCapacityInKb": 0,
+    "pendingMovingInEnterProtectedMaintenanceModeJobs": 0,
+    "rcgRemoteWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rmcache32kbEntryCount": 0,
+    "rfcachePoolEvictions": 0,
+    "rfcachePoolNumCacheDevs": 0,
+    "activeMovingInNormRebuildJobs": 0,
+    "journalerWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "aggregateCompressionLevel": "Uncompressed",
+    "rfcacheFdWriteTimeGreater500Millis": 0,
+    "targetOtherLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "journalerReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "netUserDataCapacityInKb": 33554432,
+    "rmcacheSkipCountCacheAllBusy": 0,
+    "rfcachePoolNumSrcDevs": 0,
+    "numOfSdc": 4,
+    "rfcacheFdMonitorErrorStuckIo": 0,
+    "rplRemoteUserBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rplTransmitLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "pendingMovingOutExitProtectedMaintenanceModeJobs": 0,
+    "overallUsageRatio": 1.25,
+    "volMigrationReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "pendingMovingInBckRebuildJobs": 0,
+    "rfcacheReadsSkippedInternalError": 0,
+    "netCapacityInUseNoOverheadInKb": 33554432,
+    "rfcachePoolWritePendingG500Micro": 0,
+    "activeBckRebuildCapacityInKb": 0,
+    "snapPolicyIds": [
+        "6c771cab00000000"
+    ],
+    "rebalanceCapacityInKb": 0,
+    "numDevErrors": 0,
+    "pendingMovingInExitProtectedMaintenanceModeJobs": 0,
+    "rfcachePoolInLowMemoryCondition": 0,
+    "rfcacheReadsSkippedLowResources": 0,
+    "rplReceiveLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rplJournalCapAllowed": 0,
+    "userDataSdcTrimLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "numSnapshotsTaken": 9,
+    "thinCapacityInUseInKb": 0,
+    "rplReceiveBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcachePoolLowResourcesInitiatedPassthroughMode": 0,
+    "rfcachePoolWritePendingG10Millis": 0,
+    "activeMovingInEnterProtectedMaintenanceModeJobs": 0,
+    "rfcachePoolWriteHit": 0,
+    "rcgRemoteReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheWritesSkippedInternalError": 0,
+    "rmcache128kbEntryCount": 0,
+    "rfcacheWritesSkippedCacheMiss": 0,
+    "netUserDataCapacityNoTrimInKb": 33554432,
+    "rfcacheFdReadTimeGreater5Sec": 0,
+    "numOscillationCountersPassedThreshold": 0,
+    "numOfFaultSets": 0,
+    "degradedFailedCapacityInKb": 0,
+    "activeNormRebuildCapacityInKb": 0,
+    "fglSparesInKb": 0,
+    "snapCapacityInUseInKb": 0,
+    "compressionRatio": 1.0,
+    "rfcacheFdIoErrors": 0,
+    "rfcacheWriteMiss": 0,
+    "primaryReadFromRmcacheBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "numOfVtrees": 5,
+    "userDataCapacityNoTrimInKb": 67108864,
+    "numRpoViolatingRplCgsDest": 0,
+    "rfacheReadHit": 0,
+    "numSmartAttributesPassedThreshold": 0,
+    "rfcachePooIosOutstanding": 0,
+    "compressedDataCompressionRatio": 0.0,
+    "rplUsedJournalCap": 0,
+    "rcgLocalWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "pendingMovingCapacityInKb": 0,
+    "numOfSnapshots": 0,
+    "rcgLocalReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "sdcIds": [
+        "8db5b62500000000",
+        "8db5b62600000001",
+        "8db5b62700000002",
+        "8db5b62800000003"
+    ],
+    "pendingFwdRebuildCapacityInKb": 0,
+    "rmcacheBigBlockEvictionCount": 0,
+    "rmcacheNoEvictionCount": 0,
+    "tempCapacityInKb": 0,
+    "rmcacheCurrNumOf128kbEntries": 0,
+    "normRebuildCapacityInKb": 0,
+    "rfcachePoolReadPendingG1Millis": 0,
+    "numOfAccelerationPools": 0,
+    "logWrittenBlocksInKb": 0,
+    "primaryWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rmcacheSizeInUseInKb": 0,
+    "numOfThickBaseVolumes": 4,
+    "rfcachePoolReadPendingG10Millis": 0,
+    "enterProtectedMaintenanceModeReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "activeRebalanceCapacityInKb": 0,
+    "numOfReplicationJournalVolumes": 0,
+    "rfcacheReadsSkippedLockIos": 0,
+    "unreachableUnusedCapacityInKb": 0,
+    "netProvisionedAddressesInKb": 33554432,
+    "rmcache8kbEntryCount": 0,
+    "rfcachePoolReadPendingG500Micro": 0,
+    "trimmedUserDataCapacityInKb": 0,
+    "provisionedAddressesInKb": 67108864,
+    "numOfVolumesInDeletion": 0,
+    "maxCapacityInKb": 224792453120,
+    "pendingMovingOutFwdRebuildJobs": 0,
+    "rmcacheSkipCountLargeIo": 0,
+    "rmPendingThickInKb": 0,
+    "protectedCapacityInKb": 67108864,
+    "secondaryWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "normRebuildReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "thinCapacityAllocatedInKb": 16777216,
+    "netFglUserDataCapacityInKb": 0,
+    "metadataOverheadInKb": 0,
+    "thinCapacityAllocatedInKm": 16777216,
+    "rebalanceWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rmcacheCurrNumOf8kbEntries": 0,
+    "primaryVacInKb": 41943040,
+    "netSnapshotCapacityInKb": 0,
+    "secondaryVacInKb": 41943040,
+    "numVolumeMigrationsPerformed": 0,
+    "numOfDevices": 136,
+    "numCmatrixPolicyChanges": 2,
+    "rplTotalJournalCap": 0,
+    "rfcachePoolWriteMiss": 0,
+    "rfcachePoolReadPendingG1Sec": 0,
+    "failedCapacityInKb": 0,
+    "netMetadataOverheadInKb": 0,
+    "rmcache4kbEntryCount": 0,
+    "rebalanceWaitSendQLength": 0,
+    "rfcachePoolWritePendingG1Millis": 0,
+    "rfcacheFdReadTimeGreater1Min": 0,
+    "rebalancePerReceiveJobNetThrottlingInKbps": 245760,
+    "activeMovingOutBckRebuildJobs": 0,
+    "rfcacheReadsFromCache": 0,
+    "rfcacheFdReadTimeGreater1Sec": 0,
+    "enterProtectedMaintenanceModeCapacityInKb": 0,
+    "rmcache64kbEntryCount": 0,
+    "activeMovingOutEnterProtectedMaintenanceModeJobs": 0,
+    "pendingMovingInNormRebuildJobs": 0,
+    "failedVacInKb": 0,
+    "primaryReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "fglCompressedDataSizeInKb": 0,
+    "fglUncompressedDataSizeInKb": 0,
+    "pendingRebalanceCapacityInKb": 0,
+    "rfcacheAvgReadTime": 0,
+    "semiProtectedCapacityInKb": 0,
+    "pendingMovingOutEnterProtectedMaintenanceModeJobs": 0,
+    "numOfRplPairs": 0,
+    "rfcachePoolSourceIdMismatch": 0,
+    "mgUserDdataCcapacityInKb": 67108864,
+    "netMgUserDataCapacityInKb": 33554432,
+    "rfcacheFdAvgReadTime": 0,
+    "snapshotCapacityInKb": 0,
+    "numOfPeerMdm": 0,
+    "fwdRebuildReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheWritesReceived": 0,
+    "rfcachePoolSuspendedIos": 0,
+    "netUnusedCapacityInKb": 84263615488,
+    "numOfLibsdc": 0,
+    "thinUserDataCapacityInKb": 0,
+    "rplTopPerformingRcgs": [],
+    "protectedVacInKb": 83886080,
+    "activeMovingInFwdRebuildJobs": 0,
+    "activeMovingRebalanceJobs": 0,
+    "bckRebuildCapacityInKb": 0,
+    "sdrIds": [],
+    "netTrimmedUserDataCapacityInKb": 0,
+    "pendingMovingRebalanceJobs": 0,
+    "numOfMarkedVolumesForReplication": 0,
+    "degradedHealthyVacInKb": 0,
+    "rfcachePoolLockTimeGreater1Sec": 0,
+    "rplRemoteApplyBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "semiProtectedVacInKb": 0,
+    "userDataReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rplProtectedCapacityDest": 0,
+    "rmcacheCurrNumOf4kbEntries": 0,
+    "pendingBckRebuildCapacityInKb": 0,
+    "capacityLimitInKb": 224792453120,
+    "rplLocalApplyBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "numOfProtectionDomains": 2,
+    "activeMovingCapacityInKb": 0,
+    "targetWriteLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "pendingExitProtectedMaintenanceModeCapacityInKb": 0,
+    "rfcacheIosSkipped": 0,
+    "numOfRplCgs": 0,
+    "rfcacheFdWriteTimeGreater5Sec": 0,
+    "inMaintenanceVacInKb": 0,
+    "userDataWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "exitProtectedMaintenanceModeReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "netFglSparesInKb": 0,
+    "rfcacheReadsSkipped": 0,
+    "rfcachePoolReadHit": 0,
+    "activeExitProtectedMaintenanceModeCapacityInKb": 0,
+    "rebuildWaitSendQLength": 0,
+    "numOfUnmappedVolumes": 2,
+    "activeMovingOutExitProtectedMaintenanceModeJobs": 0,
+    "rmcacheCurrNumOf64kbEntries": 0,
+    "volumeAddressSpaceInKb": 41943040,
+    "tempCapacityVacInKb": 0,
+    "rfcacheWritesSkippedMaxIoSize": 0,
+    "numSdsReconnections": 9,
+    "netMaxUserDataCapacityInKb": 84297169920,
+    "rfacheWriteHit": 0,
+    "atRestCapacityInKb": 33554432,
+    "bckRebuildReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheSourceDeviceWrites": 0,
+    "rfcacheFdInlightReads": 0,
+    "spareCapacityInKb": 56198113280,
+    "enterProtectedMaintenanceModeWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "normRebuildWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheIoErrors": 0,
+    "numOfSds": 8,
+    "numOfSdr": 0,
+    "capacityInUseInKb": 67108864,
+    "rebalanceReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "numSdSdcDisconnections": 16,
+    "rmcacheSkipCountUnaligned4kbIo": 0,
+    "rfcacheReadsSkippedMaxIoSize": 0,
+    "numSdrSdcDisconnections": 0,
+    "activeMovingInExitProtectedMaintenanceModeJobs": 0,
+    "secondaryReadFromDevBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcachePoolSuspendedPequestsRedundantSearchs": 0,
+    "rfcacheWritesSkippedStuckIo": 0,
+    "numOfStoragePools": 2,
+    "secondaryReadBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "secondaryReadFromRmcacheBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcachePoolCachePages": 0,
+    "inMaintenanceCapacityInKb": 0,
+    "protectionDomainIds": [
+        "0607185600000000",
+        "0607185700000001"
+    ],
+    "netFglCompressedDataSizeInKb": 0,
+    "vtreeMigrationWaitSendQLength": 0,
+    "userDataSdcWriteLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "inUseVacInKb": 83886080,
+    "fwdRebuildCapacityInKb": 0,
+    "libsdcIds": [],
+    "thickCapacityInUseInKb": 67108864,
+    "activeMovingInRebalanceJobs": 0,
+    "backgroundScanReadErrorCount": 0,
+    "rmcacheCurrNumOf32kbEntries": 0,
+    "rfcacheWritesSkippedLowResources": 0,
+    "peerMdmIds": [],
+    "rplApplyLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "capacityInUseNoOverheadInKb": 67108864,
+    "rfcacheFdCacheOverloaded": 0,
+    "rplLocalUserBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rmcache16kbEntryCount": 0,
+    "rmcacheEntryEvictionSizeCountInKb": 0,
+    "exitProtectedMaintenanceModeWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheSkippedUnlinedWrite": 0,
+    "netCapacityInUseInKb": 33554432,
+    "rplProtectedCapacitySrc": 0,
+    "rfcacheAvgWriteTime": 0,
+    "journalerWriteLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "pendingNormRebuildCapacityInKb": 0,
+    "vtreeMigrationPerReceiveJobNetThrottlingInKbps": 245760,
+    "rfcacheFdReadTimeGreater500Millis": 0,
+    "pendingMovingOutNormrebuildJobs": 0,
+    "rfcacheSourceDeviceReads": 0,
+    "rmcacheCurrNumOf16kbEntries": 0,
+    "initialCopyProgress": 0.0,
+    "rfcacheReadsPending": 0,
+    "volumeAllocationLimitInKb": 843331928064,
+    "fwdRebuildWriteBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheReadsSkippedHeavyLoad": 0,
+    "rfcacheFdInlightWrites": 0,
+    "protectedMaintenanceModePerReceiveJobNetThrottlingInKbps": 0,
+    "rfcacheReadMiss": 0,
+    "targetReadLatency": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "userDataCapacityInKb": 67108864,
+    "rfcacheFdReadsReceived": 0,
+    "activeMovingInBckRebuildJobs": 0,
+    "movingCapacityInKb": 0,
+    "activeEnterProtectedMaintenanceModeCapacityInKb": 0,
+    "backgroundScanCompareErrorCount": 0,
+    "pendingMovingInFwdRebuildJobs": 0,
+    "rfcacheReadsReceived": 0,
+    "rfcachePoolReadsPending": 0,
+    "pendingEnterProtectedMaintenanceModeCapacityInKb": 0,
+    "snapCapacityInUseOccupiedInKb": 0,
+    "vtreeAddresSpaceInKb": 41943040,
+    "activeFwdRebuildCapacityInKb": 0,
+    "rfcacheReadsSkippedStuckIo": 0,
+    "activeMovingOutNormRebuildJobs": 0,
+    "rplTransmitBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcacheFdWritesReceived": 0,
+    "rmcacheSizeInKb": 1048576,
+    "rfcacheFdWriteTimeGreater1Min": 0,
+    "rfcacheWritePending": 0,
+    "rfcacheFdWriteTimeGreater1Sec": 0,
+    "numOfThinBaseVolumes": 1,
+    "degradedFailedVacInKb": 0,
+    "numOfRfcacheDevices": 0,
+    "userDataTrimBwc": {
+        "numSeconds": 0,
+        "totalWeightInKb": 0,
+        "numOccured": 0
+    },
+    "rfcachePoolIoTimeGreater1Min": 0,
+    "rfcachePoolReadMiss": 0
+}
+

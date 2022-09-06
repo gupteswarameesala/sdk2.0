@@ -1,0 +1,74 @@
+{
+    "accelerationPoolId": null,
+    "rfcacheProps": null,
+    "sdsId": "16a3797700000001",
+    "storagePoolId": "fe7a72a300000000",
+    "capacityLimitInKb": 936184832,
+    "errorState": "None",
+    "capacity": 960197124096,
+    "deviceType": "Scsi",
+    "deviceState": "Normal",
+    "maxCapacityInKb": 936184832,
+    "ledSetting": "Off",
+    "spSdsId": "ff77ddf200010000",
+    "longSuccessfulIos": {
+        "mediumWindow": null,
+        "longWindow": null,
+        "shortWindow": null
+    },
+    "modelName": "WUSTVA196BSS200",
+    "vendorName": "WDC",
+    "raidControllerSerialNumber": null,
+    "firmwareVersion": "G130",
+    "cacheLookAheadActive": true,
+    "writeCacheActive": true,
+    "ataSecurityActive": false,
+    "physicalSectorSizeInBytes": 512,
+    "mediaFailing": false,
+    "slotNumber": null,
+    "externalAccelerationType": "None",
+    "autoDetectMediaType": "SSD",
+    "storageProps": {
+        "destFglAccDeviceId": null,
+        "fglNvdimmSizeMb": 0,
+        "destFglNvdimmSizeMb": 0,
+        "fglAccDeviceId": null
+    },
+    "accelerationProps": null,
+    "persistentChecksumState": "Protected",
+    "aggregatedState": "NeverFailed",
+    "temperatureState": "NeverFailed",
+    "ssdEndOfLifeState": "NeverFailed",
+    "fglNvdimmMetadataAmortizationX100": 150,
+    "mediaType": "SSD",
+    "serialNumber": "V2X165MY",
+    "deviceCurrentPathName": "/dev/sde",
+    "deviceOriginalPathName": "/dev/sde",
+    "rfcacheErrorDeviceDoesNotExist": false,
+    "logicalSectorSizeInBytes": 512,
+    "fglNvdimmWriteCacheSize": 16,
+    "name": "/dev/sde",
+    "id": "797757a200010004",
+    "links": [
+        {
+            "rel": "self",
+            "href": "/api/instances/Device::797757a200010004"
+        },
+        {
+            "rel": "/api/Device/relationship/Statistics",
+            "href": "/api/instances/Device::797757a200010004/relationships/Statistics"
+        },
+        {
+            "rel": "/api/parent/relationship/sdsId",
+            "href": "/api/instances/Sds::16a3797700000001"
+        },
+        {
+            "rel": "/api/parent/relationship/storagePoolId",
+            "href": "/api/instances/StoragePool::fe7a72a300000000"
+        },
+        {
+            "rel": "/api/parent/relationship/spSdsId",
+            "href": "/api/instances/SpSds::ff77ddf200010000"
+        }
+    ]
+}

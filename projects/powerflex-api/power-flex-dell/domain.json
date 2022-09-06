@@ -1,0 +1,2328 @@
+{
+  "appName": "power-flex-dell",
+  "appVersion": "1.0.0",
+  "discoveryConfiguration": [
+    {
+      "propertyName": "protocol",
+      "label": "Is Secure",
+      "dataType": "boolean"
+    },
+    {
+      "propertyName": "ipAddress",
+      "label": "Dell PowerFlex Gateway IP Address",
+      "dataType": "string"
+    },
+    {
+      "propertyName": "credentials",
+      "label": "Dell PowerFlex Gateway Credentials",
+      "dataType": "string",
+      "credentialType": "APPLICATION",
+      "placeholder": "Select Credentials"
+    },
+    {
+      "propertyName": "notificationAlert",
+      "label": "Notification Alert",
+      "dataType": "boolean"
+    }
+  ],
+  "required": [
+    "ipAddress",
+    "protocol",
+    "credentials"
+  ],
+  "data": {
+    "notificationAlert": false,
+    "protocol": true
+  },
+  "nativeTypeMapping": [
+    {
+      "nativeType": "Dell PowerFlex System",
+      "opsrampResourceType": "Server"
+    },
+    {
+      "nativeType": "Dell PowerFlex MDM Cluster",
+      "opsrampResourceType": "Cluster"
+    },
+    {
+      "nativeType": "Dell PowerFlex SDC",
+      "opsrampResourceType": "STORAGE_ARRAY"
+    },
+    {
+      "nativeType": "Dell PowerFlex Protection Domain",
+      "opsrampResourceType": "STORAGE_ARRAY"
+    },
+    {
+      "nativeType": "Dell PowerFlex Storage Pool",
+      "opsrampResourceType": "STORAGE_ARRAY_POOL"
+    },
+    {
+      "nativeType": "Dell PowerFlex SDS",
+      "opsrampResourceType": "STORAGE_ARRAY"
+    },
+    {
+      "nativeType": "Dell PowerFlex Device",
+      "opsrampResourceType": "Storage"
+    },
+    {
+      "nativeType": "Dell PowerFlex Volume",
+      "opsrampResourceType": "Volume"
+    },
+    {
+      "nativeType": "Dell PowerFlex VTree",
+      "opsrampResourceType": "Storage"
+    }
+  ],
+  "nativeType": [
+    {
+      "name": "Dell PowerFlex System",
+      "metric": [
+
+        {
+          "name": "dell_powerflex_system_AvailableCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Available Capacity",
+          "alertDescription": "Available Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_RebalanceCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Rebalance Capacity",
+          "alertDescription": "Rebalance Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_SnapUsedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Snap Used Capacity",
+          "alertDescription": "Snap Used Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_SystemCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex gateway System Capacity",
+          "alertDescription": "System Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_ThickUsedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Thick Used Capacity",
+          "alertDescription": "Thick Used Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_ThinUsedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Thin Used Capacity",
+          "alertDescription": "Thin Used Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_TotalUsedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Total Used Capacity",
+          "alertDescription": "Total Used Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_UnusableCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Unusable Capacity",
+          "alertDescription": "Unusable Capacity of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_system_CapacityUtilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Gateway Capacity Utilization",
+          "alertDescription": "Capacity Utilization of Gateway",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex gateway Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_system_AvailableCapacity",
+            "dell_powerflex_system_RebalanceCapacity",
+            "dell_powerflex_system_SnapUsedCapacity",
+            "dell_powerflex_system_SystemCapacity",
+            "dell_powerflex_system_ThickUsedCapacity",
+            "dell_powerflex_system_ThinUsedCapacity",
+            "dell_powerflex_system_TotalUsedCapacity",
+            "dell_powerflex_system_UnusableCapacity",
+            "dell_powerflex_system_CapacityUtilization"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex Storage Pool",
+      "metric": [
+        {
+          "name": "dell_powerflex_storagePool_UsageState",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Usage State",
+          "alertDescription": "Provides usage state of Dell PowerFlex StoragePool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NOT_EQUAL",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": true,
+          "formatGraph": false,
+          "formatAlert": false,
+          "dataPointConverisonOptions": [
+            {
+             "0": "Normal"
+            }
+          ]
+        },
+        {
+          "name": "dell_powerflex_storagePool_ActiveBckRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Active Bck Rebuild Capacity",
+          "alertDescription": "Active Bck Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ActiveFwdRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Active Fwd Rebuild Capacity",
+          "alertDescription": "Active Fwd Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ActiveMovingCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Active Moving Capacity",
+          "alertDescription": "Active Moving Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ActiveNormRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Active Norm Rebuild Capacity",
+          "alertDescription": "Active Norm Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ActiveRebalanceCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Active Rebalance Capacity",
+          "alertDescription": "Active Rebalance Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_AtRestCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool At Rest Capacity",
+          "alertDescription": "At Rest Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_BckRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Bck Rebuild Capacity",
+          "alertDescription": "Bck Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_CapacityAvailableForVolumeAllocation",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Capacity Available For Volume Allocation",
+          "alertDescription": "Capacity Available For Volume Allocation of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_CapacityInUse",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Capacity In Use",
+          "alertDescription": "Capacity In Use of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_CapacityLimit",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Capacity Limit",
+          "alertDescription": "Capacity Limit of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_DegradedFailedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Degraded Failed Capacity",
+          "alertDescription": "Degraded Failed Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_DegradedHealthyCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Degraded Healthy Capacity",
+          "alertDescription": "Degraded Healthy Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_FailedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Failed Capacity",
+          "alertDescription": "Failed Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_FwdRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Fwd Rebuild Capacity",
+          "alertDescription": "Fwd Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_InMaintenanceCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool In Maintenance Capacity",
+          "alertDescription": "In Maintenance Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_MaxCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Max Capacity",
+          "alertDescription": "Max Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_MovingCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Moving Capacity",
+          "alertDescription": "Moving Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_NormRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Norm Rebuild Capacity",
+          "alertDescription": "Norm Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_NumOfDevices",
+          "units": "count",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Number Of Devices",
+          "alertDescription": "Number Of Devices of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_NumOfVolumes",
+          "units": "count",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Number Of Volumes",
+          "alertDescription": "Number Of Volumes of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_NumOfVtrees",
+          "units": "count",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Number Of Vtrees",
+          "alertDescription": "Number Of Vtrees of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_PendingBckRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Pending Bck Rebuild Capacity",
+          "alertDescription": "Pending Bck Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_PendingFwdRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Pending Fwd Rebuild Capacity",
+          "alertDescription": "Pending Fwd Rebuild Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_PendingMovingCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Pending Moving Capacity",
+          "alertDescription": "Pending Moving Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_PendingNormRebuildCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Pending Norm Rebuild Capacity",
+          "alertDescription": "Dell PowerFlex StoragePool Pending Norm Rebuild Capacity",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_PendingRebalanceCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Pending Rebalance Capacity",
+          "alertDescription": "Pending Rebalance Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ProtectedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Protected Capacity",
+          "alertDescription": "Protected Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RebalanceCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rebalance Capacity",
+          "alertDescription": "Rebalance Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_SemiProtectedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Semi Protected Capacity",
+          "alertDescription": "Semi Protected Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_SnapCapacityInUse",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Snap Capacity In Use",
+          "alertDescription": "Snap Capacity In Use of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_SnapCapacityInUseOccupied",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Snap Capacity In Use Occupied",
+          "alertDescription": "Snap Capacity In Use Occupied of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_SpareCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Spare Capacity",
+          "alertDescription": "Spare Capacity of Storage Pool",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ThickCapacityInUse",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Thick Capacity In Use",
+          "alertDescription": "Dell PowerFlex StoragePool Thick Capacity In Use",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ThinCapacityAllocated",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Thin Capacity Allocated",
+          "alertDescription": "Dell PowerFlex StoragePool Thin Capacity Allocated",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ThinCapacityAllocatedInKm",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Thin Capacity Allocated In Km",
+          "alertDescription": "Dell PowerFlex StoragePool Thin Capacity Allocated In Km",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_ThinCapacityInUse",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Thin Capacity In Use",
+          "alertDescription": "Dell PowerFlex StoragePool Thin Capacity In Use",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_UnreachableUnusedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Unreachable Unused Capacity",
+          "alertDescription": "Dell PowerFlex StoragePool Unreachable Unused Capacity",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_UnusedCapacity",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Unused Capacity",
+          "alertDescription": "Dell PowerFlex StoragePool Unused Capacity",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfacheReadHit",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfache Read Hit",
+          "alertDescription": "Dell PowerFlex StoragePool Rfache Read Hit",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfacheWriteHit",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfache Write Hit",
+          "alertDescription": "Dell PowerFlex StoragePool Rfache Write Hit",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheAvgReadTime",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Average Read Time",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Average Read Time",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheAvgWriteTime",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Average Write Time",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Average Write Time",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadMiss",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Read Miss",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Read Miss",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsFromCache",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Reads From Cache",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Reads From Cache",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsPending",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Reads Pending",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Reads Pending",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsReceived",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Reads Received",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Reads Received",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkipped",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Reads Skipped",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Reads Skipped",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedAlignedSizeTooLarge",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Reads Skipped Aligned Size Too Large",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Reads Skipped Aligned Size Too Large",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedHeavyLoad",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Reads Skipped Heavy Load",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Reads Skipped Heavy Load",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedInternalError",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Internal Error",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Internal Error",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedLockIos",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Lock Ios",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Lock Ios",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedLowResources",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Low Resources",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Low Resources",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedMaxIoSize",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Max Io Size",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Max Io Size",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheReadsSkippedStuckIo",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Stuck Io",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache ReadsSkipped Stuck Io",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheSkippedUnlinedWrite",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Skipped Unlined Write",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Skipped Unlined Write",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheSourceDeviceReads",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Source Device Reads",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Source Device Reads",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheSourceDeviceWrites",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Source Device Writes",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Source Device Writes",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWriteMiss",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Write Miss",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Write Miss",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritePending",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Write Pending",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Write Pending",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesReceived",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Received",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Received",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesSkippedCacheMiss",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Skipped Cache Miss",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Skipped Cache Miss",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesSkippedHeavyLoad",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Skipped Heavy Load",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Skipped Heavy Load",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesSkippedInternalError",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Skipped Internal Error",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Skipped Internal Error",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesSkippedLowResources",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Skipped Low Resources",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Skipped Low Resources",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesSkippedMaxIoSize",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Skipped Max Io Size",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Skipped Max Io Size",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_powerflex_storagePool_RfcacheWritesSkippedStuckIo",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex StoragePool Rfcache Writes Skipped Stuck Io",
+          "alertDescription": "Dell PowerFlex StoragePool Rfcache Writes Skipped Stuck Io",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex Storage Pool Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_storagePool_UsageState",
+            "dell_powerflex_storagePool_ActiveBckRebuildCapacity",
+            "dell_powerflex_storagePool_ActiveFwdRebuildCapacity",
+            "dell_powerflex_storagePool_ActiveMovingCapacity",
+            "dell_powerflex_storagePool_ActiveNormRebuildCapacity",
+            "dell_powerflex_storagePool_ActiveRebalanceCapacity",
+            "dell_powerflex_storagePool_AtRestCapacity",
+            "dell_powerflex_storagePool_BckRebuildCapacity",
+            "dell_powerflex_storagePool_CapacityAvailableForVolumeAllocation",
+            "dell_powerflex_storagePool_CapacityInUse",
+            "dell_powerflex_storagePool_CapacityLimit",
+            "dell_powerflex_storagePool_DegradedFailedCapacity",
+            "dell_powerflex_storagePool_DegradedHealthyCapacity",
+            "dell_powerflex_storagePool_FailedCapacity",
+            "dell_powerflex_storagePool_FwdRebuildCapacity",
+            "dell_powerflex_storagePool_InMaintenanceCapacity",
+            "dell_powerflex_storagePool_MaxCapacity",
+            "dell_powerflex_storagePool_MovingCapacity",
+            "dell_powerflex_storagePool_NormRebuildCapacity",
+            "dell_powerflex_storagePool_NumOfDevices",
+            "dell_powerflex_storagePool_NumOfVolumes",
+            "dell_powerflex_storagePool_NumOfVtrees",
+            "dell_powerflex_storagePool_PendingBckRebuildCapacity",
+            "dell_powerflex_storagePool_PendingFwdRebuildCapacity",
+            "dell_powerflex_storagePool_PendingMovingCapacity",
+            "dell_powerflex_storagePool_PendingNormRebuildCapacity",
+            "dell_powerflex_storagePool_PendingRebalanceCapacity",
+            "dell_powerflex_storagePool_ProtectedCapacity",
+            "dell_powerflex_storagePool_RebalanceCapacity",
+            "dell_powerflex_storagePool_SemiProtectedCapacity",
+            "dell_powerflex_storagePool_SnapCapacityInUse",
+            "dell_powerflex_storagePool_SnapCapacityInUseOccupied",
+            "dell_powerflex_storagePool_SpareCapacity",
+            "dell_powerflex_storagePool_ThickCapacityInUse",
+            "dell_powerflex_storagePool_ThinCapacityAllocated",
+            "dell_powerflex_storagePool_ThinCapacityAllocatedInKm",
+            "dell_powerflex_storagePool_ThinCapacityInUse",
+            "dell_powerflex_storagePool_UnreachableUnusedCapacity",
+            "dell_powerflex_storagePool_UnusedCapacity",
+            "dell_powerflex_storagePool_RfacheReadHit",
+            "dell_powerflex_storagePool_RfacheWriteHit",
+            "dell_powerflex_storagePool_RfcacheAvgReadTime",
+            "dell_powerflex_storagePool_RfcacheAvgWriteTime",
+            "dell_powerflex_storagePool_RfcacheReadMiss",
+            "dell_powerflex_storagePool_RfcacheReadsFromCache",
+            "dell_powerflex_storagePool_RfcacheReadsPending",
+            "dell_powerflex_storagePool_RfcacheReadsReceived",
+            "dell_powerflex_storagePool_RfcacheReadsSkipped",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedAlignedSizeTooLarge",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedHeavyLoad",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedInternalError",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedLockIos",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedLowResources",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedMaxIoSize",
+            "dell_powerflex_storagePool_RfcacheReadsSkippedStuckIo",
+            "dell_powerflex_storagePool_RfcacheSkippedUnlinedWrite",
+            "dell_powerflex_storagePool_RfcacheSourceDeviceReads",
+            "dell_powerflex_storagePool_RfcacheSourceDeviceWrites",
+            "dell_powerflex_storagePool_RfcacheWriteMiss",
+            "dell_powerflex_storagePool_RfcacheWritePending",
+            "dell_powerflex_storagePool_RfcacheWritesReceived",
+            "dell_powerflex_storagePool_RfcacheWritesSkippedCacheMiss",
+            "dell_powerflex_storagePool_RfcacheWritesSkippedHeavyLoad",
+            "dell_powerflex_storagePool_RfcacheWritesSkippedInternalError",
+            "dell_powerflex_storagePool_RfcacheWritesSkippedLowResources",
+            "dell_powerflex_storagePool_RfcacheWritesSkippedMaxIoSize",
+            "dell_powerflex_storagePool_RfcacheWritesSkippedStuckIo"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex MDM Cluster",
+      "metric": [
+        {
+          "name": "dell_powerflex_mdm_CurrentState",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex MDM Cluster Current State",
+          "alertDescription": "Provides current state of Dell PowerFlex MDM",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NOT_EQUAL",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": true,
+          "formatGraph": false,
+          "formatAlert": false,
+          "dataPointConverisonOptions": [
+            {
+              "0":"ClusteredNormal"
+            }
+          ]
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex MDM Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_mdm_CurrentState"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex SDC",
+      "metric": [
+        {
+          "name": "dell_powerflex_sdc_ConnectionState",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex SDC Current State",
+          "alertDescription": "Provides current state of Dell PowerFlex SDC",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NOT_EQUAL",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": true,
+          "formatGraph": false,
+          "formatAlert": false,
+          "dataPointConverisonOptions": [
+            {
+              "0":"Connected"
+            }
+          ]
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex SDC Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_sdc_ConnectionState"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex Protection Domain",
+      "metric": [
+        {
+          "name": "dell_powerflex_protectionDomain_State",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Protection Domain Cluster Current State",
+          "alertDescription": "Provides current state of Dell PowerFlex Protection Domain",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NOT_EQUAL",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": true,
+          "formatGraph": false,
+          "formatAlert": false,
+          "dataPointConverisonOptions": [
+            {
+              "0":"Active"
+            }
+          ]
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex Protection Domain Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_protectionDomain_State"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex SDS",
+      "metric": [
+        {
+          "name": "dell_powerflex_sds_ConnectionState",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex SDS connection State",
+          "alertDescription": "Provides connection state of Dell PowerFlex SDS",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NOT_EQUAL",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": true,
+          "formatGraph": false,
+          "formatAlert": false,
+          "dataPointConverisonOptions": [
+            {
+              "0":"Connected"
+            }
+          ]
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex SDS Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_sds_ConnectionState"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex Device",
+      "metric": [
+        {
+          "name": "dell_powerflex_device_State",
+          "units": "",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "Dell PowerFlex Device State",
+          "alertDescription": "Provides state of Dell PowerFlex Device",
+          "warning": {
+            "operator": "NONE",
+            "value": "0",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "NOT_EQUAL",
+            "value": "0",
+            "repeat": 1
+          },
+          "availability": false,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": true,
+          "formatGraph": false,
+          "formatAlert": false,
+          "dataPointConverisonOptions": [
+            {
+              "0":"Normal"
+            }
+          ]
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex Device Monitor",
+          "frequency": 15,
+          "metric": [
+            "dell_powerflex_device_State"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex Volume",
+      "metric": [],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex Volume Monitor",
+          "frequency": 30,
+          "metric": []
+        }
+      ]
+    },
+    {
+      "name": "Dell PowerFlex VTree",
+      "metric": [],
+      "monitors": [
+        {
+          "title": "Dell PowerFlex VTree Monitor",
+          "frequency": 30,
+          "metric": []
+        }
+      ]
+    }
+  ]
+}
+

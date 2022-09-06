@@ -1,0 +1,10 @@
+{
+"apiVersion":"debug/v1",
+"module": "Device",
+"app": "dell-powerflex-app",
+"action": "Reachability",
+"payload": {
+    "protocol":"https",
+    "ipAddress":"10.60.89.132"
+}
+}

@@ -1,0 +1,39 @@
+[
+    {
+        "storagePoolId": "fe7a72a300000000",
+        "dataLayout": "MediumGranularity",
+        "compressionMethod": "Invalid",
+        "rootVolumes": [
+            "26b870fc00000000"
+        ],
+        "vtreeMigrationInfo": {
+            "migrationPauseReason": null,
+            "migrationStatus": "NotInMigration",
+            "sourceStoragePoolId": "fe7a72a300000000",
+            "destinationStoragePoolId": null,
+            "migrationQueuePosition": 0,
+            "thicknessConversionType": "NoConversion"
+        },
+        "inDeletion": false,
+        "name": "TEST-01",
+        "id": "49a2cd4200000000",
+        "links": [
+            {
+                "rel": "self",
+                "href": "/api/instances/VTree::49a2cd4200000000"
+            },
+            {
+                "rel": "/api/VTree/relationship/Statistics",
+                "href": "/api/instances/VTree::49a2cd4200000000/relationships/Statistics"
+            },
+            {
+                "rel": "/api/VTree/relationship/Volume",
+                "href": "/api/instances/VTree::49a2cd4200000000/relationships/Volume"
+            },
+            {
+                "rel": "/api/parent/relationship/storagePoolId",
+                "href": "/api/instances/StoragePool::fe7a72a300000000"
+            }
+        ]
+    }
+]

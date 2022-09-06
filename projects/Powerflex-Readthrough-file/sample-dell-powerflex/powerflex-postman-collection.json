@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "d7de5012-a117-43b1-9284-22d6722c0abf",
+		"name": "Sdk App 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17097007"
+	},
+	"item": [
+		{
+			"name": "Post Discovery Data",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AM-Poll-Id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"action\": \"Update\",\n  \"app\": \"powerflex-app\",\n  \"appIntegrationId\": \"INTG-f07fe727-6c9d-4919-99f2-c12af3ce8db9\",\n  \"appVersion\": \"1.0.0\",\n  \"configurationId\": \"ADAPTER-MANIFEST-d2303888-9c99-47ce-a56e-d0d4b80d5146\",\n  \"configurationName\": \"discovery\",\n  \"gateway\": \"96c20c31-cc24-433b-b892-9f04d2cc891e\",\n  \"managementProfileId\": \"96c20c31-cc24-433b-b892-9f04d2cc891e\",\n  \"messageId\": \"2161b8d4-e7fe-4c9b-8df0-c869ddd94578\",\n  \"messageVersion\": \"2.0.0\",\n  \"module\": \"Discovery\",\n  \"payload\": {\n    \"data\": {\n      \"credential\": [\n            {\n            \"credentialId\": \"CuRYsaUYfqRbEdDAX59HfYqv\",\n            \"credentialValue\": {\n                \"action\": \"Update\",\n                \"app\": \"dell-powerscale\",\n                \"appIntegrationId\": \"INTG-553f6cca-bf81-4bff-aa66-acd0f157c6c3\",\n                \"appVersion\": \"1.0.0\",\n                \"configurationId\": \"ADAPTER-MANIFEST-bcb5b23b-374d-4b04-93a1-00376a4d490e\",\n                \"configurationName\": \"demo\",\n                \"credentialId\": \"CuRYsaUYfqRbEdDAX59HfYqv\",\n                \"deployment\": \"Image\",\n                \"gateway\": \"7c61fc5b-2426-4580-9532-5e0346f9b746\",\n                \"managementProfileId\": \"7c61fc5b-2426-4580-9532-5e0346f9b746\",\n                \"messageId\": \"62069742-a34f-419a-a4e9-73351f5bf8da\",\n                \"messageVersion\": \"2.0.0\",\n                \"module\": \"App\",\n                \"payload\": {\n                \"data\": {\n                    \"cipher\": \"0sd1qkMTMBKEzsocf4XHRHHIZ1uOo0RoHFUpRoI/yQgJXAg5mv0CQmbzszIkStXDrmrFPVs9yg7emOsJjSojgpA4DaRUMVV0fKudki/9TTzAo2O+PZMr7f02c+1hKS1RXisWVvUEY8fz71Fnn4vs3lPHWVgz0WH53fPbf1cOpPV1DPM5oRAu6hkUwvKkGQdmfiREROzFtrb5XUc1tk2wIdz4iyILQH7l8ohPh7oIkkp1tJP24nZ+f3Zru5fyL7FRwDpgsX4d76IsEa/+445Yg8sQ\",\n                    \"classId\": \"credential.cipher\",\n                    \"key1\": \"18180724675\",\n                    \"type\": \"APPLICATION\",\n                    \"uuid\": \"CuRYsaUYfqRbEdDAX59HfYqv\",\n                    \"ver\": 2\n                }\n                },\n                \"requireAck\": false,\n                \"sha\": \"1bf5d42c08214fcc36675ba468a28fce5132cb3a968c54e4644677bb1e05e046\",\n                \"subtype\": \"Credential\"\n            },\n            \"fieldName\": \"credentials\"\n            }\n        ],\n      \"ipAddress\": \"172.25.252.21\",\n      \"port\": \"http\",\n      \"protocol\": \"string\"\n    },\n    \"nativeTypes\": {\n\n        \"Dell PowerFlex Manager\":{\n        \"resourceType\": \"Storage\"\n        },\n        \"Dell PowerFlex Manager Server\":{\n        \"resourceType\": \"Server\"\n        },\n        \"Dell PowerFlex Manager Switch\":{\n        \"resourceType\": \"Switch\"\n        },\n        \"Dell PowerFlex Manager VCenter\":{\n        \"resourceType\": \"Server\"\n        },\n\n        \"Dell PowerFlex Gateway\": {\n        \"resourceType\": \"Storage\"\n        },\n        \"Dell PowerFlex MDM Cluster\" : {\n            \"resourceType\": \"Cluster\"\n        },\n        \"Dell PowerFlex SDC\" : {\n            \"resourceType\": \"STORAGE_ARRAY\"\n        },\n        \"Dell PowerFlex Protection Domain\":{\n            \"resourceType\": \"STORAGE_ARRAY\"\n        },\n        \"Dell PowerFlex Storage Pool\":{\n            \"resourceType\": \"STORAGE_ARRAY_POOL\"\n        },\n        \"Dell PowerFlex SDS\": {\n            \"resourceType\": \"STORAGE_ARRAY\"\n        },\n        \"Dell PowerFlex Device\": {\n            \"resourceType\": \"Storage\"\n        },\n        \"Dell PowerFlex Volume\": {\n            \"resourceType\": \"Volume\"\n        },\n        \"Dell PowerFlex VTree\":{\n            \"resourceType\": \"Storage\"\n        }\n        }\n  },\n  \"requireAck\": false,\n  \"sha\": \"705c48b9c677cdfa2a355b21b8f413f124b134a8189dc89d262f11834b9633d0\",\n  \"subtype\": \"Configuration\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/v2/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"v2",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Monitoring Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "AM-Poll-Id",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"action\": \"Update\",\n    \"appIntegrationId\": \"0bc95e12-ac99-427b-bf48-2235f198d970\",\n    \"configurationId\": \"963ccf51-49a8-463f-b366-971daa7320c2\",\n    \"messageId\": \"43bcf325-d604-42bb-92b6-0cbec0b19539\",\n    \"module\": \"Monitoring\",\n    \"payload\": {\n      \"appConfig\": {\n        \"data\": {\n          \"credential\": [\n            {\n              \"credentialId\": \"f36bfca0-ff5d-4962-9e29-79205a969a3d\",\n              \"credentialValue\": {\n                \"password\": \"ir57ea5QPTjVkb1ySIsY\",\n                \"username\": \"nCbbquzUamWQoCa2hqTK\"\n              }\n            }\n          ],\n          \"credentialId\": [\n            \"f36bfca0-ff5d-4962-9e29-79205a969a3d\"\n          ],\n          \"ipAddress\": \"172.25.252.12\",\n          \"port\": \"5000\",\n          \"protocol\": \"http\"\n        },\n        \"nativeTypes\": {\n          \"Dell Powerflex MDM\": {\n          \"resourceType\": \"Cluster\"\n        }\n        }\n      },\n      \"monitorId\": \"9fd54582-a792-4353-92af-22cb3e857193\",\n      \"nativeType\": {\n        \"Dell PowerFlex MDM Cluster\": [\n          \"dell_powerflex_mdm_CurrentState\"\n        ]\n      },\n      \"resources\": [\n       {\n          \"resources\": {\n            \"appConfigId\": \"963ccf51-49a8-463f-b366-971daa7320c2\",\n            \"credential\": [\n              {\n                \"credentialId\": \"f36bfca0-ff5d-4962-9e29-79205a969a3d\",\n                \"credentialValue\": {\n                  \"password\": \"ir57ea5QPTjVkb1ySIsY\",\n                  \"username\": \"nCbbquzUamWQoCa2hqTK\"\n                }\n              }\n            ],\n            \"credentialId\": [\n              \"f36bfca0-ff5d-4962-9e29-79205a969a3d\"\n            ],\n            \"moId\": \"624241968486428175\",\n            \"resourceId\": \"c82e0cbe-0d82-4033-ad67-45db0bc61ced\",\n            \"signature\": \"\",\n            \"templates\": [\n              {\n                \"app\": \"helloworld-app-python\",\n                \"nativeType\": \"DELL PowerFlex MDM\",\n                \"templateId\": \"77d0510a-04dc-4633-af21-7ee7deedeab4\"\n              }\n            ]\n          }\n          \n        }\n      ],\n      \"templateId\": \"77d0510a-04dc-4633-af21-7ee7deedeab4\"\n    },\n    \"subtype\": \"Configuration\"\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/v2/messages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"v2",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Debug Logs",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:25000/api/v1/log?level=DEBUG",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "25000",
+					"path": [
+						"api",
+						"v1",
+						"log"
+					],
+					"query": [
+						{
+							"key": "level",
+							"value": "DEBUG"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

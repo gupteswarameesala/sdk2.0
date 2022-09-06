@@ -1,0 +1,12 @@
+def discoveraccount(self, base_url):
+        try:
+            token_url = base_url + "api/login"
+            token_response = requests.get(token_url, auth=('cpmsmon', 'VMwar1234'), verify=False)
+            token = token_response.content[1:-1]
+
+            url = base_url + "api/types/System/instances"
+            response = requests.get(url, auth=('cpmsmon', token), verify=False)
+            if response.status_code == Constants.STATUS_OK:
+                return response.json()
+        except Exception as e:
+            raise Exception(str(e))
