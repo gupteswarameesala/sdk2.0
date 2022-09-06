@@ -1,0 +1,8 @@
+{{- with $.Values.service.publishInfo }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "sdkApp.name" $ }}-info
+data:
+  "{{ include "sdkApp.name" $ | snakecase | upper }}_URI": "http://{{ include "sdkApp.name" $}}.{{ $.Release.Namespace }}.svc.{{$.Values.clusterDomain}}:{{ (index $.Values.service.ports 0).servicePort | default 80 }}/"
+{{- end}}

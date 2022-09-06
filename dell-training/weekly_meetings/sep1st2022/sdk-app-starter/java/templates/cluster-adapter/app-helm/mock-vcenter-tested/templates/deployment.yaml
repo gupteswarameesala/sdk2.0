@@ -1,0 +1,144 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "sdkApp.name" $  }}
+spec:
+  selector:
+    matchLabels:
+      app: {{ include "sdkApp.name" .  }}
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: {{ include "sdkApp.name" .  }}
+    spec:
+     # affinity:
+       # podAntiAffinity:
+       #   requiredDuringSchedulingIgnoredDuringExecution:
+        #  - labelSelector:
+          #    matchExpressions:
+           #   - key: app
+            #    operator: In
+              #  values:
+               # - {{ include "sdkApp.name" .}}
+            #topologyKey: "kubernetes.io/hostname"
+      tolerations:
+        - key: "node.kubernetes.io/unreachable"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 30
+        - key: "node.kubernetes.io/not-ready"
+          operator: "Exists"
+          effect: "NoExecute"
+          tolerationSeconds: 30
+      terminationGracePeriodSeconds: 0
+      securityContext:
+          fsGroup: {{ .Values.securityContext.fsGroup }}
+      containers:
+      {{- with .Values.sidecarContainer}}
+      - name: {{  include "sdkApp.name" $   }}-sidecar
+        image: "{{- if .repository}}{{ .repository }}/{{- end }}{{ include "image.channel" $  }}/{{ $.Chart.Annotations.sidecar }}:{{$.Chart.Annotations.sidecarVersion}}"
+        imagePullPolicy: {{ .imagePullPolicy }}
+        volumeMounts:
+          - name: configurations
+            subPath: appInfo.json
+            mountPath: /opt/app/info.json
+          {{- range $.Values.configMaps}}
+          {{- if eq .container "sideContainer" }}
+          - name: configurations
+            subPath: {{ .name }}
+            mountPath: {{ .mountPath }}
+          {{- end }}
+          {{- end }}
+        {{- with .envFrom }}
+        envFrom:
+          {{- range . }}
+          - {{ .type | quote }}:
+              name: {{ .name | quote }}
+          {{- end }}
+        {{- end }}
+        env:
+          {{- range .env}}
+          - name: {{ .name | quote }}
+            value: {{ .value | quote }}
+          {{- end }}
+          - name: "SERVICE_IP_ADDRESS"
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+        resources:
+          requests:
+            memory: 25Mi
+          limits:
+            memory: 25Mi
+      {{- end }}
+      {{- with $.Values.appContainer}}
+      - name: {{ include "sdkApp.name" $  }}-app
+        image: "{{- if .repository}}{{ .repository }}/{{- end }}{{ include "image.channel" $  }}/{{ $.Chart.Name }}:{{$.Chart.AppVersion}}"
+        imagePullPolicy: {{ .imagePullPolicy }}
+        {{- with .envFrom }}
+        envFrom:
+          {{- range . }}
+          - {{ .type | quote }}:
+              name: {{ .name | quote }}
+          {{- end }}
+        {{- end }}
+        env:
+          {{- range .env}}
+          - name: {{ .name | quote}}
+            value: {{ .value | quote}}
+          {{- end }}
+          {{- if $.Values.sidecarContainer }}
+          - name: SERVICE_IP_ADDRESS
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
+          {{- end }}
+        {{- with .ports}}
+        ports:
+          {{- range .}}
+          - name: {{ .name }}
+            containerPort: {{ .containerPort }}
+            protocol: {{ .protocol }}
+          {{- end }}
+        {{- end }}
+        resources:
+          requests:
+            memory: 250Mi
+          limits:
+            memory: 250Mi
+        volumeMounts:
+          - name: configurations
+            subPath: appInfo.json
+            mountPath: /opt/app/info.json
+          - name: configurations
+            subPath: jvm.properties
+            mountPath: /opt/app/config/jvm.properties
+          {{- range $.Values.configMaps}}
+          {{- if eq .container "appContainer" }}
+          - name: configurations
+            subPath: {{.name}}
+            mountPath: {{.mountPath}}
+          {{- end }}
+          {{- end }}
+        {{- end }}
+      volumes:
+        - name: configurations
+          configMap: 
+            name: {{ include "sdkApp.name" . }}-cm
+            items:
+              {{- if $.Values.appContainer }}
+              - key: appInfo.json
+                path: appInfo.json
+              {{- end }}
+              {{- if $.Values.sidecarContainer }}
+              - key: sidecarInfo.json
+                path: sidecarInfo.json
+              {{- end }}
+              {{- range .Values.configMaps }}
+              - key: {{ .name | quote}}
+                path: {{ .name | quote}}
+              {{- end }}
+              - key: jvm.properties
+                path: jvm.properties

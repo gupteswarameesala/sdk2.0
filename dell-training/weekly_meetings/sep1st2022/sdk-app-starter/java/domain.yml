@@ -1,0 +1,26 @@
+appName: dell-app
+discoveryConfiguration:
+   - propertyName:
+     label:
+     dataType:
+   - propertyName:
+     label:
+     dataType:     
+nativeTypeMapping:
+  - nativeType: host
+    opsrampResourceType: server
+  - nativeType: vm
+    opsrampResourceType: server
+nativeType:
+  - name: host
+    metric:
+      - name: metric1
+        units: percentage
+      - name: metric2
+        units: number
+  - name: vm
+    metric:
+      - name: metric3
+        units: bool
+      - name: metric4
+        units: percentage

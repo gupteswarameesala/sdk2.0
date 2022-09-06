@@ -1,0 +1,12 @@
+{
+	"host": {
+		"urls": [
+			"{0}://{1}:{2}/api/v1/vcenters/{3}/hosts/{4}/metrics"
+		]
+	},
+	"vm": {
+		"urls": [
+			"{0}://{1}:{2}/api/v1/vcenters/{3}/hosts/{4}/vms/{5}/metrics"
+		]
+	}
+}

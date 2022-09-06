@@ -1,0 +1,5 @@
+{
+	"app": "{{appName}}",
+	"version": "{{appVersion}}",
+	"name": "{{appName}}"
+}

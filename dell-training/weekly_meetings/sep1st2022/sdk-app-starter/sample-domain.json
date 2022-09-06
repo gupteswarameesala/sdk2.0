@@ -1,0 +1,675 @@
+{
+  "appName": "sample-sdkapp-starter-test",
+  "displayName":"Sample SDK App",
+  "appVersion": "1.0.0",
+  "description": "This is a sample-sdkapp-load-test App",
+  "appScope": "Private",
+  "mavenUrl" : "",
+  "helmUrl" : "us-docker.pkg.dev/gateway-images/gateway-cluster-charts",
+  "iconUrl" : "https://beta.apps.opsramp.com/api/v1/apps/helloworld-app-python/icon",  
+  "discoveryConfiguration": [
+    {
+      "propertyName": "ipAddress",
+      "label": "IP Address",
+      "dataType": "string",
+      "placeholder": "Enter IP Address or hostname"
+    },
+    {
+      "propertyName": "port",
+      "label": "Port",
+      "dataType": "string"
+    },
+    {
+      "propertyName": "protocol",
+      "label": "Protocol",
+      "dataType": "string"
+    },
+    {
+      "propertyName": "vcenterName",
+      "label": "vcenter name",
+      "dataType": "string"
+    },
+    {
+      "propertyName": "credentials",
+      "label": "Credentials",
+      "dataType": "string",
+      "credentialType": "APPLICATION",
+      "placeholder": "Select Credentials"
+    },
+    {
+      "propertyName": "notificationAlert",
+      "label": "Notification Alert",
+      "dataType": "boolean"
+    },
+    {
+      "propertyName": "alertConfiguration",
+      "label": "Event polling",
+      "dataType": "boolean"
+    },
+    {
+      "propertyName": "alertSeverity",
+      "label": "Alert Severity",
+      "dataType": "string"
+    },
+    {
+      "propertyName": "alertOnRootResource",
+      "dataType": "boolean"
+    },
+    {
+      "propertyName": "alertSeverityMapping",
+      "label": "Alert Severity Mapping",
+      "dataType": "string"
+    }
+  ],
+  "required": [
+    "ipAddress",
+    "port",
+    "protocol",
+    "vcenterName"
+  ],
+  "data": {
+    "notificationAlert": false
+  },
+  "nativeTypeMapping": [
+    {
+      "nativeType": "vcenter",
+      "opsrampResourceType": "server"
+    },
+    {
+      "nativeType": "host",
+      "opsrampResourceType": "server"
+    },
+    {
+      "nativeType": "vm",
+      "opsrampResourceType": "server"
+    }
+  ],
+  "nativeType": [
+    {
+      "name": "vcenter",
+      "metric": [
+        {
+          "name": "dell_demo_resource_event_statistics",
+          "units": "s",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_resource_event_statistics",
+          "alertDescription": "dell_demo_resource_event_statistics",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        }
+      ],
+      "monitors": [
+        {
+          "title": "Event Statistics Monitor",
+          "frequency": 5,
+          "metric": [
+            "dell_demo_resource_event_statistics"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "host",
+      "metric": [
+        {
+          "name": "dell_demo_host_system_os_uptime",
+          "units": "s",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_os_uptime",
+          "alertDescription": "dell_demo_host_system_os_uptime",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_network_interface_utilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_network_interface_utilization",
+          "alertDescription": "dell_demo_host_system_network_interface_utilization",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_disk_usage_freespace",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_disk_usage_freespace",
+          "alertDescription": "dell_demo_host_system_disk_usage_freespace",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_cpu_load",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_cpu_load",
+          "alertDescription": "dell_demo_host_system_cpu_load",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_process_stats_count",
+          "units": "count",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_process_stats_count",
+          "alertDescription": "dell_demo_host_system_process_stats_count",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_cpu_usage_stats",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_cpu_usage_stats",
+          "alertDescription": "dell_demo_host_system_cpu_usage_stats",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_memory_usage_usedspace",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_memory_usage_usedspace",
+          "alertDescription": "dell_demo_host_system_memory_usage_usedspace",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_disk_usage_usedspace",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_disk_usage_usedspace",
+          "alertDescription": "dell_demo_host_system_disk_usage_usedspace",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_memory_usage_utilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_memory_usage_utilization",
+          "alertDescription": "dell_demo_host_system_memory_usage_utilization",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_host_system_cpu_usage_utilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_host_system_cpu_usage_utilization",
+          "alertDescription": "dell_demo_host_system_cpu_usage_utilization",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        }
+      ],
+      "monitors": [
+        {
+          "title": "HOST Performance Monitor",
+          "frequency": 5,
+          "metric": [
+            "dell_demo_host_system_os_uptime",
+            "dell_demo_host_system_network_interface_utilization",
+            "dell_demo_host_system_disk_usage_freespace",
+            "dell_demo_host_system_cpu_load",
+            "dell_demo_host_system_process_stats_count",
+            "dell_demo_host_system_cpu_usage_stats",
+            "dell_demo_host_system_memory_usage_usedspace",
+            "dell_demo_host_system_disk_usage_usedspace",
+            "dell_demo_host_system_memory_usage_utilization",
+            "dell_demo_host_system_cpu_usage_utilization"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "vm",
+      "metric": [
+        {
+          "name": "dell_demo_vm_system_os_uptime",
+          "units": "s",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_os_uptime",
+          "alertDescription": "dell_demo_vm_system_os_uptime",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_network_interface_utilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_network_interface_utilization",
+          "alertDescription": "dell_demo_vm_system_network_interface_utilization",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_disk_usage_freespace",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_disk_usage_freespace",
+          "alertDescription": "dell_demo_vm_system_disk_usage_freespace",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_cpu_load",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_cpu_load",
+          "alertDescription": "dell_demo_vm_system_cpu_load",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_process_stats_count",
+          "units": "count",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_process_stats_count",
+          "alertDescription": "dell_demo_vm_system_process_stats_count",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_cpu_usage_stats",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_cpu_usage_stats",
+          "alertDescription": "dell_demo_vm_system_cpu_usage_stats",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_memory_usage_usedspace",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_memory_usage_usedspace",
+          "alertDescription": "dell_demo_vm_system_memory_usage_usedspace",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_disk_usage_usedspace",
+          "units": "GB",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_disk_usage_usedspace",
+          "alertDescription": "dell_demo_vm_system_disk_usage_usedspace",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_memory_usage_utilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_memory_usage_utilization",
+          "alertDescription": "dell_demo_vm_system_memory_usage_utilization",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        },
+        {
+          "name": "dell_demo_vm_system_cpu_usage_utilization",
+          "units": "%",
+          "alertOn": "STATIC",
+          "factor": 1,
+          "dataPoint": "Gauge",
+          "alertSummary": "dell_demo_vm_system_cpu_usage_utilization",
+          "alertDescription": "dell_demo_vm_system_cpu_usage_utilization",
+          "warning": {
+            "operator": "GREATER_THAN",
+            "value": "50",
+            "repeat": 1
+          },
+          "critical": {
+            "operator": "GREATER_THAN",
+            "value": "70",
+            "repeat": 2
+          },
+          "availability": true,
+          "graphPoint": true,
+          "raiseAlert": true,
+          "formatPlottedValue": false,
+          "formatGraph": false,
+          "formatAlert": false
+        }
+      ],
+      "monitors": [
+        {
+          "title": "VM Performance Monitor",
+          "frequency": 5,
+          "metric": [
+            "dell_demo_vm_system_os_uptime",
+            "dell_demo_vm_system_network_interface_utilization",
+            "dell_demo_vm_system_disk_usage_freespace",
+            "dell_demo_vm_system_cpu_load",
+            "dell_demo_vm_system_process_stats_count",
+            "dell_demo_vm_system_cpu_usage_stats",
+            "dell_demo_vm_system_memory_usage_usedspace",
+            "dell_demo_vm_system_disk_usage_usedspace",
+            "dell_demo_vm_system_memory_usage_utilization",
+            "dell_demo_vm_system_cpu_usage_utilization"
+          ]
+        }
+      ]
+    }
+  ]
+}
+

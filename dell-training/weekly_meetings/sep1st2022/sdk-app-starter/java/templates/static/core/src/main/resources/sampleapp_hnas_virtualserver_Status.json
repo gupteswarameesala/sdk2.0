@@ -1,0 +1,122 @@
+[
+    {
+        "resource": 49348,
+        "metric": "hnas_virtualserver_Status",
+        "unit": "",
+        "unitLabel": "",
+        "component": "5K-EVS01-140",
+        "description": "hnas device virtual server status",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 1.0,
+            "1618824720": 1.0,
+            "1618824840": 1.0,
+            "1618824960": 1.0,
+            "1618825080": 1.0,
+            "1618825200": 1.0,
+            "1618825320": 1.0,
+            "1618825440": 1.0,
+            "1618825560": 1.0,
+            "1618825680": 1.0,
+            "1618825800": 1.0
+        },
+        "timeSeriesType": "RealTime"
+    },
+    {
+        "resource": 49348,
+        "metric": "hnas_virtualserver_Status",
+        "unit": "",
+        "unitLabel": "",
+        "component": "5K-EVS02-141",
+        "description": "hnas device virtual server status",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 1.0,
+            "1618824720": 1.0,
+            "1618824840": 1.0,
+            "1618824960": 1.0,
+            "1618825080": 1.0,
+            "1618825200": 1.0,
+            "1618825320": 1.0,
+            "1618825440": 1.0,
+            "1618825560": 1.0,
+            "1618825680": 1.0,
+            "1618825800": 1.0
+        },
+        "timeSeriesType": "RealTime"
+    },
+    {
+        "resource": 49348,
+        "metric": "hnas_virtualserver_Status",
+        "unit": "",
+        "unitLabel": "",
+        "component": "5K-EVS03-142",
+        "description": "hnas device virtual server status",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 1.0,
+            "1618824720": 1.0,
+            "1618824840": 1.0,
+            "1618824960": 1.0,
+            "1618825080": 1.0,
+            "1618825200": 1.0,
+            "1618825320": 1.0,
+            "1618825440": 1.0,
+            "1618825560": 1.0,
+            "1618825680": 1.0,
+            "1618825800": 1.0
+        },
+        "timeSeriesType": "RealTime"
+    },
+    {
+        "resource": 49348,
+        "metric": "hnas_virtualserver_Status",
+        "unit": "",
+        "unitLabel": "",
+        "component": "5K-EVS04-143",
+        "description": "hnas device virtual server status",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 1.0,
+            "1618824720": 1.0,
+            "1618824840": 1.0,
+            "1618824960": 1.0,
+            "1618825080": 1.0,
+            "1618825200": 1.0,
+            "1618825320": 1.0,
+            "1618825440": 1.0,
+            "1618825560": 1.0,
+            "1618825680": 1.0,
+            "1618825800": 1.0
+        },
+        "timeSeriesType": "RealTime"
+    },
+    {
+        "resource": 49348,
+        "metric": "hnas_virtualserver_Status",
+        "unit": "",
+        "unitLabel": "",
+        "component": "AdminEVS-DC1",
+        "description": "hnas device virtual server status",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 1.0,
+            "1618824720": 1.0,
+            "1618824840": 1.0,
+            "1618824960": 1.0,
+            "1618825080": 1.0,
+            "1618825200": 1.0,
+            "1618825320": 1.0,
+            "1618825440": 1.0,
+            "1618825560": 1.0,
+            "1618825680": 1.0,
+            "1618825800": 1.0
+        },
+        "timeSeriesType": "RealTime"
+    }
+]

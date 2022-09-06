@@ -1,0 +1,50 @@
+[
+    {
+        "resource": 49348,
+        "metric": "hnas_storagepool_Capacityutilization",
+        "unit": "%",
+        "unitLabel": "Percentage (%)",
+        "component": "G370-Span-01-DP-0",
+        "description": "hnas device storage pool utilization percentage",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 1.29,
+            "1618824720": 1.29,
+            "1618824840": 1.29,
+            "1618824960": 1.29,
+            "1618825080": 1.29,
+            "1618825200": 1.29,
+            "1618825320": 1.29,
+            "1618825440": 1.29,
+            "1618825560": 1.29,
+            "1618825680": 1.29,
+            "1618825800": 1.29
+        },
+        "timeSeriesType": "RealTime"
+    },
+    {
+        "resource": 49348,
+        "metric": "hnas_storagepool_Capacityutilization",
+        "unit": "%",
+        "unitLabel": "Percentage (%)",
+        "component": "G370-Span-02-DP-0",
+        "description": "hnas device storage pool utilization percentage",
+        "consolFunc": "AVERAGE",
+        "factor": 1.0,
+        "data": {
+            "1618824600": 2.11,
+            "1618824720": 2.11,
+            "1618824840": 2.11,
+            "1618824960": 2.11,
+            "1618825080": 2.11,
+            "1618825200": 2.11,
+            "1618825320": 2.11,
+            "1618825440": 2.11,
+            "1618825560": 2.11,
+            "1618825680": 2.11,
+            "1618825800": 2.11
+        },
+        "timeSeriesType": "RealTime"
+    }
+]

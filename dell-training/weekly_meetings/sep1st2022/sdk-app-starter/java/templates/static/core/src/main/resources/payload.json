@@ -1,0 +1,280 @@
+{
+		"resourceTypes": {
+			"Desktop": {
+				"availabilityRule": "ALL",
+				"metrics": {
+					"hnas_filesystem_Status": {
+						"defaultMetric": true,
+						"availibityMetric": false,
+						"units": "null",
+						"multiplicationFactor": "1",
+						"dataPointType": "Gauge",
+						"graph": {
+							"graphPoint": true,
+							"formatPlottedValue": true
+						},
+						"notification": {
+							"alertOn": "NONE",
+							"raiseAlert": false,
+							"formatAlertValue": true,
+							"sensitivity": "MEDIUM",
+							"direction": "NEGATIVE",
+							"limit": 0,
+							"warning": {
+								"operator": "GREATER_THAN",
+								"value": "70",
+								"repeat": 1
+							},
+							"critical": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "30",
+								"repeat": 1
+							},
+							"subject": "hitachi-hnas",
+							"description": "hnas file system status"
+						},
+						"dataPointConverisonOptions": [
+							{
+								"MOUNTED": "1"
+							},
+							{
+								"VOLUME_STATE_LAST": "0"
+							},
+							{
+								"CHECKING": "2"
+							},
+							{
+								"FAILING": "3"
+							},
+							{
+								"FIXING": "4"
+							},
+							{
+								"MOUNTING": "5"
+							},
+							{
+								"FORMATTING": "6"
+							},
+							{
+								"NOT_MOUNTED": "7"
+							},
+							{
+								"NOT_FOUND": "8"
+							},
+							{
+								"VOLUME_NOT_AVAILABLE_TO_BS": "9"
+							}
+						]
+					},
+					"hnas_storagepool_Capacityutilization": {
+						"defaultMetric": true,
+						"availibityMetric": false,
+						"units": "percentage",
+						"multiplicationFactor": "1",
+						"dataPointType": "Gauge",
+						"graph": {
+							"graphPoint": true,
+							"formatPlottedValue": true
+						},
+						"notification": {
+							"alertOn": "NONE",
+							"raiseAlert": false,
+							"formatAlertValue": true,
+							"sensitivity": "HIGH",
+							"direction": "NEGATIVE",
+							"limit": 10,
+							"warning": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "1",
+								"repeat": 2
+							},
+							"critical": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "2",
+								"repeat": 2
+							},
+							"subject": "hitachi-hnas",
+							"description": "hnas storage pool percentage"
+						},
+						"dataPointConverisonOptions": [
+							{
+								"true": "1"
+							}
+						]
+					},
+					"hnas_virtualserver_Status": {
+						"defaultMetric": true,
+						"availibityMetric": true,
+						"units": "null",
+						"multiplicationFactor": "1",
+						"dataPointType": "Gauge",
+						"graph": {
+							"graphPoint": true,
+							"formatPlottedValue": true
+						},
+						"notification": {
+							"alertOn": "NONE",
+							"raiseAlert": false,
+							"formatAlertValue": true,
+							"sensitivity": "HIGH",
+							"direction": "NEGATIVE",
+							"limit": 10,
+							"warning": {
+								"operator": "GREATER_THAN",
+								"value": "70",
+								"repeat": 1
+							},
+							"critical": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "30",
+								"repeat": 1
+							},
+							"subject": "hitachi-hnas",
+							"description": "hnas virtual server status"
+						},
+						"dataPointConverisonOptions": [
+							{
+								"OFFLINE": "0"
+							},
+							{
+								"ONLINE": "1"
+							},
+							{
+								"NOT_CONFIGURED": "2"
+							},
+							{
+								"DISABLED": "3"
+							}
+						]
+					},
+					"hnas_filesystem_Utilization": {
+						"defaultMetric": true,
+						"availibityMetric": false,
+						"units": "percentage",
+						"multiplicationFactor": "1",
+						"dataPointType": "Gauge",
+						"graph": {
+							"graphPoint": true,
+							"formatPlottedValue": true
+						},
+						"notification": {
+							"alertOn": "NONE",
+							"raiseAlert": false,
+							"formatAlertValue": true,
+							"sensitivity": "HIGH",
+							"direction": "NEGATIVE",
+							"limit": 10,
+							"warning": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "50",
+								"repeat": 2
+							},
+							"critical": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "65",
+								"repeat": 1
+							},
+							"subject": "sample-app",
+							"description": "hnas file system percentage"
+						},
+						"dataPointConverisonOptions": [
+							{
+								"true": "1"
+							}
+						]
+					}
+				}
+			},
+			"Hitachi HNAS": {
+				"availabilityRule": "ALL",
+				"metrics": {
+					"hnas_virtualserver_Count": {
+						"defaultMetric": true,
+						"availibityMetric": false,
+						"units": "Count",
+						"multiplicationFactor": "1",
+						"dataPointType": "Gauge",
+						"graph": {
+							"graphPoint": false,
+							"formatPlottedValue": true
+						},
+						"notification": {
+							"alertOn": "NONE",
+							"raiseAlert": false,
+							"formatAlertValue": true,
+							"sensitivity": "LOW",
+							"direction": "POSITIVE",
+							"limit": 10,
+							"warning": {
+								"operator": "GREATER_THAN",
+								"value": "50",
+								"repeat": 1
+							},
+							"critical": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "70",
+								"repeat": 1
+							},
+							"subject": "sample-app",
+							"description": "hnas virtual server count"
+						},
+						"dataPointConverisonOptions": [
+							{
+								"true": "1"
+							}
+						]
+					},
+					"hnas_filesystem_Utilization": {
+						"defaultMetric": true,
+						"availibityMetric": false,
+						"units": "percentage",
+						"multiplicationFactor": "1",
+						"dataPointType": "Gauge",
+						"graph": {
+							"graphPoint": true,
+							"formatPlottedValue": true
+						},
+						"notification": {
+							"alertOn": "NONE",
+							"raiseAlert": false,
+							"formatAlertValue": true,
+							"sensitivity": "HIGH",
+							"direction": "NEGATIVE",
+							"limit": 10,
+							"warning": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "50",
+								"repeat": 2
+							},
+							"critical": {
+								"operator": "GREATER_THAN_EQUAL",
+								"value": "65",
+								"repeat": 1
+							},
+							"subject": "hitachi-hnas",
+							"description": "hnas file system percentage"
+						},
+						"dataPointConverisonOptions": [
+							{
+								"true": "1"
+							}
+						]
+					}
+				}
+			}
+		},
+		"Credential": "Custom:eyJLZXkiOiJiM2Q4M2YwMzNkNGE1MTYzMGQ5ZGRkMzQxODRhODRiNyIsIlNlY3JldCI6IjJiZDdiZjFmOGNjODU1MGU5NGJiYWE5MzFiZTBlNzZiYmM3NWY3NGJhNDc4NTIyYjQ1M2M3ZGFhNjczZmFhN2QiLCJUb2tlbiBVUkwiOiJodHRwczovL3NoaXZhbGlrLm9wc3JhbXAubmV0L2F1dGgvb2F1dGgvdG9rZW4iLCJHcmFudCBUeXBlIjoiQ2xpZW50X0NyZWRlbnRpYWxzIn0=",
+		"secretKey": "4z6fK7QThHrzQHaMfZCAWJauFUcHZECASsjF4dbkD7Xde2WJG8UmryA3WeHJ3wav",
+		"Hostname": "10.79.243.248",
+		"configurationName": "test",
+		"installedAppName": "sample-app",
+		"token": "2nSw9xdgg4vdGE2EKPyYxt8b9Fdcw4t8",
+		"IP Address": "shivalik.opsramp.net",
+		"Tenant Id": "client_25293",
+		"Resource Id": "a7cd8fd3-f8f0-4df0-ac94-6838456bfb9f",
+		"NotificationAlerts": true,
+		"appid": "INTG-2c69864e-dddb-44d9-87dd-d4950f7c9a56",
+		"configurationId": "ADAPTER-MANIFEST-4ab52220-3649-4d59-88fd-021462ddcba9",
+		"Protocol": "https",
+		"Credentials": "Custom:eyJLZXkiOiJFa1dDZ2ZWNDY1RGhGZDdCQmVXRWhRWHJtWFlzRDVRaiIsIlNlY3JldCI6IkhjdmFwUVp6dTZocHo3Y2E3QXpqd2tlOVJrdTdiTVJKWUFYUDd1eVFKbmNndVA3OVMyZ0NGY3JSSk1NUDRZN3AifQ=="
+	}
