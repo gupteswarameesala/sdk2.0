@@ -1,0 +1,400 @@
+name,path,display_name,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Work Station,Desktop >> Work Station,Work Station,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Server,Server,Server,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Desktop,Desktop,Desktop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+POS Terminal,Other >> POS Terminal,POS Terminal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Switch,Network Device >> Switch,Switch,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Router,Network Device >> Router,Router,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Firewall,Network Device >> Firewall,Firewall,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SAN,Storage >> SAN,SAN,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Windows,Server >> Windows,Windows,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Linux,Server >> Linux,Linux,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Power Switch,Power >> Power Switch,Power Switch,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Printer,Printer,Printer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WLAN AP,Network Device >> WLAN AP,WLAN AP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Laptop,Desktop >> Laptop,Laptop,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+OpsRamp Gateway,OpsRamp Gateway,Gateway,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WLAN Controller,Network Device >> WLAN Controller,WLAN Controller,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Network Device,Network Device,Network Device,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Power,Power,Power,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+VMware,VMware,VMware,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Storage,Storage,Storage,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NetApp,Storage >> NetApp Filer,NetApp,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMC VNX,Storage >> EMC VNX,EMC VNX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMC VNXe,Storage >> EMC VNXe,EMC VNXe,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco UCS,Cisco UCS,Cisco UCS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Xen Server,Xen Server,Xen Server,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Load balancer,Network Device >> Load balancer,Load balancer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Windows Hyper-V,Windows Hyper-V,Windows Hyper-V,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+VOIP Device,Network Device >> VOIP,VOIP Device,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco UCM,Network Device >> Cisco UCM,Cisco UCM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mobile,Mobile,Mobile,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Android,Mobile >> Android,Android,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IOS,Mobile >> IOS,IOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+FlexPod,POD >> FlexPod,FlexPod,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+VSPEX,POD >> VSPEX,VSPEX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Vblock,POD >> Vblock,Vblock,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+N-Block,POD >> N-Block,N-Block,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Console Server,Network Device >> Console Server,IBM STORWIZE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IBM STORWIZE,Storage >> IBM Storwize,IBM STORWIZE,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMC VMAX,Storage >> EMC VMAX,EMC VMAX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMC CLARiiON,Storage >> EMC CLARiiON,EMC CLARiiON,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HP EVA,Storage >> HP EVA,HP EVA,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NetApp Cluster,Storage >> NetApp Cluster,NetApp Cluster,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HP 3Par,Storage >> HP 3Par,HP 3Par,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco UCM Express,Network Device >> Cisco UCM Express,Cisco UCM Express,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco Contact Center,Network Device >> Cisco Contact Center,Cisco Contact Center,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco Contact Center Express,Network Device >> Cisco Contact Center Express,Cisco Contact Center Express,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco Unity,Network Device >> Cisco Unity,Cisco Unity,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Cisco Unity Express,Network Device >> Cisco Unity Express,Cisco Unity Express,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+EMC Isilon,Storage >> EMC Isilon,EMC Isilon,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Management Controller,Management Controller,Management Controller,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+iDRAC,Management Controller >> iDRAC,iDRAC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PBX,Network Device >>PBX,PBX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Network Cloud Controller,Network Device >> Network Cloud Controller,Network Cloud Controller,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Other,Other,Other,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+KVM,KVM,KVM,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Docker,Docker,Docker,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Virtual IP,Virtual IP,Virtual IP,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+IP Camera,Surveillance,IP Camera,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AIX,Server >> AIX ,AIX,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SUNOS,Server >> SUNOS ,SUNOS,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+vBond,Network Device >> vBond,vBond,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+vEdge,Network Device >> vEdge,vEdge,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+vManage,Network Device >> vManage,vManage,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+vSmart,Network Device >> vSmart,vSmart,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XENSERVER,XenServer,XenServer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AZ_SERVICE_BUS,Service Bus NameSpace,Service Bus NameSpace,"ResourceTreePriority"":""87""}
+122	0	CONTAINER	RESOURCE		Container	NULL	420	Container	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	1	NULL
+123	0	CONTRAIL_PROVIDER	RESOURCE		Contrail Provider	NULL	425	Contrail Provider	com.vistara.scc.model.device.cloud.ContrailProvider	0	NULL	NULL	NULL	1	NULL
+124	0	CRADLE_POINT_ROUTER	RESOURCE		Cradlepoint Router	NULL	430	Cradlepoint Router	com.vistara.scc.model.device.cloud.CradlePointRouter	0	CRADLE_POINT	RESOURCE	NULL	0	NULL
+126	0	ECS_CLUSTER	RESOURCE		ECS Cluster	NULL	440	ECS Cluster	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""7","ResourceTreePriority"":""8""}
+127	0	GAE_INSTANCE	RESOURCE		AppEngine Instance	116	445	App Engine Instance	com.vistara.scc.model.device.cloud.compute.GAEInstance	1	GOOGLE	RESOURCE	NULL	0	NULL
+128	0	GENERIC_RESOURCE	RESOURCE		Generic Resource	NULL	450	Generic Resource	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+129	0	KVM_HOST	RESOURCE		KVMHost	116	455	KVMHost	com.vistara.scc.model.device.cloud.KVMHost	1	NULL	RESOURCE	NULL	0	NULL
+130	0	REDSHIFT	RESOURCE		Redshift	NULL	460	Redshift	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""22","ResourceTreePriority"":""23""}
+135	0	STORAGE_ARRAY_STOR_VIEW	RESOURCE		Storage Array Views	NULL	485	Storage Array Views	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_VPLEX	RESOURCE	NULL	1	NULL
+137	0	TRAFFIC_PROFILE	RESOURCE		Traffic Profile	NULL	495	Traffic Profile	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""88","ResourceTreePriority"":""91""}
+138	0	UCS_CHASSIS	RESOURCE		UCS Chassis	NULL	500	UCS Chassis	com.vistara.scc.model.cloud.ucs.UCSChassis	0	CISCOUCS	RESOURCE	NULL	1	NULL
+139	0	UCS_FABRIC_EXTENDER	RESOURCE		UCS Fabric Extender	NULL	505	UCS Fabric Extender	com.vistara.scc.model.cloud.ucs.UCSFabricExtender	0	CISCOUCS	RESOURCE	NULL	1	NULL
+140	0	UCS_NETWORK_SWITCH	RESOURCE		UCS Network Switch	116	510	UCS Network Switch	com.vistara.scc.model.cloud.ucs.UCSNetworkSwitch	1	CISCOUCS	RESOURCE	NULL	0	NULL
+141	0	VIRTUAL_MACHINE	RESOURCE		VirtualMachine	116	515	VirtualMachine	com.vistara.scc.model.device.cloud.VirtuvalMachine	1	VMWARE,NUTANIX	RESOURCE	NULL	0	NULL
+142	0	VMWAREHOST	RESOURCE		VMWareHost	116	520	VMWareHost	com.vistara.scc.model.device.cloud.VMWareHost	1	VMWARE	RESOURCE	NULL	0	NULL
+145	0	API_GATEWAY	RESOURCE		API Gateway	NULL	535	API Gateway	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""2","ResourceTreePriority"":""2""}
+146	0	APPENGINE_SERVICE	RESOURCE		AppEngine Service	NULL	540	App Engine Service	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""93","ResourceTreePriority"":""96""}
+147	0	APPENGINE_VERSION	RESOURCE		AppEngine Version	NULL	545	App Engine Version	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""94","ResourceTreePriority"":""97""}
+148	0	AUTO_SCALING	RESOURCE		Auto Scaling	NULL	550	Auto Scaling	com.vistara.scc.model.resource.GenericResource	0	AWS,ARM,AZURE,ALIBABA	RESOURCE	NULL	1	{""SortPriority"":""3","ResourceTreePriority"":""3""}
+150	0	AWS_APIGATEWAY_STAGE	RESOURCE		API Gateway Stage	NULL	560	API Gateway Stage	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+151	0	AWS_S3_BUCKET	RESOURCE		Aws S3 Bucket	NULL	565	Aws S3 Bucket	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""ResourceTreePriority"":""27""}
+152	0	AZ_AD_B2C	RESOURCE		Active Directory B2C	NULL	570	Active Directory B2C	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""35","ResourceTreePriority"":""38""}
+153	0	AZ_AM_ACCOUNTS	RESOURCE		Automation Account	NULL	575	Automation Account	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	{""SortPriority"":""40","ResourceTreePriority"":""43""}
+154	0	AZ_AM_ACC_RUNBOOK	RESOURCE		AutomationAccount Runbook	NULL	580	Automation Account Runbook	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""41","ResourceTreePriority"":""44""}
+155	0	AZ_ANALYSIS_SERVICE	RESOURCE		Analysis Service	NULL	585	Analysis Service	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+156	0	AZ_API_MANAGEMENT	RESOURCE		Api Management Service	NULL	590	Api Management Service	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""36","ResourceTreePriority"":""39""}
+157	0	AZ_APP_GATEWAY	RESOURCE		Application Gateway	NULL	595	Application Gateway	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""37","ResourceTreePriority"":""40""}
+158	0	AZ_APP_INSIGHTS	RESOURCE		Application Insights	NULL	600	Application Insights	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""38","ResourceTreePriority"":""41""}
+159	0	AZ_APP_SERVICES	RESOURCE		App Services	NULL	605	App Services	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+160	0	AZ_APP_SERVICE_PLAN	RESOURCE		App Service plans	NULL	610	App Service plans	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""39","ResourceTreePriority"":""42""}
+161	0	AZ_AUTOMATION	RESOURCE		Automation Account	NULL	615	Automation Account	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""42","ResourceTreePriority"":""45""}
+162	0	AZ_BATCH_ACCOUNTS	RESOURCE		Batch Account	NULL	620	Batch Account	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""43","ResourceTreePriority"":""46""}
+163	0	AZ_CLASSIC_VIR_NET	RESOURCE		Classic Virtual Network	NULL	625	Classic Virtual Network	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""48","ResourceTreePriority"":""51""}
+164	0	AZ_COGNITIVE_SERVICE	RESOURCE		Cognitive Service Account	NULL	630	Cognitive Service Account	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+165	0	AZ_COMPUTE_DISK	RESOURCE		Compute Disk	NULL	635	Compute Disk	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""47","ResourceTreePriority"":""50""}
+166	0	AZ_CONTAINER_SERVICE	RESOURCE		Container Service	NULL	640	Container Service	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""49","ResourceTreePriority"":""52""}
+167	0	AZ_CUSTOMER_INSIGHTS	RESOURCE		Customer Insight Hub	NULL	645	Customer Insight Hub	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+168	0	AZ_DATALAKE_ANALYTICS	RESOURCE		DataLake Analytics	NULL	650	DataLake Analytics	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""50","ResourceTreePriority"":""53""}
+169	0	AZ_DATALAKE_STORE	RESOURCE		DataLake Store Account	NULL	655	DataLake Store Account	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""51","ResourceTreePriority"":""54""}
+170	0	AZ_DATA_FACTORY	RESOURCE		Data Factory	NULL	660	Data Factory	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""55","ResourceTreePriority"":""58""}
+171	0	AZ_DB_MYSQL	RESOURCE		MySql Server	117	665	MySQL Server	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""67","ResourceTreePriority"":""70""}
+172	0	AZ_DB_POSTGRESQL	RESOURCE		PostGreSQL Server	117	670	PostGreSQL Server	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""74","ResourceTreePriority"":""77""}
+173	0	AZ_EVENT_HUB	RESOURCE		EventHub namespace	NULL	675	Event Hub namespace	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""56","ResourceTreePriority"":""59""}
+174	0	AZ_FEBRIC_CLUSTER	RESOURCE		Service Fabric Cluster	NULL	680	Service Fabric Cluster	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""85","ResourceTreePriority"":""88""}
+175	0	AZ_HD_INSIGHT_CLUSTER	RESOURCE		HDInsight clusters	NULL	685	HDInsight clusters	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""58","ResourceTreePriority"":""61""}
+176	0	AZ_INSIGHTS_AUTOSCALE	RESOURCE		Insights AutoscaleSettings	NULL	690	Insights Autoscale Settings	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""61","ResourceTreePriority"":""64""}
+177	0	AZ_IOT_HUB	RESOURCE		Device IotHub	NULL	695	Device IoT Hub	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""53","ResourceTreePriority"":""56""}
+178	0	AZ_KEY_VAULT	RESOURCE		Key Vault	NULL	700	Key Vault	com.vistara.scc.model.resource.GenericResource	0	AZURE,AZURESTACK	RESOURCE	NULL	1	{""SortPriority"":""62","ResourceTreePriority"":""65""}
+179	0	AZ_LOCAL_NW_GATEWAY	RESOURCE		Local Network Gateways	NULL	705	Local Network Gateways	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""63","ResourceTreePriority"":""66""}
+180	0	AZ_LOGIC_WORKFLOW	RESOURCE		Logic workflow	NULL	710	Logic workflow	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""64","ResourceTreePriority"":""67""}
+181	0	AZ_ML_COMMITMENT_PLAN	RESOURCE		MachineLearning commitmentPlan	NULL	715	Machine Learning commitmentPlan	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""68","ResourceTreePriority"":""71""}
+182	0	AZ_ML_EX_ACCOUNT	RESOURCE		ML Experimentation Account	NULL	720	ML Experimentation Account	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""66","ResourceTreePriority"":""69""}
+183	0	AZ_ML_WORKSPACE	RESOURCE		MachineLearning Workspace	NULL	725	Machine Learning Workspace	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""65","ResourceTreePriority"":""68""}
+184	0	AZ_NETWORK_CONECTION	RESOURCE		Network Connection	NULL	730	Network Connection	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""69","ResourceTreePriority"":""72""}
+185	0	AZ_NF_HUB	RESOURCE		Notification Hub	NULL	735	Notification Hub	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""70","ResourceTreePriority"":""73""}
+186	0	AZ_NF_HUB_NAMESPACE	RESOURCE		Notification Hub Namespace	NULL	740	Notification Hub Namespace	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""71","ResourceTreePriority"":""74""}
+187	0	AZ_OI_WORKSPACE	RESOURCE		Operational Insights workspace	NULL	745	Operational Insights workspace	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""72","ResourceTreePriority"":""75""}
+188	0	AZ_OM_SOLUTIONS	RESOURCE		Operations Management solution	NULL	750	Operations Management solution	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""73","ResourceTreePriority"":""76""}
+189	0	AZ_PORTAL_DASHBOARD	RESOURCE		Portal Dashboard	NULL	755	Portal Dashboard	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+190	0	AZ_PROVISIONING_SERVICE	RESOURCE		Device Provisioning Service	NULL	760	Device Provisioning Service	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""52","ResourceTreePriority"":""55""}
+191	0	AZ_PUBLIC_IPADDRESS	RESOURCE		Public IPAddress	NULL	765	Public IP Address	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""75","ResourceTreePriority"":""78""}
+192	0	AZ_RS_POINT_COLLECTION	RESOURCE		Restore Point Collections	NULL	770	Restore Point Collections	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""80","ResourceTreePriority"":""83""}
+193	0	AZ_RS_VAULTS	RESOURCE		RecoveryService vault	NULL	775	Recovery Service vault	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""78","ResourceTreePriority"":""81""}
+194	0	AZ_SC_JOBCOLLECTION	RESOURCE		Scheduler JobCollection	NULL	780	Scheduler Job Collection	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""83","ResourceTreePriority"":""86""}
+195	0	AZ_SEARCH_SERVICE	RESOURCE		Search Service	NULL	785	Search Service	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""86","ResourceTreePriority"":""89""}
+197	0	AZ_SQL_ES_POOL	RESOURCE		SQL Elastic Pool	NULL	795	SQL Elastic Pool	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""87","ResourceTreePriority"":""90""}
+198	0	AZ_STREAM_ANALYTIC	RESOURCE		Stream Analytic job	NULL	800	Stream Analytic job	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+199	0	AZ_VN_GATEWAY	RESOURCE		Virtual NetworkGateway	NULL	805	Virtual Network Gateway	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""89","ResourceTreePriority"":""92""}
+200	0	AZ_WEB_HOSTING_ENV	RESOURCE		Hosting Environment	NULL	810	Hosting Environment	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+201	0	AZ_WEB_MR_POOL	RESOURCE		Hosting Environment MultiRole Pool	NULL	815	Hosting Environment MultiRole Pool	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""59","ResourceTreePriority"":""62""}
+202	0	AZ_WEB_SLOT	RESOURCE		Web site slot	NULL	820	Web site slot	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""92","ResourceTreePriority"":""95""}
+203	0	AZ_WEB_WORKERPOOL	RESOURCE		Hosting Environment Worker Pool	NULL	825	Hosting Environment Worker Pool	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	{""SortPriority"":""60","ResourceTreePriority"":""63""}
+204	0	BEAN_STALK	RESOURCE		AWS Elastic Beanstalk	NULL	830	AWS Elastic Beanstalk	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""11","ResourceTreePriority"":""4""}
+205	0	BIGQUERY_DATASET	RESOURCE		Dataset	NULL	835	BigQuery Dataset	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""95","ResourceTreePriority"":""98""}
+206	0	BIGQUERY_TABLE	RESOURCE		Table	NULL	840	BigQuery Table	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""96","ResourceTreePriority"":""99""}
+208	0	CDN_ENDPOINT	RESOURCE		CDN Profile Endpoint	NULL	850	CDN Profile Endpoint	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE	RESOURCE	NULL	0	NULL
+209	0	CDN_PROFILE	RESOURCE		CDN Profile	NULL	855	CDN Profile	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""45","ResourceTreePriority"":""48""}
+211	0	CLOUDFRONT	RESOURCE		CloudFront	NULL	865	CloudFront	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""4","ResourceTreePriority"":""5""}
+212	0	CLOUD_DNS	RESOURCE		Cloud DNS	NULL	870	Cloud DNS	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""97","ResourceTreePriority"":""100""}
+213	0	CLOUD_PROVIDER	RESOURCE		Cloud Provider	NULL	880	Cloud Provider	com.vistara.scc.model.cloud.DefaultProvider	0	NULL	NULL	NULL	0	NULL
+215	0	CONTRAIL_ANALYTICS_NODE	RESOURCE		Contrail Analytics Node	NULL	890	Contrail Analytics Node	com.vistara.scc.model.device.cloud.ContrailAnalyticsNode	0	CONTRAIL_CONTROLLER	RESOURCE	NULL	1	NULL
+216	0	CONTRAIL_CONFIG_NODE	RESOURCE		Contrail Config Node	NULL	895	Contrail Config Node	com.vistara.scc.model.device.cloud.ContrailConfigNode	0	CONTRAIL_CONTROLLER	RESOURCE	NULL	1	NULL
+217	0	CONTRAIL_CONTROL_NODE	RESOURCE		Contrail Control Node	NULL	900	Contrail Control Node	com.vistara.scc.model.device.cloud.ContrailControlNode	0	CONTRAIL_CONTROLLER	RESOURCE	NULL	1	NULL
+219	0	DATAPROC_CLUSTER	RESOURCE		Version	NULL	910	Dataproc Cluster	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""102","ResourceTreePriority"":""105""}
+220	0	DATA_CENTER	RESOURCE		Data Center	NULL	915	Data Center	com.vistara.scc.model.device.cloud.DataCenter	0	VMWARE	RESOURCE	NULL	1	NULL
+221	0	DC_CONNECTION	RESOURCE		Direct Connect Connection	NULL	920	Direct Connect Connection	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""6","ResourceTreePriority"":""7""}
+222	0	DEFAULT_RESOURCE	RESOURCE		All Resources	NULL	925	All Resources	com.vistara.scc.model.dependency.DefaultResource	0	NULL	NULL	NULL	0	NULL
+223	0	DISTRIBUTED_VIRTUAL_SWITCH	RESOURCE		Distributed Virtual Switch	NULL	935	Distributed Virtual Switch	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	1	NULL
+225	0	DOCUMENT_DB	RESOURCE		Document DB	NULL	945	Document DB	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""54","ResourceTreePriority"":""57""}
+226	0	DYNAMO_DB	RESOURCE		DynamoDB	NULL	950	DynamoDB	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""5","ResourceTreePriority"":""6""}
+227	0	EBS	RESOURCE		Volume	NULL	955	Volume	com.vistara.scc.model.device.cloud.EBS	0	AWS,ASM,ARM,AZURE,AZURESTACK,GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""30","ResourceTreePriority"":""33""}
+229	0	ECS_SERVICE	RESOURCE		ECS Container Service	NULL	965	ECS Container Service	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+230	0	ELASTICACHE	RESOURCE		ElastiCache	NULL	970	ElastiCache	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""8","ResourceTreePriority"":""9""}
+231	0	ELASTICACHENODE	RESOURCE		ElastiCache Node	NULL	975	ElastiCache Node	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+232	0	ELASTICMAPREDUCE	RESOURCE		Elastic MapReduce	NULL	980	Elastic MapReduce	com.vistara.scc.model.resource.GenericResource	0	AWS,ALIBABA	RESOURCE	NULL	1	{""SortPriority"":""10","ResourceTreePriority"":""11""}
+234	0	ELASTIC_TRANCODER	RESOURCE		Elastic Transcoder	NULL	990	Elastic Transcoder	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""12","ResourceTreePriority"":""12""}
+235	0	EMRBOOTSTRAPACTION	RESOURCE		EMR Bootsrap Action	NULL	995	EMR Bootsrap Action	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+236	0	EMRINSTANCEGROUP	RESOURCE		EMR Instance Group	NULL	1000	EMR Instance Group	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+237	0	EMRSTEP	RESOURCE		EMR Step	NULL	1005	EMR Step	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+238	0	ES_SERVICE	RESOURCE		Elastic search service	NULL	1010	Elastic search service	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""13","ResourceTreePriority"":""14""}
+240	0	EXPRESS_ROUTE	RESOURCE		ExpressRoute circuit	NULL	1020	AZURE/ExpressRoute circuit	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""57","ResourceTreePriority"":""60""}
+241	0	GATEWAY_VOLUME	RESOURCE		Gateway Volume	NULL	1025	AWS/Gateway Volume	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+242	0	GCE_CLUSTER	RESOURCE		Container Cluster	NULL	1030	GOOGLE/Container Cluster	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""100","ResourceTreePriority"":""103""}
+243	0	GCE_ROUTER	RESOURCE		Google Router	NULL	1035	GOOGLE/Google Router	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""107","ResourceTreePriority"":""110""}
+244	0	GCE_SUBSCRIPTION	RESOURCE		Subscription	NULL	1040	GOOGLE/Subscription	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""108","ResourceTreePriority"":""111""}
+245	0	GCE_TOPIC	RESOURCE		Topic	NULL	1045	GOOGLE/Topic	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""109","ResourceTreePriority"":""112""}
+246	0	GCP_CLOUD_FUNCTION	RESOURCE		Cloud Functions	NULL	1050	GOOGLE/Cloud Functions	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+247	0	GCP_DATAFLOW_JOB	RESOURCE		Dataflow Job	NULL	1055	GOOGLE/Dataflow Job	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	{""SortPriority"":""101","ResourceTreePriority"":""104""}
+250	0	GCP_ML_JOB	RESOURCE		MachineLearning Job	NULL	1070	GOOGLE/Machine Learning Job	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	{""SortPriority"":""104","ResourceTreePriority"":""107""}
+251	0	GCP_ML_MODEL	RESOURCE		MachineLearning Model	NULL	1075	GOOGLE/Machine Learning Model	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	{""SortPriority"":""105","ResourceTreePriority"":""108""}
+252	0	GCP_ML_VERSION	RESOURCE		MachineLearning Version	NULL	1080	GOOGLE/Machine Learning Version	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	{""SortPriority"":""106","ResourceTreePriority"":""109""}
+253	0	GCP_SPANNER_INSTANCE	RESOURCE		Cloud Spanner	NULL	1085	GOOGLE/Cloud Spanner	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+255	0	GLOBAL_SECONDARY_INDEX	RESOURCE		Global Secondary Index	NULL	1095	AWS/Global Secondary Index	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+257	0	HYPERVIOSOR	RESOURCE		Hyperviosor	NULL	1105	hypervisor	com.vistara.scc.model.resource.GenericResource	0	NUTANIX	RESOURCE	NULL	1	NULL
+266	0	JMX_APP_CLUSTER	RESOURCE		Application Cluster	NULL	1150	Application Cluster	com.vistara.scc.model.device.cloud.JmxAppCluster	0	JMX_GENERIC,JMX_IBM_WEBSPHERE,JMX_REDHAT_JBOSS,JMX_WILDFLY	RESOURCE	NULL	1	NULL
+267	0	JMX_APP_HOST	RESOURCE		Application Host	116	1155	Application Host	com.vistara.scc.model.device.cloud.JmxAppHost	1	JMX_GENERIC,JMX_IBM_WEBSPHERE,JMX_REDHAT_JBOSS,JMX_WILDFLY	RESOURCE	NULL	0	NULL
+268	0	JMX_APP_INSTANCE	RESOURCE		Application Instance	NULL	1160	Application Instance	com.vistara.scc.model.device.cloud.JmxAppInstance	0	JMX_GENERIC,JMX_IBM_WEBSPHERE,JMX_REDHAT_JBOSS,JMX_WILDFLY	RESOURCE	NULL	1	NULL
+270	0	KINESIS	RESOURCE		Kinesis	NULL	1170	AWS/Kinesis	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""15","ResourceTreePriority"":""16""}
+271	0	KINESIS_FIREHOSE	RESOURCE		Kinesis firehose	NULL	1175	AWS/Kinesis firehose	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""16","ResourceTreePriority"":""17""}
+272	0	LAMBDA	RESOURCE		Lambda	NULL	1180	AWS/Lambda	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""17","ResourceTreePriority"":""18""}
+273	0	LIGHTSAIL	RESOURCE		Lightsail	116	1155	AWS/Lightsail	com.vistara.scc.model.device.cloud.lightsail.Lightsail	1	AWS	RESOURCE	NULL	0	NULL
+274	0	LOAD_BALANCER	RESOURCE		Load Balancer	NULL	1160	Load Balancer	com.vistara.scc.model.device.cloud.lb.LoadBalancer	0	AWS,ARM,AZURE,AZURESTACK,GOOGLE,ALIBABA	RESOURCE	NULL	1	{""SortPriority"":""18","ResourceTreePriority"":""19""}
+275	0	MACHINE_LEARNING	RESOURCE		machinelearning	NULL	1165	Machine Learning	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""19","ResourceTreePriority"":""20""}
+281	0	VCENTER	RESOURCE		VCenter	116	1705	VCenter	com.vistara.scc.model.device.cloud.VCenter	1	VMWARE	RESOURCE	NULL	0	NULL
+283	0	ROUTE_53	RESOURCE		Route 53	NULL	1715	Route 53	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""23","ResourceTreePriority"":""25""}
+284	0	ROUTE_TABLE	RESOURCE		Route Table	NULL	1720	Route Table	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE,AZURESTACK	RESOURCE	NULL	1	{""SortPriority"":""79","ResourceTreePriority"":""82""}
+288	0	SNAPSHOT	RESOURCE		Snapshot	NULL	1755	Snapshot	com.vistara.scc.model.device.cloud.EBS	0	NULL	RESOURCE	NULL	0	NULL
+289	0	SNS	RESOURCE		SNS	NULL	1760	AWS/SNS	com.vistara.scc.model.resource.GenericResource	0	AWS 	RESOURCE	NULL	1	{""SortPriority"":""26","ResourceTreePriority"":""29""}
+290	0	SQL_DATABASE	RESOURCE		SQL Database	NULL	1765	SQL Database	com.vistara.scc.model.resource.GenericResource	0	ASM,ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""81","ResourceTreePriority"":""84""}
+291	0	SQL_SERVER	RESOURCE		SQL Server	117	1770	SQL Server	com.vistara.scc.model.resource.GenericResource	0	ASM,ARM,AZURE,GOOGLE	RESOURCE	NULL	1	{""SortPriority"":""82","ResourceTreePriority"":""85""}
+292	0	SQS	RESOURCE		SQS	NULL	1775	AWS/SQS	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""28","ResourceTreePriority"":""31""}
+293	0	STORAGE_ARRAY	RESOURCE		Storage Array	116	1780	Storage Array	com.vistara.scc.model.device.storage.StorageArray	1	NULL	RESOURCE	NULL	0	NULL
+301	0	STORAGE_ARRAY_CLUSTER	RESOURCE		Storage Array Cluster	NULL	1820	Storage Array Cluster	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_XTREMIO,STORAGEARRAY_VPLEX,STORAGEARRAY_RPA	RESOURCE	NULL	1	NULL
+302	0	STORAGE_ARRAY_CLUSTER_ARRAY	RESOURCE		Storage Array Cluster Arrays	NULL	1825	Storage Array Cluster Arrays	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_VPLEX	RESOURCE	NULL	1	NULL
+303	0	STORAGE_ARRAY_CLUSTER_DEVICE	RESOURCE		Storage Array Cluster Devices	NULL	1830	Storage Array Cluster Devices	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_VPLEX	RESOURCE	NULL	1	NULL
+304	0	STORAGE_ARRAY_CLUSTER_NODE	RESOURCE		Storage Cluster Node	NULL	1835	Storage Cluster Node	com.vistara.scc.model.device.storage.StorageArrayClusterNode	0	NETAPP_CLUSTER,IBM_STORWIZE	RESOURCE	NULL	1	NULL
+305	0	STORAGE_ARRAY_CONTROLLER	RESOURCE		Storage Array Controller	NULL	1840	Storage Array Controller	com.vistara.scc.model.device.cloud.StorageArrayController	0	STORAGEARRAY_PURE,STORAGEARRAY_XTREMIO	RESOURCE	NULL	1	NULL
+306	0	STORAGE_ARRAY_CONTROLSTATION	RESOURCE		Storage Control Station	NULL	1845	Storage Control Station	com.vistara.scc.model.device.storage.StorageArrayControlStation	0	VNX_NAS,VNX_UNIFIED	RESOURCE	NULL	1	NULL
+307	0	STORAGE_ARRAY_CS_GROUP	RESOURCE		Storage Array Consistency Groups	NULL	1850	Storage Array Consistency Groups	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_VPLEX,STORAGEARRAY_RPA	RESOURCE	NULL	1	NULL
+312	0	STORAGE_ARRAY_DIRECTOR	RESOURCE		Storage Array Directors	NULL	1875	Storage Array Directors	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_VPLEX	RESOURCE	NULL	1	NULL
+314	0	STORAGE_ARRAY_ENGINE	RESOURCE		Storage Array Engines	NULL	1885	Storage Array Engines	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_VPLEX	RESOURCE	NULL	1	NULL
+318	0	STORAGE_ARRAY_EXTENT	RESOURCE		Storage Array Extents	NULL	1905	Storage Array Extents	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	1	NULL
+333	0	STORAGE_ARRAY_LUN	RESOURCE		Storage LUN	NULL	1980	Storage LUN	com.vistara.scc.model.device.storage.StorageArrayLun	0	NETAPP_CLUSTER,NETAPP_FILER,EMC_VNXE,EMC_CLARIION,IBM_STORWIZE,VNX_SAN,VNX_UNIFIED,STORAGEARRAY_VPLEX	RESOURCE	NULL	1	NULL
+338	0	STORAGE_ARRAY_POOL	RESOURCE		Storage Pool or Aggregate	NULL	2005	Storage Pool or Aggregate	com.vistara.scc.model.device.storage.StorageArrayPool	0	NETAPP_CLUSTER,NETAPP_FILER,EMC_VMAX,EMC_VNXE,EMC_CLARIION,HP_EVA,IBM_STORWIZE,VNX_NAS,VNX_SAN,VNX_UNIFIED,STORAGEARRAY_HITACHI_VSP	RESOURCE	NULL	1	NULL
+340	0	STORAGE_ARRAY_PROCESSOR	RESOURCE		Storage Processor	NULL	2015	Storage Processor	com.vistara.scc.model.device.storage.StorageArrayProcessor	0	EMC_VMAX,EMC_VNXE,EMC_CLARIION,VNX_SAN,VNX_UNIFIED,STORAGEARRAY_HITACHI_VSP	RESOURCE	NULL	1	NULL
+341	0	STORAGE_ARRAY_PROVIDER	RESOURCE		Storage Array Provider	NULL	2020	Storage Array Provider	com.vistara.scc.model.device.storage.StorageArrayProvider	0	NULL	NULL	NULL	1	NULL
+343	0	STORAGE_ARRAY_RAID_GROUP	RESOURCE		Storage Array Raid Group	NULL	2030	Storage Array Raid Group	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_HITACHI_VSP	RESOURCE	NULL	1	NULL
+345	0	STORAGE_ARRAY_RPA	RESOURCE		Storage Array Recover Point Appliance	NULL	2040	Storage Array Recover Point Appliance	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_RPA	RESOURCE	NULL	1	NULL
+358	0	STORAGE_ARRAY_THIN_POOL	RESOURCE		Storage Array Dynamic Provisioning Pool	NULL	2105	Storage Array Dynamic Provisioning Pool	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_HITACHI_VSP	RESOURCE	NULL	1	NULL
+359	0	STORAGE_ARRAY_THIN_POOL_VOLUME	RESOURCE		Storage Array Dynamic Provisioning Volume	NULL	2110	Storage Array Dynamic Provisioning Volume	com.vistara.scc.model.resource.GenericResource	0	STORAGEARRAY_HITACHI_VSP	RESOURCE	NULL	1	NULL
+363	0	STORAGE_ARRAY_VOLUME	RESOURCE		Storage Volume	NULL	2130	Storage Volume	com.vistara.scc.model.device.storage.StorageArrayVolume	0	STORAGEARRAY_PURE,NETAPP_CLUSTER,NETAPP_FILER,EMC_VMAX,HP_EVA,IBM_STORWIZE,VNX_SAN,VNX_UNIFIED,STORAGEARRAY_XTREMIO,STORAGEARRAY_VPLEX,STORAGEARRAY_HITACHI_VSP	RESOURCE	NULL	1	NULL
+364	0	STORAGE_ARRAY_VSERVER	RESOURCE		Storage Virtual Machine	NULL	2135	Storage Virtual Machine	com.vistara.scc.model.device.storage.StorageArrayVServer	0	NETAPP_CLUSTER	RESOURCE	NULL	1	NULL
+372	0	STORAGE_GATEWAY	RESOURCE		storagegateway	NULL	2175	Storage Gateway	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""29","ResourceTreePriority"":""32""}
+374	0	SYNTHETIC	RESOURCE		Synthetic	NULL	2185	Synthetics	com.vistara.scc.model.uptime.CheckEntity	0	NULL	RESOURCE	NULL	0	NULL
+378	0	UCS_BLADE_SERVER	RESOURCE		UCS Blade Server	116	2205	UCS Blade Server	com.vistara.scc.model.cloud.ucs.UCSBladeServer	1	CISCOUCS	RESOURCE	NULL	0	NULL
+385	0	UCS_HOST	RESOURCE		Cisco UCS	116	2240	Cisco UCS	com.vistara.scc.model.cloud.ucs.UCSHost	1	NULL	RESOURCE	NULL	0	NULL
+387	0	VIPTELA_PROVIDER	RESOURCE		Viptela Provider	116	2255	Viptela Provider	com.vistara.scc.model.device.cloud.ViptelaProvider	1	VIPTELA	NULL	NULL	0	NULL
+388	0	VIRTUAL_NETWORK	RESOURCE		Virtual Network	NULL	2260	Virtual Network	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	{""SortPriority"":""90","ResourceTreePriority"":""93""}
+389	0	VIRTUVAL_ROUTER	RESOURCE		vRouter	NULL	2265	vRouter	com.vistara.scc.model.device.cloud.VirtualRouter	0	CONTRAIL_CONTROLLER	RESOURCE	NULL	1	NULL
+390	0	VI_CLUSTER	RESOURCE		Cluster	NULL	2270	VMware/Cluster	com.vistara.scc.model.device.cloud.Cluster	0	VMWARE,NUTANIX	RESOURCE	NULL	1	NULL
+391	0	VI_DATASTORE	RESOURCE		Datastore	NULL	2275	Hypervisor/Datastore	com.vistara.scc.model.device.cloud.DataStore	0	VMWARE,XENSERVER,NUTANIX,HYPERV	RESOURCE	NULL	1	NULL
+395	0	VPN	RESOURCE		VpnConnection	NULL	2295	Vpn Connection	com.vistara.scc.model.resource.GenericResource	0	GOOGLE,AWS,AWS	RESOURCE	NULL	1	{""SortPriority"":""32","ResourceTreePriority"":""35""}
+396	0	WAF	RESOURCE		Web Application Firewall	NULL	2300	AWS/Web Application Firewall	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""33","ResourceTreePriority"":""36""}
+397	0	WEBSITE	RESOURCE		WebSite	NULL	2305	AZURE/WebSite	com.vistara.scc.model.resource.GenericResource	0	ASM,ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""91","ResourceTreePriority"":""94""}
+398	0	WORKSPACE	RESOURCE		Workspace	116	2310	AWS/Workspace	com.vistara.scc.model.device.cloud.workspace.WorkSpace	1	AWS	RESOURCE	NULL	0	NULL
+399	0	WORKSPACE_DIRECTORY	RESOURCE		WorkSpace Directory	NULL	2315	WorkSpace Directory	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+402	0	NETWORK_CARD	RESOURCE		Network Card	NULL	3005	Network Card	com.vistara.scc.model.device.NetworkCardDetails	0	NULL	NULL	NULL	0	NULL
+405	0	NUTANIX	RESOURCE		Nutanix	116	3020	Nutanix	com.vistara.scc.model.device.cloud.Nutanix	1	NUTANIX	RESOURCE	NULL	0	NULL
+406	0	OOB_INTERFACE	RESOURCE		OOB Interface	NULL	3025	OOB Interface	com.vistara.scc.model.device.cloud.OOBInterface	0	NULL	RESOURCE	NULL	1	NULL
+415	0	RDS	RESOURCE		RDS	117	3085	RDS	com.vistara.scc.model.resource.GenericResource	0	AWS,ALIBABA	RESOURCE	NULL	1	{""SortPriority"":""24","ResourceTreePriority"":""26""}
+416	0	REDIS_CACHE	RESOURCE		Redis Cache	NULL	3090	Redis Cache	com.vistara.scc.model.resource.GenericResource	0	ARM,AZURE	RESOURCE	NULL	1	{""SortPriority"":""77","ResourceTreePriority"":""80""}
+418	0	REDSHIFTCLUSTERNODE	RESOURCE		Redshift Cluster Node	NULL	3100	Redshift Cluster Node	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+419	0	AZS_BRIDGE_ACTIVATIONS	RESOURCE		Bridge Activations	NULL	3105	AZS_EVENTCONNECTIONS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+420	0	AZS_BACKUP_LOCATION	RESOURCE		Backup Location	NULL	3110	AZS_BACKUP_LOCATION	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+421	0	AZS_FABRIC_LOCATION	RESOURCE		Fabric Location	NULL	3115	AZS_FABRIC_LOCATION	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+422	0	AZS_GALLERY_ITEMS	RESOURCE		Gallery Items	NULL	3120	AZS_GALLERY_ITEMS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+423	0	AZS_REGION_HEALTHS	RESOURCE		Region Healths	NULL	3125	AZS_REGION_HEALTHS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+424	0	AZS_SERVICE_HEALTHS	RESOURCE		Service Healths Registrations	NULL	3130	AZS_SERVICE_HEALTHS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+425	0	AZS_EXTENSIONS	RESOURCE		Extensions	NULL	3135	AZS_EXTENSIONS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+426	0	AZS_FARMS	RESOURCE		Farms	NULL	3140	AZS_FARMS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+427	0	AZS_DIRECTORY_TENANTS	RESOURCE		Directory Tenants	NULL	3145	AZS_DIRECTORY_TENANTS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	0	NULL
+428	0	AZS_APPLICATION_REGISTRATIONS	RESOURCE		Application Registrations	NULL	3150	AZS_APPLICATION_REGISTRATIONS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+429	0	AZS_MANIFESTS	RESOURCE		Manifests	NULL	3155	AZS_MANIFESTS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+430	0	AZS_USAGECONNECTIONS	RESOURCE		UsageConnections	NULL	3160	AZS_USAGECONNECTIONS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+431	0	AZS_TOPICS	RESOURCE		Topics	NULL	3165	AZS_TOPICS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+432	0	AZ_MANAGED_CLUSTERS	RESOURCE		ManagedClusters	NULL	3170	Kubernetes Service	com.vistara.scc.model.resource.GenericResource	0	AZURE 	RESOURCE	NULL	1	NULL
+433	0	AZS_OFFERS	RESOURCE		Offers	NULL	3175	AZS_OFFERS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+434	0	AZS_PLANS	RESOURCE		Plans	NULL	3180	AZS_PLANS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+435	0	AZS_EVENTCONNECTIONS	RESOURCE		EventConnections	NULL	3185	AZS_EVENTCONNECTIONS	com.vistara.scc.model.resource.GenericResource	0	AZURESTACK	RESOURCE	NULL	1	NULL
+436	0	AWS_EFS	RESOURCE		Aws EFS	NULL	3190	EFS	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""ResourceTreePriority"":""13""}
+437	0	AWS_DMS	RESOURCE		Replication Instance	NULL	3290	Replication Instance	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""ResourceTreePriority"":""24""}
+438	0	AWS_DMS_TASK	RESOURCE		Replication Task	NULL	3390	Replication Task	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+439	0	KUBEMASTER	RESOURCE		KubeMaster	NULL	3390	KubeMaster	com.vistara.scc.model.device.Device	0	NULL	RESOURCE	NULL	0	NULL
+440	0	AWS_SPOT_FLEET_REQUEST	RESOURCE		AWS Spot Fleet Request	NULL	1763	Spot Fleet Request	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	{""SortPriority"":""27","ResourceTreePriority"":""30""}
+441	0	Tape Library	RESOURCE	tape-library.png	Storage >> Tape Library	47	3395	Tape Library	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+442	0	Network Optimizer	RESOURCE	network-optimizer.png	Network Device >> Network Optimizer	39	3400	Network Optimize	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+443	0	Network USB Hub	RESOURCE	network-usb-hub.png	Network Device >> Network USB Hub	39	3405	Network USB Hub	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+444	0	WAN Optimizer	RESOURCE	network-optimizer.png	Network Device >> WAN Optimizer	39	160	WAN Optimizer	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+450	0	MESOSCLUSTER	RESOURCE		MesosCluster	NULL	3400	MesosCluster	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	0	NULL
+451	0	MESOSMASTER	RESOURCE		MesosMaster	116	3405	MesosMaster	com.vistara.scc.model.device.Device	0	NULL	NULL	NULL	0	NULL
+452	0	MESOSAGENT	RESOURCE		MesosAgent	116	3410	MesosAgent	com.vistara.scc.model.device.Device	0	NULL	NULL	NULL	0	NULL
+453	0	GCP_VPN_TUNNEL	RESOURCE		Vpn Tunnel	NULL	4160	Vpn Tunnel	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+478	0	AZ_SCALE_SET_VM	RESOURCE		virtual machine scale sets vm	116	4260	Virtual Machine Scale Sets VM	com.vistara.scc.model.device.cloud.ScaleSetVM	1	NULL	NULL	NULL	0	NULL
+479	0	AWS_STATE_MACHINE	RESOURCE		State Machine	NULL	4270	State Machine	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+480	0	AWS_MQ_BROKER	RESOURCE		Mq Broker	NULL	4320	MQ Broker	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+482	0	CODEBUILD_PROJECT	RESOURCE		Project	NULL	4280	Project	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+486	0	AWS_SWF_WORKFLOW_TYPES	RESOURCE		SWF Workflow Types	NULL	4340	SWF Workflow Types	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+487	0	AWS_SWF_ACTIVITY_TYPES	RESOURCE		SWF Activity Types	NULL	4350	SWF Activity Types	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+488	0	AWS_SWF_DOMAIN	RESOURCE		SWF Domain	NULL	4330	SWF Domain	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+492	0	AWS_IOT_RULE	RESOURCE		IOT Rule	NULL	4370	IOT Rule	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+493	0	AWS_IOT_JOB	RESOURCE		IOT Job	NULL	4380	IOT Job	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+495	0	AZ_DB_FOR_MARIADB	RESOURCE		AzureDB for MariaDB	NULL	4400	Azure Database for MariaDB	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+497	0	AZ_RELAY	RESOURCE		Relay	NULL	4420	Relay	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+498	0	AZ_EVENT_GRID_DOMAIN	RESOURCE		Event Grid Domain	NULL	4430	Event Grid Domain	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+499	0	AZ_CONTAINER_INSTANCE	RESOURCE		ContainerInstance	NULL	4440	Container Instance	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+500	0	GCP_FILE_STORE	RESOURCE		GCP_FILE_STORE	NULL	4450	GCP_FILE_STORE	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+501	0	AWS_TRANSIT_GATEWAY	RESOURCE		Transit Gateway	NULL	4460	Transit Gateway	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+507	0	GCP_NETWORK_SECURITY	RESOURCE		Network Security	NULL	4520	Network Security	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+511	0	AZ_NETWORK_INTERFACE	RESOURCE		Network Interface	NULL	4590	Network Interface	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+515	0	GCP_MEMORYSTORE_REDIS	RESOURCE		GCP_MEMORYSTORE_REDIS	NULL	4610	Memorystore for Redis	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+516	0	GCP_CLOUD_RUN_SERVICES	RESOURCE		Cloud Run Services	NULL	4630	Cloud Run Services	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	NULL
+517	0	GCP_CLOUD_COMPOSER	RESOURCE		Composer Environment	NULL	4620	Composer Environment	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+518	0	GCP_TPU	RESOURCE		Tpu	NULL	4640	Tpu	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+519	0	GCP_CLOUD_TASK_QUEUE	RESOURCE		Cloud Task Queue	NULL	4650	Cloud Task Queue	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	1	NULL
+520	0	OKDMASTER	RESOURCE	okd.png	OkdMaster	NULL	4700	OkdMaster	NULL	0	OKD	NULL	NULL	0	NULL
+522	0	GCP_BIGTABLE_INSTANCE	RESOURCE		BigTable Instance	NULL	4710	BigTable Instance	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+523	0	GCP_BIGTABLE_CLUSTER	RESOURCE		BigTable Cluster	NULL	4720	BigTable Cluster	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+524	0	GCP_BIGTABLE_TABLE	RESOURCE		BigTable Table	NULL	4730	BigTable Table	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+525	0	HPEONEVIEW_RESOURCE	RESOURCE		OneView	NULL	4740	OneView	com.vistara.scc.model.resource.GenericResource	0	HPEONEVIEW	RESOURCE	NULL	0	NULL
+526	0	HPEONEVIEW_ENCLOSURE	RESOURCE		Enclosure	NULL	4750	Enclosure	com.vistara.scc.model.resource.GenericResource	0	HPEONEVIEW	RESOURCE	NULL	0	NULL
+533	0	HPEONEVIEW_SERVERHARDWARE	RESOURCE		ServerHardware	NULL	4820	ServerHardware	com.vistara.scc.model.resource.GenericResource	0	HPEONEVIEW	RESOURCE	NULL	0	NULL
+536	0	AWS_DOCDB_CLUSTER	RESOURCE		DocumentDBCluster	NULL	4850	DocumentDB Cluster	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+537	0	AWS_CLOUD_SEARCH	RESOURCE		Cloud Search Domain	NULL	4860	Cloud Search Domain	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+538	0	AWS_DOCDB_INSTANCE	RESOURCE		DocumentDBInstance	NULL	4870	DocumentDB Instance	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+539	0	AWS_CLOUD_HSM_CLUSTER	RESOURCE		Cloud HSM Cluster	NULL	4880	Cloud HSM Cluster	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+540	0	AWS_CLOUD_HSM	RESOURCE		Cloud HSM	NULL	4890	Cloud HSM	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+543	0	AWS_EVENT_BRIDGE_BUS	RESOURCE		Event Bridge Bus	NULL	4910	EventBridge Bus	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+544	0	AWS_EVENT_BRIDGE_RULE	RESOURCE		Event Bridge Rule	NULL	4920	EventBridge Rule	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+545	0	AWS_NAT_GATEWAY	RESOURCE		AWS Nat Gateway	NULL	4930	AWS NAT Gateway	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+546	0	AWS_MEDIA_CONNECT_FLOW	RESOURCE		AWS Media Connect Flow	NULL	4940	AWS Media Connect Flow	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+548	0	AWS_MEDIA_PACKAGE_CHANNEL	RESOURCE		AWS Media Package Channel	NULL	4980	AWS Media Package Channel	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+550	0	AWS_MP_ORIGIN_ENDPOINT	RESOURCE		AWS Media Package Origin Endpoint	NULL	5000	AWS Media Package Origin Endpoint	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+551	0	AWS_MEDIA_CONVERT_QUEUE	RESOURCE		AWS Media Convert Queue	NULL	5010	AWS Media Convert Queue	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+554	0	AWS_MEDIA_CONVERT_JOB	RESOURCE		AWS Media Convert Job	NULL	6020	AWS Media Convert Job	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+555	0	AWS_MEDIA_TAILOR_CONFIG	RESOURCE		AWS Media Tailor Playback Config	NULL	6030	AWS Media Tailor Playback Config	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+556	0	AWS_COGNITO_USER_POOL	RESOURCE		Cognito User Pool	NULL	6040	Cognito User Pool	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+557	0	AWS_COGNITO_USER_CLIENT	RESOURCE		Cognito User Pool Client	NULL	6050	Cognito User Pool Client	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+559	0	AWS_APPSYNC	RESOURCE		AppSync API	NULL	5000	AppSync API	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+560	0	AWS_NEPTUNE_DB_CLUSTER	RESOURCE		Neptune DB Cluster	NULL	5010	Neptune DB Cluster	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+561	0	AWS_NEPTUNE_DB_INSTANCE	RESOURCE		Neptune DB Instance	NULL	5020	Neptune DB Instance	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+564	0	AWS_GAMELIFT_QUEUE	RESOURCE		GameLiftQueue	NULL	5040	GameLift Queue	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+565	0	AWS_GAMELIFT_CONFIG	RESOURCE		GameLiftMatchmakingConfig	NULL	5050	GameLift Matchmaking Config	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+566	0	AWS_GAMELIFT_RULESET	RESOURCE		GameLiftMatchmakingRuleSet	NULL	5060	GameLift Matchmaking Rule Set	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+568	0	AWS_GAMELIFT_FLEET	RESOURCE		GameLiftFleet	NULL	6010	GameLift Fleet	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+570	0	AWS_MSK_CLUSTER	RESOURCE		MSK Cluster	NULL	5090	MSK Cluster	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+571	0	AWS_MSK_BROKER_NODE	RESOURCE		MSK Cluster Broker Node	NULL	6000	MSK Cluster Broker Node	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+572	0	AWS_APP_STREAM	RESOURCE		App Stream	NULL	5200	App Stream	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+574	0	AWS_TRANSLATE_JOB	RESOURCE		Translation Job	NULL	5220	Translate Job	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+575	0	AWS_LEX_BOT	RESOURCE		Bot	NULL	5230	Lex Bot	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+576	0	AWS_LEX_BOT_CHANNELS	RESOURCE		Bot Channels	NULL	5240	Lex Bot Channels	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+578	0	AWS_KMS_CUSTOMER_MANAGED_KEYS	RESOURCE		Customer Managed Keys	NULL	5270	Customer Managed Keys	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+583	0	AWS_GLUE_JOBS	RESOURCE		Jobs	NULL	5310	Glue Jobs	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+588	0	AWS_ATHENA	RESOURCE		Aws Athena	NULL	5360	Aws Athena	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+590	0	AWS_OPSWORKS_STACKS	RESOURCE		OpsWorks Stack	NULL	5500	OpsWorks Stack	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+591	0	AWS_OPSWORKS_LAYERS	RESOURCE		OpsWorks Layer	NULL	5600	OpsWorks Layer	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+592	0	AWS_INSPECTOR_TARGET	RESOURCE		Inspector Target	NULL	5610	Inspector Target	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+593	0	AWS_INSPECTOR_TEMPLATE	RESOURCE		Inspector Template	NULL	5620	Inspector Template	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+594	0	AWS_SAGEMAKER_GROUNDTRUTH	RESOURCE		SageMaker GroundTruth	NULL	5630	SageMaker GroundTruth	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+595	0	AWS_SAGEMAKER_TRAINING	RESOURCE		SageMaker Training	NULL	5640	SageMaker Training	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+596	0	AWS_SAGEMAKER_ENDPOINT	RESOURCE		SageMaker EndPoint	NULL	5650	SageMaker EndPoint	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+599	0	AWS_SAGEMAKER_TRANSFORM	RESOURCE		SageMaker Transform	NULL	5680	SageMaker Transform	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+600	0	AWS_KINESIS_SHARD	RESOURCE		Kinesis Shard	NULL	5690	Kinesis Shard	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+603	0	BSD	RESOURCE	dev-server.png	Server >> BSD	3	6060	BSD	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+608	0	AZ_SQL_MANAGED_INSTANCE	RESOURCE		Sql Managed Instance	NULL	6070	SQL Managed Instance	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+613	0	K3SMASTER	RESOURCE	k3s.png	K3sMaster	NULL	6090	K3sMaster	com.vistara.scc.model.device.Device	0	K3S	RESOURCE	NULL	0	NULL
+618	0	DOCKER_CONTAINER	RESOURCE	/img/device-images/16x16/containerIcon.png	DockerContainer	122	7010	Docker Container	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+623	0	CONTAINERD_CONTAINER	RESOURCE	/img/device-images/16x16/containerDContainerIcon.png	ContainerDContainer	122	7020	ContainerD Container	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+633	0	AZ_POSTGRESQL_SERVERS_V2	RESOURCE		PostgreSql Serversv2	NULL	7010	PostgreSql Serversv2	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+638	0	HYPERFLEX_CLUSTER	RESOURCE	hyper_flex_cluster.png	HyperFlex	NULL	7030	Cisco HyperFlex	com.vistara.scc.model.device.cloud.HyperFlexCluster	0	HYPERFLEX	RESOURCE	NULL	0	NULL
+643	0	HYPERFLEX_DATASTORE	RESOURCE	hyper_flex_datastore.png	HyperFlex	116	7040	HyperFlex/datastore	com.vistara.scc.model.device.cloud.DataStore	0	HYPERFLEX	RESOURCE	NULL	0	NULL
+648	0	HYPERFLEX_NODES	RESOURCE	hyper_flex_node.png	HyperFlex	116	7050	HyperFlex Hypervisor Hosts	com.vistara.scc.model.device.cloud.HyperFlexNode	0	HYPERFLEX	RESOURCE	NULL	0	NULL
+653	0	HYPERFLEX_NODE_DISKS	RESOURCE	hyper_flex_node_disks.png	HyperFlex	116	7060	HyperFlex/node/disks	com.vistara.scc.model.device.cloud.HyperFlexNodeDisk	0	HYPERFLEX	RESOURCE	NULL	0	NULL
+658	0	HYPERFLEX_NODE_CONTROLLER_VM	RESOURCE	hyper_flex_node_controller_vm.png	HyperFlex	116	7070	HyperFlex Node Controller	com.vistara.scc.model.device.cloud.HyperFlexNodeVMController	0	HYPERFLEX	RESOURCE	NULL	0	NULL
+688	0	HYPERV_HOST	RESOURCE	hyperv_icon.png	HYPERV_HOST	NULL	7080	Microsoft Hyper-V	com.vistara.scc.model.cloud.hyperv.HyperVHost	0	HYPERV	RESOURCE	NULL	0	NULL
+693	0	Hitachi VSP	RESOURCE	hitachi_vsp.png	Hitachi VSP	NULL	7090	Hitachi VSP	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+698	0	Hitachi HNAS	RESOURCE	hitachi_hnas.png	Hitachi HNAS	NULL	7100	Hitachi HNAS	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+703	0	Hitachi HCI	RESOURCE	hitachi_hci.png	Hitachi HCI	NULL	7110	Hitachi HCI	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+708	0	CRIO_CONTAINER	RESOURCE	/img/device-images/16x16/crioContainerIcon.png	CRIOContainer	122	7120	CRIO Container	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+713	0	AZ_BLOCKCHAIN_MEMBERS	RESOURCE		Blockchain Members	NULL	7130	Blockchain Members	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+718	0	AZ_INTEGRATION_SERVICE_ENVIRONMENT	RESOURCE		Integration Service Environment	NULL	7140	Integration Service Environment	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+723	0	AZ_KUSTO_CLUSTER	RESOURCE		Kusto Clusters	NULL	7150	Kusto Clusters	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+728	0	AZ_DATA_BOX_EDGE	RESOURCE		DataBox Edge	NULL	7160	Data Box Edge	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+733	0	AZ_ML_SERVICES_WORKSPACES	RESOURCE		Machine Learning Services Workspaces	NULL	7170	Machine Learning Services Workspaces	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+738	0	AWS_AMAZON_CONNECT	RESOURCE		Amazon Connect	NULL	7180	Amazon Connect	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+743	0	AWS_CONTACT_FLOW	RESOURCE		Contact Flow	NULL	7190	Contact Flow	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	0	NULL
+748	0	PROMETHEUSMETRICS	RESOURCE	prometheus.png	PrometheusMetrics	NULL	7200	Prometheus Metrics	com.vistara.scc.model.device.Device	0	PROMETHEUSMETRICS	RESOURCE	NULL	0	NULL
+753	0	AZ_MEDIA_SERVICE	RESOURCE		Media Service	NULL	7210	Media Service	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+758	0	AZ_MEDIA_SERVICE_STREAM_ENDPOINT	RESOURCE		Media Service Stream End Point	NULL	7220	Media Service Stream Endpoint	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+763	0	AZ_FRONT_DOOR	RESOURCE		Front Door	NULL	7230	Front Door	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+768	0	AZ_IOT_CENTRAL	RESOURCE		IOT Central	NULL	7240	IOT Central	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+773	0	AZ_SYNAPSE_WORKSPACE	RESOURCE		Synapse Workspace	NULL	7250	Synapse Workspace	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	1	NULL
+778	0	AZ_SYNAPSE_APACHE_SPARK_POOL	RESOURCE		Synapse Apache Spark Pool	NULL	7260	Synapse Apache Spark Pool	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+783	0	AZ_SYNAPSE_SQL_POOL	RESOURCE		Synapse Sql Pool	NULL	7270	Synapse SQL Pool	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+793	0	AZ_NETWORK_WATCHER_CONNECTION_MONITOR	RESOURCE		Network Watcher Connection Monitor	NULL	7290	Network Watcher Connection Monitor	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+798	0	Fabric	RESOURCE	dev-fabric.png	Network Device >> Fabric	39	7300	Fabric	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+803	0	Port	RESOURCE	port.png	Port	NULL	7310	Port	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	0	NULL
+808	0	Cluster	RESOURCE	dev-cluster.png	Cluster	NULL	7320	Cluster	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+813	0	Volume	RESOURCE	volume.png	Volume	NULL	7330	Volume	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	0	NULL
+818	0	Group	RESOURCE	Group.png	Group	NULL	7340	Group	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	0	NULL
+823	0	File System	RESOURCE	File-System.png	File System	NULL	7350	File System	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	0	NULL
+828	0	Account	RESOURCE	account.png	Account	NULL	7360	Account	com.vistara.scc.model.resource.GenericResource	0	NULL	NULL	NULL	0	NULL
+833	0	Software Defined Network Resource	RESOURCE	sdnr.png	Software Defined Network Resource	NULL	7370	Software Defined Network Resource	com.vistara.scc.model.device.Device	1	NULL	NULL	NULL	0	NULL
+838	0	CISCO_MERAKI_NETWORK	RESOURCE	ciscomeraki.png	Cisco Meraki Network	NULL	7380	Cisco Meraki Network	com.vistara.scc.model.resource.GenericResource	0	MERAKI	RESOURCE	NULL	1	NULL
+843	0	CLOUD_SERVICES	RESOURCE	ciscomeraki.png	Cloud Service	NULL	7390	Cloud Service	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+848	0	Endpoint	RESOURCE	Endpoint.png	Endpoint	NULL	7400	Endpoint	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+858	0	AZ_NETAPP_CAPACITY_POOL	RESOURCE		NetApp Capacity Pool	NULL	7420	NetApp Capacity Pool	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+863	0	AZ_NETAPP_VOLUME	RESOURCE		NetApp Volume	NULL	7430	NetApp Volume	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+882	0	GCP_APIGEE_ENVIRONMENT	RESOURCE		Apigee Environment	NULL	7470	Apigee Environment	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+887	0	GCP_APIGEE_INSTANCE	RESOURCE		Apigee Instance	NULL	7480	Apigee Instance	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+892	0	GCP_APIGEE_API_PROXIES	RESOURCE		Apigee API Proxies	NULL	7490	Apigee API Proxies	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+897	0	MERAKI_DEVICE	RESOURCE		Meraki Device	NULL	7500	Meraki Device	com.vistara.scc.model.device.Device	1	MERAKI	RESOURCE	NULL	1	NULL
+902	0	AZ_POSTGRESQL_FLEXIBLE_SERVER	RESOURCE		PostgreSQL Flexible Server	117	7510	PostgreSQL Flexible Server	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+907	0	GCP_INTERCONNECT	RESOURCE		Interconnect	NULL	7520	Interconnect	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+912	0	AWS_TARGET_GROUP	RESOURCE		Target Group	NULL	7530	Target Group	com.vistara.scc.model.resource.GenericResource	0	AWS	RESOURCE	NULL	1	NULL
+917	0	ZOOM_ROOM	RESOURCE		Zoom Room	NULL	7540	Zoom Room	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+922	0	AZ_FIREWALL	RESOURCE		Firewall	NULL	7550	Firewall	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+927	0	AZ_BACKUP_VAULTS	RESOURCE		Backup Vault	NULL	7560	Backup Vaults	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+932	0	AZ_CONTAINER_REGISTRIES	RESOURCE		Container registries	NULL	7570	Container registries	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+937	0	AZ_MAPS_ACCOUNTS	RESOURCE		Azure Maps Accounts	NULL	7580	Azure Maps Accounts	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+942	0	GCP_INTERCONNECT_ATTACHMENT	RESOURCE		Interconnect Attachment	NULL	7590	Interconnect Attachment	com.vistara.scc.model.resource.GenericResource	0	GOOGLE	RESOURCE	NULL	0	NULL
+947	0	AZ_CONTAINER_APPS	RESOURCE		Container Apps	NULL	7600	Container Apps	com.vistara.scc.model.resource.GenericResource	0	AZURE	RESOURCE	NULL	0	NULL
+952	0	OCI_BUCKET	RESOURCE		OCI Bucket	NULL	7610	OCI Bucket	com.vistara.scc.model.resource.GenericResource	0	NULL	RESOURCE	NULL	0	NULL
+"
